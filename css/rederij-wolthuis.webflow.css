@@ -502,30 +502,7 @@ p {
   padding-left: 1rem;
   text-shadow: none;
 }
-.tochten-column-left.col-lg-6 {
-  text-shadow: none;
-}
-.tochten-column-left.col-lg-6.around-lg {
-  padding-top: 0rem;
-  text-shadow: none;
-}
-.tochten-column-left.col-lg-6.around-lg.col-md-6 {
-  text-shadow: none;
-}
-.tochten-column-left.col-lg-6.around-lg.col-md-6.col-xs-12 {
-  max-height: 48rem;
-  min-height: 48rem;
-  text-shadow: none;
-}
-.tochten-column-left.col-xs-6 {
-  text-shadow: none;
-}
-.tochten-column-left.col-xs-12.col-md-6 {
-  text-shadow: none;
-}
-.tochten-column-left.col-md-6 {
-  text-shadow: none;
-}
+
 .left-row {
   min-height: 8rem;
   margin: auto 1rem;
@@ -1840,29 +1817,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding: 0px;
   }
   .tochten-column-left {
-    min-height: 41rem;
+    min-height: 40rem;
     padding-top: 1rem;
     padding-bottom: 0px;
     text-shadow: none;
   }
-  .tochten-column-left.col-lg-6 {
-    text-shadow: none;
-  }
-  .tochten-column-left.col-lg-6.around-lg {
-    padding-right: 1rem;
-  }
-  .tochten-column-left.col-lg-6.around-lg.col-md-6.col-xs-12 {
-    max-height: 40rem;
-    min-height: 42rem;
-  }
-  .tochten-column-left.col-xs-12 {
-    text-shadow: none;
-  }
-  .tochten-column-left.col-xs-12.col-md-6 {
-    text-shadow: none;
-  }
-  .tochten-column-left.col-md-6 {
-    text-shadow: none;
+ 
   }
   .left-row {
     min-height: 9rem;
@@ -2587,19 +2547,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding: 1rem 1rem 2px;
     text-shadow: none;
   }
-  .tochten-column-left.col-lg-6.around-lg {
-    padding-right: 1rem;
-  }
-  .tochten-column-left.col-lg-6.around-lg.col-md-6.col-xs-12 {
-    max-height: 72rem;
-    min-height: 72rem;
-  }
-  .tochten-column-left.col-xs-12 {
-    text-shadow: none;
-  }
-  .tochten-column-left.col-md-6 {
-    text-shadow: none;
-  }
+ 
   .left-row {
     padding-right: 0rem;
     padding-left: 0rem;
@@ -3437,22 +3385,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding: 1rem 0rem 3px;
     text-shadow: none;
   }
-  .tochten-column-left.col-lg-6.around-lg {
-    max-height: 70rem;
-  }
-  .tochten-column-left.col-lg-6.around-lg.col-md-6 {
-    padding-right: 0rem;
-    padding-left: 0rem;
-  }
-  .tochten-column-left.col-lg-6.around-lg.col-md-6.col-xs-12 {
-    min-height: 70rem;
-  }
-  .tochten-column-left.col-xs-12 {
-    text-shadow: none;
-  }
-  .tochten-column-left.col-md-6 {
-    text-shadow: none;
-  }
+  
   .left-row {
     margin-right: 0rem;
     margin-left: 0rem;
