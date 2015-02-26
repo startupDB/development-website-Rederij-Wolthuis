@@ -2363,7 +2363,11 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     min-width: 100%;
     padding-left: 1rem;
   }
- 
+  .nav-menu.col-lg-3 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
   .nav-link {
     margin-left: 1.5rem;
     font-size: 1.2em;
@@ -3179,9 +3183,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .nav-menu {
     padding-left: 1rem;
+  }
+  .nav-menu.col-lg-3 {
     background-color: #189bce;
   }
-  
   .nav-link {
     margin-right: 0rem;
     margin-left: 0.5rem;
