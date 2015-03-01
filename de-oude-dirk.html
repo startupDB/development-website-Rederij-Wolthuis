@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sat Feb 28 2015 22:22:31 GMT+0000 (UTC) -->
+<!-- Last Published: Sun Mar 01 2015 09:01:42 GMT+0000 (UTC) -->
 <html data-wf-site="54b3ca1fdab6b5db23c4c33a" data-wf-page="54bab3f0c3c251532765ed43">
 <head>
   <meta charset="utf-8">
@@ -34,7 +34,7 @@
           <div class="w-hidden-small w-hidden-tiny menu-text-next-hamburger">Menu</div>
         </a>
       </div>
-      <div class="row center-lg center-md center-sm center-xs" data-flex="row center-lg center-dm center-sm center-xs">
+      <div class="basic-row-nav-bar" data-flex="row center-lg center-md center-sm center-xs">
         <div class="dic-top-nav-bar">
           <a class="w-nav-brand wolthuis-logo" href="index.html"><img src="images/Wolthuis_logo.png" width="48%" alt="54b3e43db936169d36228a9a_Wolthuis_logo.png">
           </a>
@@ -60,17 +60,21 @@
   </div>
   <div class="w-section section-top alt-boot-ouade-dirk">
     <div class="w-container container">
-      <div class="div-top row">
-        <div class="column-top-left col-sm-12 col-md-8 col-lg-8 col-xs-12">
-          <h1 class="homepage-header editable">Oude Dirk</h1>
-          <h2 class="sub-heading-boot editable">Het meest authentieke <br>schip van <br>‘s-Hertogenbosch</h2>
+      <div class="div-top">
+        <div class="row-left" data-flex="row start-lg center-xs start-sm center-lg">
+          <div class="column-top-left" data-flex="col-lg-12 center-lg center-md  col-md-12  col-sm-12">
+            <div class="div-home-title">
+              <h1 class="homepage-header editable" data-ix="intro-header-homepage">Oude Dirk</h1>
+              <h2 class="home-sub-header editable" data-ix="intro-sub-header-home">Het meest authentieke&nbsp;<br>schip van&nbsp;<br>‘s-Hertogenbosch</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="w-section">
-    <div class="section-vaartpagina-2 row">
-      <div class="column-section-vaart1 col-lg-6 col-md-6 col-sm-12 col-xs-12 middle-md middle-lg editable">
+    <div class="section-vaartpagina-2" data-flex="row">
+      <div class="column-section-vaart1" data-flex="col-lg-6 col-md-6 col-sm-12 col-xs-12 middle-lg middle-md">
         <div class="div-text">
           <h3 class="vaart-pagina-heading">Het meest authentieke schip van Den Bosch</h3>
         </div>
@@ -82,24 +86,24 @@
         <div class="div-button-event-1"><a class="button vaart-pagina" href="#">Neem contact op</a>
         </div>
       </div>
-      <div class="column-section-vaart2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="column-section-vaart2" data-flex="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="bleu-vaart-column">
-          <div class="location-row row alt-vaarten">
-            <div class="column-blue-vaart1 col-lg-2 col-md-2 col-sm-12 col-xs-12 middle-sm">
+          <div class="location-row alt-vaarten" data-flex="row">
+            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12 middle-xs middle-sm">
               <div class="div-location"><img src="images/779-users@2x.png" alt="54c8d624c794d6f3145b479a_779-users%402x.png">
               </div>
             </div>
-            <div class="column-blue-vaart2 col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            <div class="column-blue-vaart2 col-lg-10 col-md-10 col-sm-12 col-xs-12" data-flex="col-lg-10 col-md-10 col-sm-12 col-xs-12">
               <p class="vaart-pagina-para alt-location editable">Aantal personen:
                 <br> 80 - 100 afhankelijk van eventueel buffet</p>
             </div>
           </div>
-          <div class="location-row row alt-vaarten">
-            <div class="column-blue-vaart1 col-lg-2 col-md-2 col-sm-12 col-xs-12 middle-sm">
+          <div class="location-row alt-vaarten" data-flex="row">
+            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12 middle-xs middle-sm">
               <div class="div-location"><img src="images/826-money-1@2x.png" alt="54b9a057aba3daf27b32d8b4_826-money-1%402x.png">
               </div>
             </div>
-            <div class="column-blue-vaart2 col-lg-10 col-md-10 col-xs-12 col-sm-12">
+            <div class="column-blue-vaart2 col-lg-10 col-md-10 col-sm-12 col-xs-12" data-flex="col-lg-10 col-md-10 col-sm-12 col-xs-12">
               <p class="vaart-pagina-para alt-money editable">Rondvaart op de Dieze in ’s-Hertogenbosch richting sluis Engelen: vanaf € 10,00 per persoon.
                 <br>
                 <br>Dagtocht naar Heusden: vanaf € 17,50 per persoon.
@@ -109,18 +113,19 @@
                 <br>Avondtocht op de Maas alleen vaartocht vanaf € 17,50 per persoon.
                 <br>
                 <br>Met buffet aan boord vanaf € 54,50 per persoon</p>
+              <p class="vaart-pagina-para alt-location editable">Aantal personen:
+                <br> 80 - 100 afhankelijk van eventueel buffet</p>
             </div>
           </div>
-          <div class="location-row row alt-vaarten">
-            <div class="column-blue-vaart1 col-lg-2 col-md-2 col-sm-12 col-xs-12 middle-sm">
+          <div class="location-row alt-vaarten" data-flex="row">
+            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12 middle-xs middle-sm">
               <div class="div-location"><img src="images/724-info@2x.png" alt="54c8d660c794d6f3145b47a3_724-info%402x.png">
               </div>
             </div>
-            <div class="column-blue-vaart2 col-lg-10 col-md-10 col-xs-12">
+            <div class="column-blue-vaart2 col-lg-10 col-md-10 col-sm-12 col-xs-12" data-flex="col-lg-10 col-md-10 col-sm-12 col-xs-12">
               <p class="vaart-pagina-para alt-money editable">Prijzen gelden vanaf minimaal 25 personen. Bij kleinere groepen kunt u altijd informeren naar speciale prijzen. Al deze vaartochten zijn het gehele jaar te boeken, tijden en aanvullend entertainment zijn in overleg met u af te stemmen op de gelegenheid.</p>
             </div>
           </div>
-          <div class="location-row row"></div>
         </div>
       </div>
     </div>
@@ -172,8 +177,8 @@
     </div>
   </div>
   <div class="w-section">
-    <div class="boten-en-tochten-section row">
-      <div class="blue-boot-column col-lg-6 center-lg col-md-6 center-md">
+    <div class="boten-en-tochten-section" data-flex="row">
+      <div class="blue-boot-column" data-flex="col-lg-6 col-md-6 center-lg center-md">
         <div class="div-column-boot row center-lg center-md center-sm">
           <div class="boten-blue-image-column middle-lg col-lg-10 col-sm-10">
             <div class="image-event-1"><img class="image-boot-od" src="images/Feesten en verhuur.png" alt="54b69168f7e59176037ac138_Feesten%20en%20verhuur.png">
@@ -195,7 +200,7 @@
         </div>
         <a class="w-inline-block link-div-pop-tochten" href="#" data-ix="new-interaction-2">
           <div class="left-row-first" id="pop-tocht-row-1" data-ix="hoover-tekst-kleur">
-            <div class="tochten-row-first row center-xs start-md start-lg" data-flex="row center-xs start-md start-lg">
+            <div class="tochten-row-first" data-flex="row center-xs start-md start-lg">
               <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
               </div>
               <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
@@ -235,17 +240,17 @@
   </div>
   <div class="w-section section-boekingen" id="Boekingsformulier">
     <h3 class="contact-blue">Benieuwd naar de mogelijkheden ?</h3>
-    <div class="w-container container" data-flex="container">
-      <div class="row-conatct row" data-flex="row">
-        <div class="contact-column-telefoon" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
+    <div class="w-container container-contact-section">
+      <div class="row-conatct" data-flex="row middle-lg middle-md between-sm between-xs">
+        <div class="contact-column-telefoon" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs">
           <div class="telefoon"></div>
           <div class="contact-text">Telefonisch contact</div>
         </div>
-        <div class="contact-column-mail" id="contact-mail" data-tidy-sitewide="#contact-mail" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
+        <div class="contact-column-mail" id="contact-mail" data-tidy-sitewide="#contact-mail" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs">
           <div class="mail-contact"></div>
           <div class="contact-text">Mail ons</div>
         </div>
-        <div class="contact-column-boeken" id="contact-boeken" data-tidy-sitewide="#contact-boeken" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
+        <div class="contact-column-boeken" id="contact-boeken" data-tidy-sitewide="#contact-boeken" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs">
           <a class="w-inline-block contact-link modal-open-button" href="javascript:void(0);">
             <div class="boeken"></div>
             <div class="contact-text">Direct boeken</div>
@@ -258,7 +263,7 @@
     <div class="footer-row" data-flex="row center-lg">
       <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
-          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+          <div class="column-footer" id="column-footer" data-flex="middle-md">
             <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
               <h4 class="footer-heading4">Rederij Wolthuis</h4>
             </div>
@@ -274,7 +279,7 @@
       </div>
       <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
-          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+          <div class="column-footer" id="column-footer" data-flex="middle-md">
             <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
               <h4 class="footer-heading4">Opstapplek: Oliemolen</h4>
             </div>
@@ -290,7 +295,7 @@
       </div>
       <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
-          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+          <div class="column-footer" id="column-footer" data-flex="middle-md">
             <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
               <h4 class="footer-heading4">Opstapplek: St. Janssingel</h4>
             </div>

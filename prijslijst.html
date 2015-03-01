@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sat Feb 28 2015 22:22:31 GMT+0000 (UTC) -->
+<!-- Last Published: Sun Mar 01 2015 09:01:42 GMT+0000 (UTC) -->
 <html data-wf-site="54b3ca1fdab6b5db23c4c33a" data-wf-page="54ede4b36d51184d56a7a1e7">
 <head>
   <meta charset="utf-8">
@@ -34,7 +34,7 @@
           <div class="w-hidden-small w-hidden-tiny menu-text-next-hamburger">Menu</div>
         </a>
       </div>
-      <div class="row center-lg center-md center-sm center-xs" data-flex="row center-lg center-dm center-sm center-xs">
+      <div class="basic-row-nav-bar" data-flex="row center-lg center-md center-sm center-xs">
         <div class="dic-top-nav-bar">
           <a class="w-nav-brand wolthuis-logo" href="index.html"><img src="images/Wolthuis_logo.png" width="48%" alt="54b3e43db936169d36228a9a_Wolthuis_logo.png">
           </a>
@@ -58,85 +58,89 @@
       </div><a class="w-nav-link nav-link" href="prijslijst.html">Prijslijst</a><a class="w-nav-link nav-link" href="/contact.html">Contact</a>
     </nav>
   </div>
-  <div class="div-prijslijst-pagina row center-lg center-md center-xs">
-    <div class="column-top-prijslijst col-lg-10">
-      <h1 class="heading-pagina-prijslijst">Prijslijst</h1>
-      <h2 class="prijslijst-heading">Heerlijk eten en drinken tijdens de tocht</h2>
-    </div>
-  </div>
-  <div class="sectie-prijs row center-lg center-md center-sm center-xs">
-    <div class="column-prijslijst-basic-left col-sm-12 col-xs-12 col-md-6 col-lg-5">
-      <div class="row-dranken row">
-        <div class="top-prijslijst-left-column white-black-text col-md-10 col-lg-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijslijst">Dranken</h3></a>
+  <div class="div-prijslijst-pagina" data-flex="row middle-lg center-lg center-md center-sm center-xs"></div>
+  <div class="w-section sectie-prijs row center-lg center-md center-sm center-xs" data-flex="row center-lg center-md center-sm center-xs">
+    <div class="header-row-prijslijst" data-flex="row center-lg center-md center-sm center-xs">
+      <div class="column-top-prijslijst" data-flex="col-lg-10">
+        <h1 class="heading-pagina-prijslijst">Prijslijst</h1>
+        <h2 class="prijslijst-heading">Heerlijk eten en drinken tijdens de tocht</h2>
+      </div>
+      <div class="column-prijslijst-basic-left col-sm-12 col-xs-12" data-flex="col-xs-12 col-sm-12 col-lg-5 col-md-5">
+        <div class="row-dranken" data-flex="row">
+          <div class="top-prijslijst-left-column white-black-text" data-flex="col-lg-10 col-md-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijslijst">Dranken</h3></a>
+          </div>
+          <div class="image-colum-prijslijst alt-left-column" data-ix="show-prijzen-drank" data-flex="col-lg-2 col-md-2 col-xs-2 col-sm-2 middle-lg center-lg middle-md center-sm center-xs"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+          </div>
+          <div class="w-clearfix hidden-drank">
+            <p class="invisable-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
         </div>
-        <div class="image-colum-prijslijst alt-left-column middle-lg center-lg middle-md center-sm center-xs col-lg-2 col-md-2 col-sm-2 col-xs-2" data-ix="show-prijzen-drank"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+        <div class="row-dranken" data-flex="row">
+          <div class="top-prijslijst-left-column white-black-text" data-flex="col-lg-10 col-md-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijslijst">Lunch(buffet)</h3></a>
+          </div>
+          <div class="image-colum-prijslijst alt-left-column" data-ix="show-prijzen-drank" data-flex="col-lg-2 col-md-2 col-xs-2 col-sm-2 middle-lg center-lg middle-md center-sm center-xs"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+          </div>
+          <div class="w-clearfix hidden-lunch">
+            <p class="invisable-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
         </div>
-        <div class="w-clearfix hidden-drank">
-          <p class="invisable-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        <div class="row-dranken" data-flex="row">
+          <div class="top-prijslijst-left-column white-black-text" data-flex="col-lg-10 col-md-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijslijst">Koud/Warm buffet luxe</h3></a>
+          </div>
+          <div class="image-colum-prijslijst alt-left-column" data-ix="show-prijzen-drank" data-flex="col-lg-2 col-md-2 col-xs-2 col-sm-2 middle-lg center-lg middle-md center-sm center-xs"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+          </div>
+          <div class="w-clearfix hidden-buffet">
+            <p class="invisable-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
         </div>
       </div>
-      <div class="row-lunch row">
-        <div class="top-prijslijst-left-column white-black-text col-xs-10"><a class="w-inline-block link-prijslijst" href="#"><h3 class="heading-item-prijslijst">Lunch(buffet)</h3></a>
+      <div class="column-prijslijst-basic-right" data-flex="col-lg-5 col-md-5">
+        <div class="row-dranken" data-flex="row">
+          <div class="top-prijslijst-left-column white-black-text" data-flex="col-lg-10 col-md-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijs-right">Hapjes</h3></a>
+          </div>
+          <div class="image-colum-prijslijst alt-left-column" data-ix="show-prijzen-drank" data-flex="col-lg-2 col-md-2 col-xs-2 col-sm-2 middle-lg center-lg middle-md center-sm center-xs"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+          </div>
+          <div class="hidden-hapjes">
+            <p class="hidden-para-hapjes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
+          <div class="w-clearfix hidden-drank">
+            <p class="invisable-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
         </div>
-        <div class="image-colum-prijslijst alt-left-column middle-lg center-lg middle-md center-sm center-xs col-lg-2 col-md-2 col-sm-2 col-xs-2" data-ix="show-prijzen-lunch"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+        <div class="row-dranken" data-flex="row">
+          <div class="top-prijslijst-left-column white-black-text" data-flex="col-lg-10 col-md-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijs-right">Nagerecht &amp; bij de koffie</h3></a>
+          </div>
+          <div class="image-colum-prijslijst alt-left-column" data-ix="show-prijzen-drank" data-flex="col-lg-2 col-md-2 col-xs-2 col-sm-2 middle-lg center-lg middle-md center-sm center-xs"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+          </div>
+          <div class="hidden-nagerecht">
+            <p class="hidden-para-hapjes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
         </div>
-        <div class="w-clearfix hidden-lunch">
-          <p class="invisable-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-        </div>
-      </div>
-      <div class="row-buffet-luxe row">
-        <div class="top-prijslijst-left-column white-black-text col-sm-10 col-xs-10"><a class="w-inline-block link-prijslijst" href="#"><h3 class="heading-item-prijslijst">Koud/Warm buffet luxe</h3></a>
-        </div>
-        <div class="image-colum-prijslijst alt-left-column middle-lg center-lg middle-md center-sm center-xs col-lg-2 col-md-2 col-sm-2 col-xs-2" data-ix="show-prijzen-buffet-luxe"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
-        </div>
-        <div class="w-clearfix hidden-buffet">
-          <p class="invisable-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-        </div>
-      </div>
-    </div>
-    <div class="column-prijslijst-basic-right col-md-5 col-lg-5">
-      <div class="row-hapjes row">
-        <div class="top-prijslijst-left-column white-black-text col-lg-10 col-md-10 col-sm-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijs-right">Hapjes</h3></a>
-        </div>
-        <div class="image-colum-prijslijst alt-left-column middle-lg center-lg middle-md center-sm center-xs col-lg-2 col-md-2 col-sm-2 col-xs-2" data-ix="show-prijzen-hapjes"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
-        </div>
-        <div class="hidden-hapjes">
-          <p class="hidden-para-hapjes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-        </div>
-      </div>
-      <div class="row-nagerecht row">
-        <div class="top-prijslijst-left-column white-black-text col-sm-10 col-xs-10"><a class="w-inline-block link-prijslijst" href="#"><h3 class="heading-item-prijs-right">Nagerecht &amp; bij de koffie</h3></a>
-        </div>
-        <div class="image-colum-prijslijst alt-left-column middle-lg center-lg middle-md center-sm center-xs col-lg-2 col-md-2 col-sm-2 col-xs-2" data-ix="show-prijzen-nagerecht"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
-        </div>
-        <div class="hidden-nagerecht">
-          <p class="hidden-para-hapjes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-        </div>
-      </div>
-      <div class="row-buffet-luxe row">
-        <div class="top-prijslijst-left-column white-black-text col-sm-10 col-xs-10"><a class="w-inline-block link-prijslijst" href="#"><h3 class="heading-item-prijs-right">Aanvulling bij buffet</h3></a>
-        </div>
-        <div class="image-colum-prijslijst alt-left-column middle-lg center-lg middle-md center-sm center-xs col-lg-2 col-md-2 col-sm-2 col-xs-2" data-ix="show-prijzen-buffet-luxe-aanvulling"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
-        </div>
-        <div class="hidden-aanvulling-buffet">
-          <p class="hidden-para-hapjes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        <div class="row-dranken" data-flex="row">
+          <div class="top-prijslijst-left-column white-black-text" data-flex="col-lg-10 col-md-10 col-xs-10"><a class="w-inline-block drank-link" href="#"><h3 class="heading-item-prijs-right">Aanvulling bij buffet</h3></a>
+          </div>
+          <div class="image-colum-prijslijst alt-left-column" data-ix="show-prijzen-drank" data-flex="col-lg-2 col-md-2 col-xs-2 col-sm-2 middle-lg center-lg middle-md center-sm center-xs"><img src="images/ic_arrow_drop_down_circle_48px.svg" alt="54edadee703e91ba55f2bc31_ic_arrow_drop_down_circle_48px.svg">
+          </div>
+          <div class="hidden-aanvulling-buffet">
+            <p class="hidden-para-hapjes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="w-section section-boekingen" id="Boekingsformulier">
     <h3 class="contact-blue">Benieuwd naar de mogelijkheden ?</h3>
-    <div class="w-container container" data-flex="container">
-      <div class="row-conatct row" data-flex="row">
-        <div class="contact-column-telefoon" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
+    <div class="w-container container-contact-section">
+      <div class="row-conatct" data-flex="row middle-lg middle-md between-sm between-xs">
+        <div class="contact-column-telefoon" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs">
           <div class="telefoon"></div>
           <div class="contact-text">Telefonisch contact</div>
         </div>
-        <div class="contact-column-mail" id="contact-mail" data-tidy-sitewide="#contact-mail" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
+        <div class="contact-column-mail" id="contact-mail" data-tidy-sitewide="#contact-mail" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs">
           <div class="mail-contact"></div>
           <div class="contact-text">Mail ons</div>
         </div>
-        <div class="contact-column-boeken" id="contact-boeken" data-tidy-sitewide="#contact-boeken" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
+        <div class="contact-column-boeken" id="contact-boeken" data-tidy-sitewide="#contact-boeken" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs">
           <a class="w-inline-block contact-link modal-open-button" href="javascript:void(0);">
             <div class="boeken"></div>
             <div class="contact-text">Direct boeken</div>
@@ -149,7 +153,7 @@
     <div class="footer-row" data-flex="row center-lg">
       <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
-          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+          <div class="column-footer" id="column-footer" data-flex="middle-md">
             <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
               <h4 class="footer-heading4">Rederij Wolthuis</h4>
             </div>
@@ -165,7 +169,7 @@
       </div>
       <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
-          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+          <div class="column-footer" id="column-footer" data-flex="middle-md">
             <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
               <h4 class="footer-heading4">Opstapplek: Oliemolen</h4>
             </div>
@@ -181,7 +185,7 @@
       </div>
       <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
-          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+          <div class="column-footer" id="column-footer" data-flex="middle-md">
             <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
               <h4 class="footer-heading4">Opstapplek: St. Janssingel</h4>
             </div>
