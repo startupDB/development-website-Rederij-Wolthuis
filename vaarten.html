@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Feb 26 2015 22:55:11 GMT+0000 (UTC) -->
+<!-- Last Published: Sat Feb 28 2015 22:22:31 GMT+0000 (UTC) -->
 <html data-wf-site="54b3ca1fdab6b5db23c4c33a" data-wf-page="54b93b604b796755107421d1">
 <head>
   <meta charset="utf-8">
@@ -34,9 +34,11 @@
           <div class="w-hidden-small w-hidden-tiny menu-text-next-hamburger">Menu</div>
         </a>
       </div>
-      <div class="dic-top-nav-bar row center-lg center-md center-sm center-xs">
-        <a class="w-nav-brand wolthuis-logo" href="index.html"><img src="images/Wolthuis_logo.png" width="48%" alt="54b3e43db936169d36228a9a_Wolthuis_logo.png">
-        </a>
+      <div class="row center-lg center-md center-sm center-xs" data-flex="row center-lg center-dm center-sm center-xs">
+        <div class="dic-top-nav-bar">
+          <a class="w-nav-brand wolthuis-logo" href="index.html"><img src="images/Wolthuis_logo.png" width="48%" alt="54b3e43db936169d36228a9a_Wolthuis_logo.png">
+          </a>
+        </div>
       </div>
     </div>
     <nav class="w-nav-menu nav-menu" role="navigation"><a class="w-nav-link nav-link bold home" href="index.html">Home</a>
@@ -122,39 +124,35 @@
       <div class="w-hidden-tiny hulp-column col-lg-3 col-sm-2"></div>
     </div>
   </div>
-  <div class="section-top alt-vaart">
+  <div class="w-section section-top alt-vaart">
     <div class="w-container container">
-      <div class="div-top row">
-        <div class="column-top-left col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="div-top" data-flex="row">
+        <div class="column-top-left" data-flex="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <h1 class="homepage-header editable">Vestingrondvaart</h1>
           <h2 class="vestingsvaart editable">Ontdek <br>‘s-Hertogenbosch<br>op een unieke manier</h2>
           <a class="w-lightbox w-inline-block lightbox-video-top-image" href="#">
-            <div class="video-outline row start-sm start-lg start-md center-xs" data-ix="video-hoover">
+            <div class="video-outline" data-ix="video-hoover" data-flex="row start-md start-lg start-sm center-xs">
               <div class="play-video"><img class="image-lightbox alt-video" src="images/ic_play_circle_outline_48px.png" alt="54c9fed3d23112847b347253_ic_play_circle_outline_48px.png">
               </div>
             </div>
             <script type="application/json" class="w-json">
-              {
-                "items": [
-                  {
-                    "type": "video",
-                    "url": "http://www.youtube.com/watch?v=Wp_g5A7-tdM",
-                    "thumbnailUrl": "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=866738f8f18b4394a18e371517a66ae0",
-                    "width": 854,
-                    "height": 480,
-                    "html": "<iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWp_g5A7-tdM%3Fautoplay%3D1%26feature%3Doembed&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWp_g5A7-tdM&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&autoplay=1&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>"
-                  }
-                ]
-              }
+              { "items": [{
+                "type": "video",
+                "html": "<iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWp_g5A7-tdM%3Fautoplay%3D1%26feature%3Doembed&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWp_g5A7-tdM&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&autoplay=1&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>",
+                "thumbnailUrl": "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=866738f8f18b4394a18e371517a66ae0",
+                "width": 854,
+                "height": 480,
+                "url": "http://www.youtube.com/watch?v=Wp_g5A7-tdM"
+              }] }
             </script>
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div>
-    <div class="section-vaartpagina-2 row center-sm">
-      <div class="column-section-vaart1 col-lg-6 col-md-6 middle-lg middle-md middle-sm editable">
+  <div class="w-section">
+    <div class="section-vaartpagina-2 row center-sm" data-flex="row">
+      <div class="column-section-vaart1" data-flex="col-lg-6 col-md-6 middle-lg middle-md middle-sm">
         <div class="div-text">
           <h3 class="vaart-pagina-heading">Rondvaart door Den Bosch; één van de oudste steden van Nederland.</h3>
         </div>
@@ -168,25 +166,25 @@
         <div class="div-button-event-1"><a class="button vaart-pagina modal-open-button" href="javascript:void(0);" data-ix="madal-background-show">Direct boeken</a>
         </div>
       </div>
-      <div class="column-section-vaart2 col-sm-12 col-md-6 col-lg-6 center-sm col-xs-12 center-xs start-lg start-md">
+      <div class="column-section-vaart2" data-flex="col-lg-6 col-md-6 col-sm-12 col-xs-12 start-lg start-md center-sm center-xs">
         <div class="bleu-vaart-column">
-          <div class="location-row row center-xs center-sm">
-            <div class="column-blue-vaart1 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="location-row" data-flex="row center-sm center-xs start-lg start-md middle-lg">
+            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12">
               <div class="div-location"><img src="images/701-location@2x.png" alt="54b99db4aba3daf27b32d878_701-location%402x.png">
               </div>
             </div>
-            <div class="column-blue-vaart2 col-lg-10 col-md-10 editable">
+            <div class="column-blue-vaart2" data-flex="col-lg-10 col-md-10">
               <p class="vaart-pagina-para alt-location">Opstapplek:
                 <br>St. Janssingel</p>
             </div>
             <div class="w-hidden-main w-hidden-medium w-hidden-small white-line-blue-boeking col-sm12"></div>
           </div>
-          <div class="location-row row alt-vaarten center-sm">
-            <div class="column-blue-vaart1 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="location-row" data-flex="row center-sm center-xs start-lg start-md">
+            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12">
               <div class="div-location"><img src="images/851-calendar@2x.png" alt="54b9a045469b565410b4909a_851-calendar%402x.png">
               </div>
             </div>
-            <div class="column-blue-vaart2 col-lg-10 col-md-10">
+            <div class="column-blue-vaart2" data-flex="col-lg-9 col-md-10">
               <p class="vaart-pagina-para alt-money editable">Wanneer:
                 <br>&nbsp;In mei en september op woensdag, zaterdag en zondag.
                 <br> In oktober alleen op zaterdag en zondag om 13.30 uur en 15.00 uur.
@@ -194,27 +192,27 @@
                 <br>
                 <br>Andere dagen op reservering vanaf 8 personen.<span class="span-small-characters"></span>
               </p>
-              <div class="w-hidden-main w-hidden-medium w-hidden-small white-line-blue-boeking col-sm12"></div>
             </div>
+            <div class="w-hidden-main w-hidden-medium w-hidden-small white-line-blue-boeking col-sm12"></div>
           </div>
-          <div class="location-row row alt-vaarten center-xs">
-            <div class="column-blue-vaart1 col-lg-2 col-lg col-md-2 col-sm-12 col-xs-12">
+          <div class="location-row alt-vaarten" data-flex="row center-sm center-xs middle-lg">
+            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12">
               <div class="div-location"><img src="images/728-clock@2x.png" alt="54b99d9683d2d6f17bab6f3f_728-clock%402x.png">
               </div>
             </div>
-            <div class="column-blue-vaart2 col-lg-10 col-lg col-md-10 col-sm-12">
+            <div class="column-blue-vaart2" data-flex="col-lg-10 col-md-10">
               <p class="vaart-pagina-para alt-money editable">Vertrektijden:
                 <br>12:00, 13:30, 15:00, 16:30
                 <br>Duur: Circa één uur.</p>
             </div>
           </div>
           <div class="w-hidden-main w-hidden-medium w-hidden-small white-line-blue-boeking col-sm12"></div>
-          <div class="location-row row alt-vaarten center-sm">
-            <div class="column-blue-vaart1 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="location-row alt-vaarten" data-flex="row">
+            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12">
               <div class="div-location"><img src="images/826-money-1@2x.png" alt="54b9a057aba3daf27b32d8b4_826-money-1%402x.png">
               </div>
             </div>
-            <div class="column-blue-vaart2 col-lg-10 col-md-10">
+            <div class="column-blue-vaart2" data-flex="col-lg-10 col-md-10">
               <p class="vaart-pagina-para alt-money editable">Volwassenen: €9,00.
                 <br>65-plussers en kinderen tot twaalf jaar: €7,50.
                 <br>
@@ -227,76 +225,57 @@
       </div>
     </div>
   </div>
-  <div class="section-images">
-    <div class="fotot-slides-region-den-bosch row">
+  <div class="w-section section-images">
+    <div class="fotot-slides-region-den-bosch" data-flex="row">
       <a class="w-lightbox w-inline-block lightbox-div" href="#" id="region1" data-ix="hoover-voor-titels-over-images-vaarten"><img class="image-lightbox" src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" alt="placeholder-thumb.svg">
         <script type="application/json" class="w-json">
-          {
-            "items": [
-              {
-                "type": "image",
-                "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/54b94cc64b796755107424ae_wolthuis-regionaam1.jpg",
-                "width": 512,
-                "height": 400
-              }
-            ],
-            "group": "regions"
-          }
+          { "group": "regions", "items": [{
+            "type": "image",
+            "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/54b94cc64b796755107424ae_wolthuis-regionaam1.jpg",
+            "width": 512,
+            "height": 400
+          }] }
         </script>
       </a>
       <a class="w-lightbox w-inline-block lightbox-div alt-image2" href="#" id="region2"><img class="image-lightbox" src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" alt="placeholder-thumb.svg">
         <script type="application/json" class="w-json">
-          {
-            "items": [
-              {
-                "type": "image",
-                "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/54b94dc583d2d6f17bab6a0f_wolthuis-regionaam2.jpg",
-                "width": 512,
-                "height": 400
-              }
-            ],
-            "group": "regions"
-          }
+          { "group": "regions", "items": [{
+            "type": "image",
+            "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/54b94dc583d2d6f17bab6a0f_wolthuis-regionaam2.jpg",
+            "width": 512,
+            "height": 400
+          }] }
         </script>
       </a>
       <a class="w-lightbox w-inline-block lightbox-div alt-image3" href="#"><img class="image-lightbox" src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" alt="placeholder-thumb.svg">
         <script type="application/json" class="w-json">
-          {
-            "items": [
-              {
-                "type": "image",
-                "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/54b94dd783d2d6f17bab6a12_wolthuis-regionaam3.jpg",
-                "width": 512,
-                "height": 400
-              }
-            ],
-            "group": "regions"
-          }
+          { "group": "regions", "items": [{
+            "type": "image",
+            "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/54b94dd783d2d6f17bab6a12_wolthuis-regionaam3.jpg",
+            "width": 512,
+            "height": 400
+          }] }
         </script>
       </a>
       <a class="w-lightbox w-inline-block lightbox-div alt-video" href="#"><img class="image-lightbox" src="https://d3e54v103j8qbb.cloudfront.net/img/placeholder-thumb.svg" alt="placeholder-thumb.svg">
         <script type="application/json" class="w-json">
-          {
-            "items": [
-              {
-                "type": "video",
-                "url": "http://www.youtube.com/watch?v=Wp_g5A7-tdM",
-                "thumbnailUrl": "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=866738f8f18b4394a18e371517a66ae0",
-                "width": 854,
-                "height": 480,
-                "html": "<iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWp_g5A7-tdM%3Fautoplay%3D1%26feature%3Doembed&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWp_g5A7-tdM&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&autoplay=1&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>"
-              }
-            ]
-          }
+          { "items": [{
+            "type": "video",
+            "url": "http://www.youtube.com/watch?v=Wp_g5A7-tdM",
+            "thumbnailUrl": "https://i.embed.ly/1/image?url=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=866738f8f18b4394a18e371517a66ae0",
+            "width": 854,
+            "height": 480,
+            "html": "<iframe class=\"embedly-embed\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FWp_g5A7-tdM%3Fautoplay%3D1%26feature%3Doembed&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWp_g5A7-tdM&image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FWp_g5A7-tdM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&autoplay=1&type=text%2Fhtml&schema=youtube\" width=\"854\" height=\"480\" scrolling=\"no\" frameborder=\"0\" allowfullscreen></iframe>"
+          }] }
         </script>
       </a>
     </div>
   </div>
-  <div>
-    <div class="boten-en-tochten-section row">
-      <div class="blue-boot-column col-lg-6 center-lg col-md-6 center-md">
-        <div class="div-column-boot row center-lg center-md center-sm">
-          <div class="boten-blue-image-column middle-lg col-lg-10 middle-sm editable col-xs-12 col-sm-10" id="oude-dirk" data-tidy-sitewide="#oude-dirk">
+  <div class="w-section section-boot-en-pop-tochten">
+    <div class="boten-en-tochten-section row" data-flex="row">
+      <div class="blue-boot-column" data-flex="col-lg-6 col-md-6 center-lg center-md">
+        <div class="div-column-boot" data-flex="row center-lg center-md center-sm">
+          <div class="boten-blue-image-column middle-lg col-lg-10 middle-sm editable col-xs-12 col-sm-10" id="oude-dirk" data-tidy-sitewide="#oude-dirk" data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-12 middle-sm">
             <div class="image-event-1"><img class="image-boot-od" src="images/Feesten en verhuur.png" alt="54b69168f7e59176037ac138_Feesten%20en%20verhuur.png">
             </div>
             <div class="div-heading-vaart">
@@ -310,16 +289,16 @@
           </div>
         </div>
       </div>
-      <div class="tochten-column-left col-md-6 col-lg-6" id="populaire-tochten">
+      <div class="tochten-column-left" id="populaire-tochten" data-flex="col-lg-6 col-md-6">
         <div class="div-block-pop-tochten">
           <h3 class="populaire-tochten-titel alt-homepage">Populaire tochten</h3>
         </div>
         <a class="w-inline-block link-div-pop-tochten" href="#" data-ix="new-interaction-2">
           <div class="left-row-first" id="pop-tocht-row-1" data-ix="hoover-tekst-kleur">
-            <div class="tochten-row-first row center-xs start-md start-lg">
-              <div class="image-column col-md-4 col-lg-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
+            <div class="tochten-row-first row center-xs start-md start-lg" data-flex="row center-xs start-md start-lg">
+              <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
               </div>
-              <div class="tochten-text-right col-xs-12 col-md-8 col-lg-8">
+              <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
                 <h3 class="tochten-h3 alt-first">Vestigingsrondvaart</h3>
                 <p class="tochten-paragraph">Ontdek ’s-Hertogenbosch op een unieke manier tijdens deze één uur durende rondvaart. Geniet van de prachtige omgeving en eventueel een heerlijke Bossche Bol.&nbsp;</p>
               </div>
@@ -328,10 +307,10 @@
         </a>
         <a class="w-inline-block link-div-pop-tochten" href="#" data-ix="new-interaction-2">
           <div class="left-row" id="pop-tocht-row-2">
-            <div class="tochten-second-row row center-xs start-md start-lg">
-              <div class="image-column col-md-4 col-lg-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
+            <div class="tochten-second-row" data-flex="row center-xs start-md start-lg">
+              <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
               </div>
-              <div class="tochten-text-right col-xs-12 col-md-8 col-lg-8">
+              <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
                 <h3 class="tochten-h3">Dagtocht Heusden</h3>
                 <p class="tochten-paragraph">Deze tocht neemt u mee naar het mooie stadje Heusden. Over de Maas kunt u dit prachtige stadje bezoeken en ontdekken.</p>
               </div>
@@ -340,10 +319,10 @@
         </a>
         <a class="w-inline-block link-div-pop-tochten" href="#" data-ix="new-interaction-2">
           <div class="left-row alt-last" id="pop-tocht-row-3">
-            <div class="tochten-row-first row center-xs start-md start-lg">
-              <div class="image-column col-md-4 col-lg-4 middle-lg"><img class="image-tochten-rond" src="images/Pannenkoekboot_Wolthuis_.png" width="100%" alt="54b696126b33f31570c48a2c_Pannenkoekboot_Wolthuis_.png">
+            <div class="tochten-row-first" data-flex="row center-xs start-md start-lg">
+              <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/Pannenkoekboot_Wolthuis_.png" width="100%" alt="54b696126b33f31570c48a2c_Pannenkoekboot_Wolthuis_.png">
               </div>
-              <div class="tochten-text-right col-xs-12 col-md-8 col-lg-8">
+              <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
                 <h3 class="tochten-h3">Pannenkoekenboot</h3>
                 <p class="tochten-paragraph">Kom eens lekker pannenkoeken eten aan boord van de “Pannenkoekenboot ’s-Hertogenbosch”. Zeer geschikt voor de kleinere kapiteintjes.</p>
               </div>
@@ -354,19 +333,19 @@
       </div>
     </div>
   </div>
-  <div class="section-boekingen" id="Boekingsformulier">
+  <div class="w-section section-boekingen" id="Boekingsformulier">
     <h3 class="contact-blue">Benieuwd naar de mogelijkheden ?</h3>
-    <div class="w-container container">
-      <div class="row-conatct row">
-        <div class="contact-column-telefoon col-lg-4 middle-lg col-md-4 middle-md col-sm-12 middle-sm col-xs-12 middle-xs editable" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon">
+    <div class="w-container container" data-flex="container">
+      <div class="row-conatct row" data-flex="row">
+        <div class="contact-column-telefoon" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
           <div class="telefoon"></div>
           <div class="contact-text">Telefonisch contact</div>
         </div>
-        <div class="contact-column-mail col-lg-4 middle-lg col-md-4 middle-md col-sm-12 middle-sm col-xs-12 middle-xs editable" id="contact-mail" data-tidy-sitewide="#contact-mail">
+        <div class="contact-column-mail" id="contact-mail" data-tidy-sitewide="#contact-mail" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
           <div class="mail-contact"></div>
           <div class="contact-text">Mail ons</div>
         </div>
-        <div class="contact-column-boeken col-lg-4 middle-lg col-md-4 middle-md col-sm-12 middle-sm col-xs-12 middle-xs editable" id="contact-boeken" data-tidy-sitewide="#contact-boeken">
+        <div class="contact-column-boeken" id="contact-boeken" data-tidy-sitewide="#contact-boeken" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm middle-xs">
           <a class="w-inline-block contact-link modal-open-button" href="javascript:void(0);">
             <div class="boeken"></div>
             <div class="contact-text">Direct boeken</div>
@@ -375,52 +354,52 @@
       </div>
     </div>
   </div>
-  <div class="section-footer editable" id="footer-id" data-tidy-sitewide="#footer-id">
-    <div class="footer-row row">
-      <div class="footer-column col-lg-4 col-sm-12 col-md-4 end-lg end-md col-xs-12">
-        <div class="boot-blue-text-div row center-lg center-md center-sm center-xs">
-          <div class="column-footer col-lg-12 middle-lg middle-md col-md-12 middle-sm alt" id="column-footer">
-            <div class="div-foor-headline-row row center-lg center-sm center-xs">
-              <h4>Rederij Wolthuis</h4>
+  <div class="w-section section-footer editable" id="footer-id" data-tidy-sitewide="#footer-id">
+    <div class="footer-row" data-flex="row center-lg">
+      <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
+          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+            <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
+              <h4 class="footer-heading4">Rederij Wolthuis</h4>
             </div>
-            <div class="div-paragrapgh row center-sm center-xs">
+            <div class="div-paragrapgh" data-flex="row center-xs center-sm">
               <p class="alt-blue footer">T: 073 - 631 20 48
                 <br>E: info@rederijwoltuis.nl
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot row alt-footer"><a class="button alt-boot altfooter" href="#">Kantooradres</a>
+            <div class="div-button-boot alt-footer" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Kantooradres</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-column col-lg-4 col-sm-12 col-md-4 end-lg end-md end-xs col-xs-12">
-        <div class="boot-blue-text-div row center-lg center-md center-sm center-xs">
-          <div class="column-footer col-lg-12 middle-lg middle-md col-md-12 middle-sm middle-xs col-xs-12" id="column-footer-2">
-            <div class="div-foor-headline-row row center-lg center-sm">
-              <h4>Opstapplek: Oliemolen&nbsp;</h4>
+      <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
+          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+            <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
+              <h4 class="footer-heading4">Opstapplek: Oliemolen</h4>
             </div>
-            <div class="div-paragrapgh row center-sm">
+            <div class="div-paragrapgh" data-flex="row center-xs center-sm">
               <p class="alt-blue footer">Oliemolensingel 243
-                <br>5221 BC
+                <br>5221 BC&nbsp;
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot row alt-footer center-sm"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
+            <div class="div-button-boot alt-footer" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-column col-lg-4 col-md-4 col-sm-12 end-lg end-md">
-        <div class="boot-blue-text-div row center-lg center-md center-sm">
-          <div class="column-footer col-lg-12 middle-lg middle-md col-md-12 middle-sm col-xs-12 middle-xs" id="column-footer-3">
-            <div class="div-foor-headline-row row center-lg center-sm">
-              <h4>Opstapplek: St. Janssingel</h4>
+      <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
+          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+            <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
+              <h4 class="footer-heading4">Opstapplek: St. Janssingel</h4>
             </div>
-            <div class="div-paragrapgh row center-sm">
+            <div class="div-paragrapgh" data-flex="row center-xs center-sm">
               <p class="alt-blue footer">St. Janssingel 1
                 <br>5234 FD
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot row alt-footer center-sm"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
+            <div class="div-button-boot alt-footer" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Feb 26 2015 22:55:11 GMT+0000 (UTC) -->
+<!-- Last Published: Sat Feb 28 2015 22:22:31 GMT+0000 (UTC) -->
 <html data-wf-site="54b3ca1fdab6b5db23c4c33a" data-wf-page="54b3ca1fdab6b5db23c4c33b">
 <head>
   <meta charset="utf-8">
@@ -28,7 +28,7 @@
   </style>
 </head>
 <body>
-  <div class="section-top homepage">
+  <div class="w-section section-top homepage">
     <div class="w-nav top-nav-bar" data-collapse="all" data-animation="over-left" data-duration="1250">
       <div class="topmenu">
         <div class="w-nav-button button-menu" id="menu-button" data-ix="hide-hamburger-show-arrow-2">
@@ -36,9 +36,11 @@
             <div class="w-hidden-small w-hidden-tiny menu-text-next-hamburger">Menu</div>
           </a>
         </div>
-        <div class="dic-top-nav-bar row center-lg center-md center-sm center-xs">
-          <a class="w-nav-brand wolthuis-logo" href="index.html"><img src="images/Wolthuis_logo.png" width="48%" alt="54b3e43db936169d36228a9a_Wolthuis_logo.png">
-          </a>
+        <div class="row center-lg center-md center-sm center-xs" data-flex="row center-lg center-dm center-sm center-xs">
+          <div class="dic-top-nav-bar">
+            <a class="w-nav-brand wolthuis-logo" href="index.html"><img src="images/Wolthuis_logo.png" width="48%" alt="54b3e43db936169d36228a9a_Wolthuis_logo.png">
+            </a>
+          </div>
         </div>
       </div>
       <nav class="w-nav-menu nav-menu" role="navigation"><a class="w-nav-link nav-link bold home" href="index.html">Home</a>
@@ -59,126 +61,148 @@
       </nav>
     </div>
     <div class="w-container container">
-      <div class="div-top alt-homepage row center-md center-lg center-xs">
-        <div class="column-top-left col-sm-12 col-lg-8 col-md-6 col-xs-12">
-          <h1 class="homepage-header editable" data-ix="intro-header-homepage">Rederij Wolthuis</h1>
-          <h2 class="home-sub-header editable" data-ix="intro-sub-header-home">Varend genieten!</h2>
-        </div>
-        <div class="w-hidden-small w-hidden-tiny column-top-right col-lg-4 col-md-5">
-          <div class="blue-background-text-div">
-            <p class="alt-blue editable">Ontdek ‘s-Hertogenbosch op een unieke manier. Rederij Wolthuis verzorgt al 40 jaar rondvaarten, dagtochten en feesten op de Bossche wateren. Laat u verrassen door een bijzondere dag op één van onze schepen. Voor elk soort feest heeft Rederij Wolthuis een unieke en verrassende oplossing.</p>
+      <div class="div-top alt-homepage">
+        <div class="row-left" data-flex="row center-xs start-sm center-lg">
+          <div class="column-top-left" data-flex="col-lg-8 center-lg center-md  col-md-8  col-sm-12">
+            <div class="div-home-title">
+              <h1 class="homepage-header editable" data-ix="intro-header-homepage">Rederij Wolthuis</h1>
+              <h2 class="home-sub-header editable" data-ix="intro-sub-header-home">Varend genieten!</h2>
+            </div>
+          </div>
+          <div class="w-hidden-small w-hidden-tiny col-lg-4 col-md-4" data-flex="col-lg-4 col-md-4">
+            <div class="w-hidden-small w-hidden-tiny column-top-right">
+              <div class="blue-background-text-div">
+                <p class="alt-blue editable">Ontdek ‘s-Hertogenbosch op een unieke manier. Rederij Wolthuis verzorgt al 40 jaar rondvaarten, dagtochten en feesten op de Bossche wateren. Laat u verrassen door een bijzondere dag op één van onze schepen. Voor elk soort feest heeft Rederij Wolthuis een unieke en verrassende oplossing.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="w-hidden-main w-hidden-medium mobile-section-blue-description">
+  <div class="w-section w-hidden-main w-hidden-medium mobile-section-blue-description">
     <div class="w-hidden-main w-hidden-medium div-mobile-section">
       <p class="w-hidden-main w-hidden-medium alt-blue">Ontdek ‘s-Hertogenbosch op een unieke manier. Rederij Wolthuis verzorgt al 40 jaar rondvaarten, dagtochten en feesten op de Bossche wateren. Laat u verrassen door een bijzondere dag op één van onze schepen. Voor elk soort feest heeft Rederij Wolthuis een unieke en verrassende oplossing.</p>
     </div>
   </div>
-  <div class="section-events">
+  <div class="w-section section-events">
     <div class="w-container test-container">
-      <div class="box-events-row row">
-        <div class="box-image-event-1 center-lg center-md col-lg-4 middle-lg middle-md col-md-4 center-sm editable col-sm-12 middle-sm col-xs-12 middle-xs">
-          <div class="columns-events" data-ix="new-interaction">
-            <div class="image-event-1"><img class="image-round" src="images/Wolthuis_rondvaarten.png" width="90%" alt="54b3ecfedab6b5db23c4c739_Wolthuis_rondvaarten.png">
+      <div class="box-events-row">
+        <div data-flex="row  middle-sm center-sm">
+          <div class="col-md-4 col-xs-12 middle-md center-xs col-lg-4 item-flex-grow col-sm-10" data-flex="col-lg-4 item-flex-grow middle-md center-xs col-sm-10 col-xs-12 col-md-4 middle-sm">
+            <div class="image-event-1 first"><img class="image-round" src="images/Wolthuis_rondvaarten.png" width="90%" alt="54b3ecfedab6b5db23c4c739_Wolthuis_rondvaarten.png">
+            </div>
+            <div class="row center-lg center-md">
+              <div class="col-lg-12">
+                <div class="div-events-text">
+                  <h3 class="rondvaarteen">Rondvaarten</h3>
+                  <p class="event-par">Een goed verzorgde dag naar diverse bijzondere steden aan de Maas. Daarnaast krijgt u de mogelijkheid om bijvoorbeeld Heusden op een unieke manier te ontdekken.</p>
+                </div>
+              </div>
+            </div>
+            <div class="div-button-event-1 alt-homepage"><a class="button events" href="#" data-ix="new-interaction-2">Ervaar</a>
             </div>
           </div>
-          <div class="div-events-text">
-            <h3 class="rondvaarteen">Rondvaarten</h3>
-            <p class="event-par">Een goed verzorgde dag naar diverse bijzondere steden aan de Maas. Daarnaast krijgt u de mogelijkheid om bijvoorbeeld Heusden op een unieke manier te ontdekken.</p>
-          </div>
-          <div class="div-button-event-1 alt-homepage"><a class="button events" href="#" data-ix="new-interaction-2">Ervaar</a>
-          </div>
-        </div>
-        <div class="box-image-event-1 center-lg center-md col-lg-4 middle-sm middle-md col-md-4 center-sm editable col-sm-12 col-xs-12 middle-xs">
-          <div class="columns-events" data-ix="new-interaction">
-            <div class="image-event-1 alt-2"><img class="image-round" src="images/Wolthuis_dagtochten.png" width="90%" alt="54b55097af20c3f638669a24_Wolthuis_dagtochten.png">
+          <div class="w-hidden-main w-hidden-medium line"></div>
+          <div class="col-md-4 col-xs-12 center-sm center-xs col-lg-4 middle-sm item-flex-grow" data-flex="col-lg-4 item-flex-grow middle-md center-xs middle-sm col-sm-10 col-xs-12 col-md-4">
+            <div class="image-event-1"><img class="image-round" src="images/Wolthuis_dagtochten.png" width="90%" alt="54b55097af20c3f638669a24_Wolthuis_dagtochten.png">
+            </div>
+            <div class="row center-lg center-md">
+              <div class="col-lg-12">
+                <div class="div-events-text">
+                  <h3 class="rondvaarteen">Dagtochten</h3>
+                  <p class="event-par">Beleef het prachtige ’s-Hertogenbosch vanaf het water met de Ouwe Dirk. Dit schip laat u de oude stad op een bijzondere manier zien.</p>
+                </div>
+              </div>
+            </div>
+            <div class="div-button-event-1 alt-homepage"><a class="button events" href="#" data-ix="new-interaction-2">Alle tochten</a>
             </div>
           </div>
-          <div class="div-events-text">
-            <h3 class="rondvaarteen">Dagtochten</h3>
-            <p class="event-par">Beleef het prachtige ’s-Hertogenbosch vanaf het water met de Ouwe Dirk. Dit schip laat u de oude stad op een bijzondere manier zien.</p>
-          </div>
-          <div class="div-button-event-1 alt-homepage"><a class="button events" href="#">Alle tochten</a>
-          </div>
-        </div>
-        <div class="box-image-event-1 center-lg center-md col-lg-4 middle-sm middle-md col-md-4 center-sm editable col-sm-12 middle-sm col-xs-12 middle-xs">
-          <div class="columns-events" data-ix="new-interaction">
-            <div class="image-event-1 alt3 middle-lg"><img class="image-round" src="images/Feesten en verhuur.png" width="90%" alt="54b69168f7e59176037ac138_Feesten%20en%20verhuur.png">
+          <div class="w-hidden-main w-hidden-medium line"></div>
+          <div class="col-md-4 col-xs-12 center-sm center-xs col-lg-4 between-lg middle-sm" data-flex="col-lg-4 item-flex-grow middle-md center-xs middle-sm col-sm-10 col-xs-12 col-md-4">
+            <div class="image-event-1"><img class="image-round" src="images/Feesten en verhuur.png" width="90%" alt="54b69168f7e59176037ac138_Feesten%20en%20verhuur.png">
             </div>
-          </div>
-          <div class="div-events-text">
-            <h3 class="rondvaarteen">Feesten / verhuur</h3>
-            <p class="event-par">Onze schepen zijn te huur voor grote en kleine groepen. Kies uit één van de arrangementen of neem contact op een speciale dag voor uw gezelschap te organiseren.</p>
-          </div>
-          <div class="div-button-event-1 alt-homepage"><a class="button events" href="#">Neem contact op</a>
+            <div class="row center-lg center-md">
+              <div class="col-lg-12">
+                <div class="div-events-text">
+                  <h3 class="rondvaarteen">Feesten / verhuur</h3>
+                  <p class="event-par">Onze schepen zijn te huur voor grote en kleine groepen. Kies uit één van de arrangementen of neem contact op een speciale dag voor uw gezelschap te organiseren.</p>
+                </div>
+              </div>
+            </div>
+            <div class="div-button-event-1 alt-homepage"><a class="button events" href="#">Neem contact op</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="section-text">
-    <div class="w-container text-container container">
-      <div class="text-section row center-lg center-sm center-md alt editable">
+  <div class="w-section section-text">
+    <div class="w-container text-container" data-flex="row center-lg middle-lg center-md middle-md center-sm center-xs">
+      <div class="text-section" data-flex="col-lg-8 center-lg  center-md center-sm">
         <div class="col-lg-8 col-md-8">
           <h3 class="rondvaarteen">Deze tekst komt nog ;-)</h3>
         </div>
-        <p class="normal-text-para col-lg-8 col-md-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+        <p class="normal-text-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
           <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
       </div>
     </div>
   </div>
-  <div class="section-boten">
-    <div class="container-boten container-fluid">
-      <div class="boten-rij row">
-        <div class="boten-column col-lg-4 col-sm-12 col-md-12 center-sm">
-          <div class="boot-jeronimus center-xs middle-xs row">
-            <div class="boot-initialen"><img class="initialen-boot" src="images/Ellipse-1.png" width="70%" alt="54b41d59a8a7eedc23df7cbe_Ellipse-1.png">
+  <div class="w-section section-boten">
+    <div class="container-boten container-fluid" data-flex="container-fluid">
+      <div class="row boten-rij" data-flex="row">
+        <div class="boten-column" data-flex="col-lg-4 col-sm-12">
+          <div class="boot-jeronimus" data-flex="center-lg col-lg col-md  center-md col-sm center-sm col-xs center-xs">
+            <div class="boot-initialen" data-flex="row center-lg center-md center-sm center-xs">
+              <div class="div-naam" data-flex="col-md-6 middle-md"><img class="initialen-boot" src="images/Ellipse-1.png" width="50%" height="51%" alt="54b41d59a8a7eedc23df7cbe_Ellipse-1.png">
+              </div>
             </div>
           </div>
           <h4 class="alt-boottitel">Jeronimus Bosch</h4>
           <p class="alt-blue boten editable">De Ouwe Dirk is een ontzettend mooi schip dat gebaseerd is op tekeningen uit 1912. Het ship is ruim en heeft ruimte voor ongeveer 80 personen.</p>
-          <div class="div-button center-lg"><a class="button alt-boot editable" href="#">Bekijk het schip</a>
+          <div class="div-button" data-flex="center-lg"><a class="button alt-boot editable" href="#">Bekijk het schip</a>
           </div>
         </div>
-        <div class="boten-column col-lg-4 col-sm-12 center-lg col-md-12 center-sm center-md">
-          <div class="oude-dirk center-xs middle-xs row">
-            <div class="boot-initialen"><img class="initialen-boot" src="images/Ellipse-1 copy.png" width="70%" alt="54b6957ef7e59176037ac1ac_Ellipse-1%20copy.png">
+        <div class="boten-column" data-flex="col-lg-4 col-sm-12">
+          <div class="oude-dirk center-xs middle-xs row" data-flex="center-lg col-lg col-md center-md col-sm center-sm col-xs center-xs">
+            <div class="boot-initialen" data-flex="row center-lg center-md middle-md center-sm center-xs">
+              <div class="div-naam" data-flex="col-md-6 middle-md"><img class="initialen-boot" src="images/Ellipse-1 copy.png" width="50%" height="50%" alt="54b6957ef7e59176037ac1ac_Ellipse-1%20copy.png">
+              </div>
             </div>
           </div>
           <h4 class="alt-boottitel">Oude Dirk</h4>
           <p class="alt-blue boten editable">De Jeronimus Bosch is ons grootste schip. Met een overdekt bovendek en plaats voor ongeveer 120 personen is dit schip geschikt voor grotere partijen.</p>
-          <div class="div-button"><a class="button alt-boot editable" href="#">Bekijk het schip</a>
+          <div class="div-button" data-flex="center-lg"><a class="button alt-boot editable" href="#">Bekijk het schip</a>
           </div>
         </div>
-        <div class="boten-column col-lg-4 col-sm-12 col-md-12 center-sm center-lg center-md">
-          <div class="boot-jeronimus alt-fleur row middle-xs center-xs">
-            <div class="boot-initialen"><img class="initialen-boot" src="images/Fleur.png" width="70%" alt="54c8e859a97006f114a90c9b_Fleur.png">
+        <div class="boten-column" data-flex="col-lg-4 col-sm-12">
+          <div class="boot-jeronimus alt-fleur" data-flex="center-lg col-lg col-md center-md col-sm center-sm col-xs center-xs">
+            <div class="boot-initialen" data-flex="row center-lg center-md middle-md center-sm center-xs">
+              <div class="div-naam" data-flex="col-md-6 middle-md"><img class="initialen-boot" src="images/Fleur.png" width="50%" alt="54c8e859a97006f114a90c9b_Fleur.png">
+              </div>
             </div>
           </div>
           <h4 class="alt-boottitel">Fleur</h4>
           <p class="alt-blue boten editable">De Fleur is een klein gezellig directie-scheepje en geschikt voor maximaal 12 personen. Genietend van een drankje vaar de kapitein u over de mooie Bossche waterwegen.</p>
-          <div class="div-button center-lg"><a class="button alt-boot editable" href="#">Bekijk het schip</a>
+          <div class="div-button" data-flex="center-lg"><a class="button alt-boot editable" href="#">Bekijk het schip</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="section-populaire-tochten">
+  <div class="w-section section-populaire-tochten">
     <div class="populaire-tochten-container container-fluid">
-      <div class="populaire-tochten-row row">
-        <div class="tochten-column-left col-md-6 col-lg-6" id="populaire-tochten">
+      <div class="populaire-tochten-row" data-flex="row">
+        <div class="tochten-column-left" id="populaire-tochten" data-flex="col-lg-6 col-md-6">
           <div class="div-block-pop-tochten">
             <h3 class="populaire-tochten-titel alt-homepage">Populaire tochten</h3>
           </div>
           <a class="w-inline-block link-div-pop-tochten" href="#" data-ix="new-interaction-2">
             <div class="left-row-first" id="pop-tocht-row-1" data-ix="hoover-tekst-kleur">
-              <div class="tochten-row-first row center-xs start-md start-lg">
-                <div class="image-column col-md-4 col-lg-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
+              <div class="tochten-row-first row center-xs start-md start-lg" data-flex="row center-xs start-md start-lg">
+                <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
                 </div>
-                <div class="tochten-text-right col-xs-12 col-md-8 col-lg-8">
+                <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
                   <h3 class="tochten-h3 alt-first">Vestigingsrondvaart</h3>
                   <p class="tochten-paragraph">Ontdek ’s-Hertogenbosch op een unieke manier tijdens deze één uur durende rondvaart. Geniet van de prachtige omgeving en eventueel een heerlijke Bossche Bol.&nbsp;</p>
                 </div>
@@ -187,10 +211,10 @@
           </a>
           <a class="w-inline-block link-div-pop-tochten" href="#" data-ix="new-interaction-2">
             <div class="left-row" id="pop-tocht-row-2">
-              <div class="tochten-second-row row center-xs start-md start-lg">
-                <div class="image-column col-md-4 col-lg-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
+              <div class="tochten-second-row" data-flex="row center-xs start-md start-lg">
+                <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/dagtochten_Heusden_wolthuis.png" width="100%" alt="54b550805608e3f4389dce98_dagtochten_Heusden_wolthuis.png">
                 </div>
-                <div class="tochten-text-right col-xs-12 col-md-8 col-lg-8">
+                <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
                   <h3 class="tochten-h3">Dagtocht Heusden</h3>
                   <p class="tochten-paragraph">Deze tocht neemt u mee naar het mooie stadje Heusden. Over de Maas kunt u dit prachtige stadje bezoeken en ontdekken.</p>
                 </div>
@@ -199,10 +223,10 @@
           </a>
           <a class="w-inline-block link-div-pop-tochten" href="#" data-ix="new-interaction-2">
             <div class="left-row alt-last" id="pop-tocht-row-3">
-              <div class="tochten-row-first row center-xs start-md start-lg">
-                <div class="image-column col-md-4 col-lg-4 middle-lg"><img class="image-tochten-rond" src="images/Pannenkoekboot_Wolthuis_.png" width="100%" alt="54b696126b33f31570c48a2c_Pannenkoekboot_Wolthuis_.png">
+              <div class="tochten-row-first" data-flex="row center-xs start-md start-lg">
+                <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/Pannenkoekboot_Wolthuis_.png" width="100%" alt="54b696126b33f31570c48a2c_Pannenkoekboot_Wolthuis_.png">
                 </div>
-                <div class="tochten-text-right col-xs-12 col-md-8 col-lg-8">
+                <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
                   <h3 class="tochten-h3">Pannenkoekenboot</h3>
                   <p class="tochten-paragraph">Kom eens lekker pannenkoeken eten aan boord van de “Pannenkoekenboot ’s-Hertogenbosch”. Zeer geschikt voor de kleinere kapiteintjes.</p>
                 </div>
@@ -211,7 +235,7 @@
           </a>
           <div class="w-hidden-tiny line-blue-tochten"></div>
         </div>
-        <div class="tochten-new-column center-lg col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="tochten-new-column center-lg col-lg-6 col-md-6 col-sm-12 col-xs-12" data-flex="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="div-test"><a class="link-div-titel editable" href="#" id="pop-tocht-img-1" data-tidy-sitewide="#pop-tocht-img-1">Text Link</a>
           </div>
           <div class="image-2"><a class="link-div-titel editable" href="#" id="pop-tocht-img-2" data-tidy-sitewide="#pop-tocht-img-2">Text Link</a>
@@ -220,73 +244,52 @@
       </div>
     </div>
   </div>
-  <div class="section-boekingen" id="Boekingsformulier">
-    <h3 class="contact-blue">Benieuwd naar de mogelijkheden ?</h3>
-    <div class="w-container container">
-      <div class="row-conatct row">
-        <div class="contact-column-telefoon col-lg-4 middle-lg col-md-4 middle-md col-sm-12 middle-sm col-xs-12 middle-xs editable" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon">
-          <div class="telefoon"></div>
-          <div class="contact-text">Telefonisch contact</div>
-        </div>
-        <div class="contact-column-mail col-lg-4 middle-lg col-md-4 middle-md col-sm-12 middle-sm col-xs-12 middle-xs editable" id="contact-mail" data-tidy-sitewide="#contact-mail">
-          <div class="mail-contact"></div>
-          <div class="contact-text">Mail ons</div>
-        </div>
-        <div class="contact-column-boeken col-lg-4 middle-lg col-md-4 middle-md col-sm-12 middle-sm col-xs-12 middle-xs editable" id="contact-boeken" data-tidy-sitewide="#contact-boeken">
-          <a class="w-inline-block contact-link modal-open-button" href="javascript:void(0);">
-            <div class="boeken"></div>
-            <div class="contact-text">Direct boeken</div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section-footer editable" id="footer-id" data-tidy-sitewide="#footer-id">
-    <div class="footer-row row">
-      <div class="footer-column col-lg-4 col-sm-12 col-md-4 end-lg end-md col-xs-12">
-        <div class="boot-blue-text-div row center-lg center-md center-sm center-xs">
-          <div class="column-footer col-lg-12 middle-lg middle-md col-md-12 middle-sm alt" id="column-footer">
-            <div class="div-foor-headline-row row center-lg center-sm center-xs">
-              <h4>Rederij Wolthuis</h4>
+  <div class="w-section section-footer editable" id="footer-id" data-tidy-sitewide="#footer-id">
+    <div class="footer-row" data-flex="row center-lg">
+      <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
+          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+            <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
+              <h4 class="footer-heading4">Rederij Wolthuis</h4>
             </div>
-            <div class="div-paragrapgh row center-sm center-xs">
+            <div class="div-paragrapgh" data-flex="row center-xs center-sm">
               <p class="alt-blue footer">T: 073 - 631 20 48
                 <br>E: info@rederijwoltuis.nl
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot row alt-footer"><a class="button alt-boot altfooter" href="#">Kantooradres</a>
+            <div class="div-button-boot alt-footer" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Kantooradres</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-column col-lg-4 col-sm-12 col-md-4 end-lg end-md end-xs col-xs-12">
-        <div class="boot-blue-text-div row center-lg center-md center-sm center-xs">
-          <div class="column-footer col-lg-12 middle-lg middle-md col-md-12 middle-sm middle-xs col-xs-12" id="column-footer-2">
-            <div class="div-foor-headline-row row center-lg center-sm">
-              <h4>Opstapplek: Oliemolen&nbsp;</h4>
+      <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
+          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+            <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
+              <h4 class="footer-heading4">Opstapplek: Oliemolen</h4>
             </div>
-            <div class="div-paragrapgh row center-sm">
+            <div class="div-paragrapgh" data-flex="row center-xs center-sm">
               <p class="alt-blue footer">Oliemolensingel 243
-                <br>5221 BC
+                <br>5221 BC&nbsp;
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot row alt-footer center-sm"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
+            <div class="div-button-boot alt-footer" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-column col-lg-4 col-md-4 col-sm-12 end-lg end-md">
-        <div class="boot-blue-text-div row center-lg center-md center-sm">
-          <div class="column-footer col-lg-12 middle-lg middle-md col-md-12 middle-sm col-xs-12 middle-xs" id="column-footer-3">
-            <div class="div-foor-headline-row row center-lg center-sm">
-              <h4>Opstapplek: St. Janssingel</h4>
+      <div class="footer-column" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="boot-blue-text-div" data-flex="row center-lg center-sm center-md center-xs">
+          <div class="column-footer alt" id="column-footer" data-flex="middle-md">
+            <div class="div-foor-headline-row" data-flex="row center-lg center-md center-sm center-xs">
+              <h4 class="footer-heading4">Opstapplek: St. Janssingel</h4>
             </div>
-            <div class="div-paragrapgh row center-sm">
+            <div class="div-paragrapgh" data-flex="row center-xs center-sm">
               <p class="alt-blue footer">St. Janssingel 1
                 <br>5234 FD
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot row alt-footer center-sm"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
+            <div class="div-button-boot alt-footer" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
             </div>
           </div>
         </div>
