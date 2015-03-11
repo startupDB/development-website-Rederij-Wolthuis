@@ -5,21 +5,42 @@
 
 var $html = $(document.documentElement);
 var $modal = $('.modal-form');
+var $modal2 = $('.modal-boeken-overall');
+var $modal3 = $('.modal-contact');
 var $menu = $('.nav-menu');
 
 function showModal() {
     $html.css('overflow', 'hidden');
     $html.css('position', 'fixed');
     $modal.fadeIn(1000).css('overflow', 'auto');
+    
 }
+     function showModal3() {
+    $html.css('overflow', 'hidden');
+    $html.css('position', 'fixed');
+    $modal3.fadeIn(1000).css('overflow', 'auto');
+    
+}
+
+   function showModal2() {
+    $html.css('overflow', 'hidden');
+    $html.css('position', 'fixed');
+    $modal2.fadeIn(1000).css('overflow', 'auto');
+    
+}
+
 function hideModal() {
     $html.css('overflow', '');
     $html.css('position', '');
     $modal.fadeOut(1000);
+    $modal2.fadeOut(100);
+    $modal3.fadeOut(100);
 }
 $('.modal-open-button').on('click', showModal);
 $('.hulp-column').on('click', hideModal);
 $('.link-clsoe').on('click', hideModal);
+  $('.modal-open-contact').on('click', showModal3);
+$('.modal-open-overall').on('click', showModal2);
 
 
 // Toggle lock background html from scrolling
@@ -38,7 +59,7 @@ $('.button-menu').clickToggle(function() {
   
 }, function() {
         $html.css('overflow', '');
-        $html.css('position', '');
+        $html.css('position', 'auto');
        
 });
 

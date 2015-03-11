@@ -12,6 +12,7 @@ h1 {
   font-size: 4em;
   line-height: 1em;
   font-weight: 400;
+  text-align: left;
 }
 h2 {
   margin-bottom: 10px;
@@ -91,11 +92,12 @@ p {
   border-bottom-width: 3px;
   border-radius: 5px;
   background-color: transparent;
+  font-size: 1.2em;
 }
 .button.events:hover {
   border-bottom-width: 3px;
   color: #40c4f5;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .button.boten-blue {
   border-color: white;
@@ -133,8 +135,8 @@ p {
 }
 .section-top.homepage {
   min-height: 36rem;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 57%), url('../images/Den_Bosch_home_1.jpg');
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 57%), url('../images/Den_Bosch_home_1.jpg');
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.31) 57%), url('../images/Den_Bosch_home_1.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.31) 57%), url('../images/Den_Bosch_home_1.jpg');
   background-position: 0% 0%, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -183,7 +185,7 @@ p {
   right: 0px;
   min-height: 4rem;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 5px 0px;
 }
 .wolthuis-logo {
   padding-top: 0.7rem;
@@ -268,7 +270,7 @@ p {
 .section-events {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: rgba(101, 210, 252, 0.32);
+  background-color: rgba(101, 210, 252, 0.29);
 }
 .box-events-row {
   padding-right: 0rem;
@@ -467,9 +469,7 @@ p {
   font-size: 4em;
   line-height: 1.3em;
   text-align: left;
-}
-.homepage-header.editable {
-  text-shadow: none;
+  text-shadow: black 1px 1px 1px;
 }
 .blue-boot-column {
   height: auto;
@@ -532,6 +532,9 @@ p {
   line-height: 1.4em;
   text-align: left;
 }
+.vaart-pagina-para.alt-money.editable {
+  line-height: 1.6em;
+}
 .event-par {
   height: auto;
   padding-right: 1rem;
@@ -553,7 +556,6 @@ p {
 .bleu-vaart-column.alt-arrangementen {
   padding-top: 1rem;
   opacity: 1;
-  text-shadow: none;
 }
 .column-blue-vaart1 {
   padding-right: 0rem;
@@ -562,9 +564,6 @@ p {
 .div-location {
   padding-right: 0.4rem;
   padding-left: 0.4rem;
-}
-.div-location.div-personen {
-  text-shadow: none;
 }
 .location-row {
   padding-top: 1rem;
@@ -647,10 +646,6 @@ p {
 .lightbox-div.alt-image3 {
   background-image: url('../images/wolthuis-regionaam3.jpg');
 }
-.lightbox-div.aly-image4 {
-  padding-right: 0rem;
-  background-image: url('../images/wolthuis-regionaam4.jpg');
-}
 .lightbox-div.alt-video {
   background-image: url('../images/video vestingrondvaart.jpg');
   background-position: 50% 50%;
@@ -658,7 +653,7 @@ p {
 .section-boekingen {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgba(101, 210, 252, 0.29);
+  background-color: rgba(101, 210, 252, 0.32);
 }
 .initialen-boot {
   -webkit-transform: scale(1);
@@ -672,10 +667,10 @@ p {
   -ms-transform: scale(1.33);
   transform: scale(1.33);
 }
-
 .lightbox-video-top-image {
-  padding-top: 2rem;
+  padding-top: 0rem;
   padding-bottom: 0rem;
+  text-align: left;
   text-decoration: none;
 }
 .play-video {
@@ -773,7 +768,6 @@ p {
   background-color: #189bce;
   color: transparent;
   font-size: 1em;
-  text-shadow: none;
 }
 .titel-arrangementen-blok {
   margin-top: 0px;
@@ -803,15 +797,11 @@ p {
   background-color: #189bce;
   box-shadow: rgba(212, 203, 203, 0.29) 0px 2px 3px 1px, rgba(212, 203, 203, 0.29) 3px 0px 3px 1px;
 }
-.arr-users {
-  text-shadow: none;
-}
 .div-but-arr {
   padding-bottom: 1rem;
   text-align: center;
   text-shadow: none;
 }
-
 .arr-pag-white {
   padding-left: 1rem;
   color: white;
@@ -820,6 +810,8 @@ p {
   text-shadow: none;
 }
 .social {
+  overflow-x: visible;
+  overflow-y: visible;
   max-height: 4rem;
   min-height: 4rem;
   padding-right: 3rem;
@@ -959,7 +951,6 @@ p {
   background-position: 50% 50%;
   background-size: auto 52%;
   background-repeat: no-repeat;
-  text-shadow: none;
 }
 .row-conatct {
   min-height: 14rem;
@@ -975,6 +966,7 @@ p {
   background-repeat: no-repeat;
 }
 .boeken {
+  display: inline-block;
   width: 8rem;
   height: 8rem;
   border: 7px solid #189bce;
@@ -987,11 +979,13 @@ p {
 .contact-blue {
   padding-top: 1.2rem;
   color: #189bce;
+  font-size: 2.5em;
   text-align: center;
 }
 .contact-text {
   padding-top: 1.4rem;
   color: #189bce;
+  font-size: 1.5em;
   text-align: center;
   text-shadow: none;
 }
@@ -1148,9 +1142,6 @@ p {
 .contact-link {
   text-decoration: none;
 }
-.contact-link.modal-open-button {
-  text-shadow: none;
-}
 .link-clsoe {
   text-align: center;
 }
@@ -1181,11 +1172,11 @@ p {
   max-height: 1px;
   min-height: 1px;
 }
-.home-sub-header {
-  text-shadow: none;
+.vestingsvaart.editable {
+  text-shadow: black 1px 1px 1px;
 }
-.home-sub-header.editable {
-  text-shadow: none;
+.home-sub-header {
+  text-shadow: black 1px 1px 2px;
 }
 .prijslijst-heading {
   color: #189bce;
@@ -1196,7 +1187,6 @@ p {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 0px;
-  text-shadow: none;
 }
 .hidden-hapjes {
   overflow-x: hidden;
@@ -1217,7 +1207,6 @@ p {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 0px;
-  text-shadow: none;
 }
 .hidden-nagerecht {
   overflow-x: hidden;
@@ -1279,6 +1268,9 @@ p {
   bottom: 0px;
   z-index: 3;
 }
+.info-image {
+  opacity: 1;
+}
 html.w-mod-js *[data-ix="new-interaction"] {
   display: block;
   opacity: 0;
@@ -1314,6 +1306,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .button.alt-boot.altfooter {
     padding: 0.3rem 2rem;
+    font-size: 1.2em;
+  }
+  .button.white.editable {
+    text-shadow: none;
   }
   .section-top.alt-boot-ouade-dirk {
     max-height: 30rem;
@@ -1327,25 +1323,25 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 68%), url('../images/Den_Bosch_home_1.jpg');
     background-position: 0% 0%, 28% 50%;
   }
-  .container {
-    text-shadow: none;
-  }
   .div-top {
     height: 32rem;
     max-height: 33rem;
     min-height: 32rem;
     padding-top: 13rem;
     padding-left: 2rem;
-    text-shadow: none;
   }
   .div-top.alt-homepage {
     padding-top: 9rem;
     padding-right: 2rem;
+  }
+  .div-top.arrangementen {
     text-shadow: none;
+  }
+  .div-top.vaarten {
+    padding-top: 16rem;
   }
   .column-top-left {
     padding-left: 2rem;
-    text-shadow: none;
   }
   .column-top-right {
     margin-top: 0rem;
@@ -1396,10 +1392,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 1rem;
     text-align: center;
   }
+  .alt-blue.editable {
+    padding-right: 2rem;
+  }
   .div-button-event-1.alt-homepage {
     padding-bottom: 0rem;
   }
-  
   .div-events-text {
     float: none;
   }
@@ -1415,7 +1413,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .boot-initialen {
     text-align: center;
   }
- 
   .populaire-tochten-row {
     padding: 0px;
   }
@@ -1470,7 +1467,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .div-menu {
     padding-left: 0rem;
   }
- 
   .div-button {
     text-align: center;
   }
@@ -1481,9 +1477,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .line-blue-tochten {
     margin-top: auto;
     border-bottom-style: none;
-  }
-  .homepage-header {
-    text-shadow: none;
   }
   .homepage-header.editable {
     line-height: 1.2em;
@@ -1504,8 +1497,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .vaart-pagina-heading {
     padding-top: 1rem;
     padding-right: 1rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     text-align: left;
+    text-shadow: none;
+  }
+  .vaart-pagina-heading.alt-opstapplek.editable {
+    font-size: 1.9em;
     text-shadow: none;
   }
   .vaart-pagina-para {
@@ -1513,8 +1510,19 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0rem;
   }
   .vaart-pagina-para.alt-zwart {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-shadow: none;
+  }
+  .vaart-pagina-para.alt-location.editable {
     padding-right: 1rem;
-    padding-left: 1rem;
+    font-size: 1em;
+    text-shadow: none;
+  }
+  .vaart-pagina-para.alt-money.editable {
+    padding-right: 1rem;
+    font-size: 0.9em;
+    line-height: 1.6em;
   }
   .event-par {
     font-size: 1em;
@@ -1524,11 +1532,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0rem;
   }
   .location-row {
+    padding-bottom: 0rem;
     padding-left: 0.4rem;
-    text-shadow: none;
   }
   .div-text {
     max-width: 100%;
+    text-shadow: none;
   }
   .opstapplek-basic-row {
     padding-bottom: 0rem;
@@ -1543,6 +1552,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .alt-opstapplek {
     text-align: left;
+  }
+  .alt-opstapplek.editable {
+    text-shadow: none;
   }
   .lightbox-div {
     max-height: 9rem;
@@ -1563,11 +1575,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     min-height: 8rem;
     min-width: 8rem;
   }
-  .video-outline {
-    text-shadow: none;
-  }
   .lightbox-video-top-image {
     padding-top: 0rem;
+    text-align: center;
     text-shadow: none;
   }
   .play-video {
@@ -1593,9 +1603,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     min-height: 20rem;
     padding-top: 13rem;
   }
-  .top-prijslijst-left-column.white-black-text {
-    text-shadow: none;
-  }
   .invisable-para {
     padding-left: 1rem;
     text-align: left;
@@ -1608,8 +1615,17 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 1rem;
     text-align: left;
   }
+  .arrangementen-para.editable {
+    text-shadow: none;
+  }
+  .text-arr-blue-right {
+    text-shadow: none;
+  }
   .arr-pag-white {
     text-align: left;
+  }
+  .arr-pag-white.editable {
+    text-shadow: none;
   }
   .image-example-arrangementen.image-4 {
     margin-right: 1rem;
@@ -1638,6 +1654,13 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .tochten-second-row {
     padding: 0rem;
   }
+  .contact-blue {
+    font-size: 2.5em;
+  }
+  .contact-text {
+    font-size: 1.5em;
+    text-shadow: none;
+  }
   .contact-heading-white {
     font-size: 1.8em;
   }
@@ -1656,29 +1679,18 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0.5rem;
     text-align: left;
   }
-  .column-prijslijst-basic-left {
-    text-shadow: none;
-  }
-  .row-dranken {
-    text-shadow: none;
-  }
-  .column-prijslijst-basic-right {
-    text-shadow: none;
-  }
   .sectie-prijs {
     padding-top: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    text-shadow: none;
   }
-  .column-top-prijslijst {
+  .heading-pagina-prijslijst {
     text-shadow: none;
   }
   .heading-item-prijslijst {
     padding-left: 0rem;
     font-size: 1.4em;
     text-align: left;
-    text-shadow: none;
   }
   .heading-item-prijs-right {
     padding-top: 1.2rem;
@@ -1687,12 +1699,11 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     font-size: 1.4em;
     font-weight: 400;
     text-align: left;
-    text-shadow: none;
   }
-  .row-left {
-    text-shadow: none;
+  .footer-heading4 {
+    font-size: 1.2em;
   }
-  .div-home-title {
+  .video {
     text-shadow: none;
   }
 }
@@ -1718,17 +1729,19 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 1rem;
   }
   .button.alt-boot.altfooter {
-    font-size: 11px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.4em;
   }
   .button.events {
     padding-right: 1rem;
     padding-left: 1rem;
     color: #189bce;
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .button.events:hover {
     color: #189bce;
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .button.boten-blue {
     font-size: 0.9em;
@@ -1758,27 +1771,31 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 84%), url('../images/Den_Bosch_home_1.jpg');
     background-position: 28% 75%, 0px 50%;
   }
-  .container {
-    text-shadow: none;
-  }
   .div-top {
     height: 20rem;
     max-height: 20rem;
     min-height: 20rem;
     padding-top: 9rem;
-    text-shadow: none;
   }
   .div-top.alt-homepage {
     height: 17rem;
     max-height: 17rem;
     min-height: 17rem;
     padding-top: 11rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
+  }
+  .div-top.arrangementen {
+    padding-top: 11rem;
     text-shadow: none;
+  }
+  .div-top.vaarten {
+    padding-top: 8rem;
+  }
+  .div-top.boten {
+    padding-top: 8rem;
   }
   .column-top-left {
     padding-left: 0rem;
-    text-shadow: none;
   }
   .column-top-right {
     padding-left: 6rem;
@@ -1837,13 +1854,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .alt-blue.footer {
     padding-right: 0rem;
     padding-left: 0rem;
-    font-size: 0.9em;
+    font-size: 1.3em;
   }
   .div-button-event-1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
- 
   .div-events-text.boten-blue {
     padding-right: 0rem;
     padding-left: 0rem;
@@ -1858,7 +1874,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     max-height: 21rem;
     padding: 1px;
   }
- 
   .section-populaire-tochten {
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -1886,12 +1901,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 1rem;
     padding-right: 0px;
     padding-left: 0.8rem;
-    font-size: 1.4em;
+    font-size: 1.8em;
     text-align: center;
   }
   .tochten-h3.alt-first {
     padding-top: 1rem;
-    font-size: 1.4em;
+    font-size: 1.8em;
     text-align: center;
   }
   .populaire-tochten-titel {
@@ -1914,7 +1929,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .div-menu {
     padding-left: 0.5rem;
   }
- 
   .image-2 {
     min-height: 14rem;
     padding-top: 10rem;
@@ -1925,7 +1939,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .homepage-header {
     font-size: 2.6em;
-    text-shadow: none;
   }
   .blue-boot-column {
     height: auto;
@@ -1940,6 +1953,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-right: 1rem;
     padding-left: 2rem;
     font-size: 1.4em;
+    text-shadow: none;
+  }
+  .vaart-pagina-heading.alt-opstapplek.editable {
+    font-size: 2.2em;
     text-shadow: none;
   }
   .vaart-pagina-para {
@@ -1958,12 +1975,17 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     font-size: 1em;
     text-align: center;
   }
+  .vaart-pagina-para.alt-location.editable {
+    text-shadow: none;
+  }
   .vaart-pagina-para.alt-money {
     padding-right: 0.5rem;
     font-size: 0.9em;
     text-align: center;
   }
   .vaart-pagina-para.alt-money.editable {
+    font-size: 1em;
+    line-height: 1.6em;
     text-shadow: none;
   }
   .vaart-pagina-para.editable {
@@ -1973,10 +1995,15 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     font-size: 1.2em;
   }
   .vaartpagina-heading2 {
-    font-size: 1.4em;
-  }
-  .column-blue-vaart2 {
+    font-size: 1.8em;
     text-shadow: none;
+  }
+  .bleu-vaart-column {
+    padding-left: 0rem;
+  }
+  .bleu-vaart-column.alt-arrangementen {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
   .div-location {
     padding-bottom: 1rem;
@@ -1984,13 +2011,24 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .div-location.div-personen {
     padding-right: 2rem;
+    padding-bottom: 0rem;
     padding-left: 2rem;
   }
   .location-row {
-    text-shadow: none;
+    width: 33%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .location-row.boten {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .image-boot-od {
     max-width: 7rem;
+  }
+  .div-text {
+    text-shadow: none;
   }
   .opstapplek-basic-row {
     padding-bottom: 0rem;
@@ -2000,6 +2038,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .alt-opstapplek {
     font-size: 0.9em;
+  }
+  .alt-opstapplek.editable {
+    text-shadow: none;
   }
   .mobile-section-blue-description {
     background-color: #189bce;
@@ -2044,10 +2085,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     min-height: 6rem;
     min-width: 6rem;
   }
-  .video-outline {
-    padding-bottom: 0.5rem;
-    text-shadow: none;
-  }
   .lightbox-video-top-image {
     padding-top: 0rem;
     text-shadow: none;
@@ -2079,8 +2116,8 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .link-div-titel {
     font-size: 1em;
   }
-  .top-prijslijst-left-column.white-black-text {
-    text-shadow: none;
+  .arrangementen-column-right {
+    padding-bottom: 1.4rem;
   }
   .invisable-para {
     display: block;
@@ -2094,16 +2131,42 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .titel-arrangementen-blok {
     font-size: 1.4em;
   }
+  .titel-arrangementen-blok.editable {
+    line-height: 2em;
+    text-shadow: none;
+  }
   .arrangementen-para {
     font-size: 1em;
   }
+  .arrangementen-para.editable {
+    text-shadow: none;
+  }
+  .paragraph-arragmenten-div {
+    text-shadow: none;
+  }
+  .div-but-arr {
+    text-shadow: none;
+  }
   .text-arr-blue-right {
     font-size: 0.8em;
+    text-shadow: none;
   }
- 
   .arr-pag-white {
     font-size: 1em;
     text-align: left;
+  }
+  .arr-pag-white.editable {
+    margin-top: auto;
+    padding-top: 0.4rem;
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: none;
+  }
+  .social {
+    padding-right: 2rem;
+  }
+  .link-arra-emty {
+    text-shadow: none;
   }
   .image-example-arrangementen.image-4 {
     margin-right: 0.7rem;
@@ -2116,6 +2179,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .image-example-arrangementen.image1 {
     margin-right: 0.7rem;
+  }
+  .rondvaarteen {
+    font-size: 2em;
   }
   .footer-column {
     padding-top: 1rem;
@@ -2142,14 +2208,18 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .mail-contact {
     width: 9rem;
     height: 9rem;
-    text-shadow: none;
   }
   .boeken {
     width: 9rem;
     height: 9rem;
   }
+  .contact-blue {
+    font-size: 2em;
+  }
   .contact-text {
+    font-size: 1.5em;
     font-weight: 400;
+    text-shadow: none;
   }
   .modal-form {
     display: none;
@@ -2190,27 +2260,23 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 2.5rem;
     text-align: left;
   }
-  .column-prijslijst-basic-left {
-    text-shadow: none;
-  }
   .column-prijslijst-basic-right {
-    padding-left: 2rem;
-    text-shadow: none;
+    padding-left: 0rem;
   }
   .sectie-prijs {
     padding-top: 0rem;
-    text-shadow: none;
   }
   .column-top-prijslijst {
     text-shadow: none;
   }
+  .heading-pagina-prijslijst {
+    text-shadow: none;
+  }
   .heading-item-prijslijst {
     padding-left: 0rem;
-    text-shadow: none;
   }
   .heading-item-prijs-right {
     padding-left: 0rem;
-    text-shadow: none;
   }
   .line {
     width: 100%;
@@ -2221,12 +2287,19 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .row-left {
     text-align: left;
+  }
+  .footer-heading4 {
+    font-size: 1.6em;
+  }
+  .video {
     text-shadow: none;
   }
 }
 @media (max-width: 479px) {
   h1 {
     color: white;
+    font-size: 3em;
+    text-shadow: none;
   }
   h2 {
     color: white;
@@ -2253,6 +2326,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .button.events {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
+    font-size: 1.5em;
+  }
+  .button.events:hover {
     font-size: 1.5em;
   }
   .section-top {
@@ -2292,16 +2368,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .section-top.alt-arrangementen {
     background-position: 63% 72%;
   }
-  .container {
-    text-shadow: none;
-  }
   .div-top {
     height: 20rem;
     max-height: 20rem;
     min-height: 20rem;
     padding-top: 7rem;
     padding-left: 1rem;
-    text-shadow: none;
   }
   .div-top.alt-homepage {
     height: 16rem;
@@ -2310,13 +2382,22 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 12rem;
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+  .div-top.arrangementen {
     text-shadow: none;
+  }
+  .div-top.boten {
+    padding-top: 8rem;
+    text-shadow: none;
+  }
+  .div-top.opstapplek {
+    padding-top: 10rem;
+    font-size: 1em;
   }
   .column-top-left {
     padding-top: 0rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    text-shadow: none;
   }
   .column-top-right {
     padding-left: 7rem;
@@ -2401,7 +2482,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-right: 1rem;
     padding-left: 1rem;
   }
-
   .div-events-text {
     padding-top: 1rem;
     padding-right: 1rem;
@@ -2422,7 +2502,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .boot-initialen {
     text-align: center;
   }
-  
   .section-populaire-tochten {
     padding-bottom: 0rem;
   }
@@ -2430,7 +2509,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding: 0px;
     font-size: 1em;
     line-height: 1.2em;
-    text-align: center;
   }
   .tochten-column-left {
     min-height: 52rem;
@@ -2448,10 +2526,11 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .tochten-text-right {
     padding: 0rem 0rem 3rem;
+    text-shadow: none;
   }
   .tochten-paragraph {
-    padding-right: 0rem;
-    padding-left: 0rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     font-size: 1em;
     text-align: center;
     text-shadow: none;
@@ -2487,13 +2566,15 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     min-width: 4rem;
     text-shadow: none;
   }
-
   .homepage-header {
     overflow-x: visible;
     overflow-y: visible;
-    font-size: 2em;
+    font-size: 2.3em;
     line-height: 1.3em;
     text-align: center;
+  }
+  .homepage-header.editable {
+    font-size: 2em;
     text-shadow: none;
   }
   .blue-boot-column {
@@ -2544,10 +2625,24 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     font-size: 1.1em;
     text-align: center;
   }
+  .vaart-pagina-para.alt-money.editable {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    text-shadow: none;
+  }
   .event-par {
     padding-right: 0.3rem;
     padding-left: 0.3rem;
     font-size: 1.1em;
+  }
+  .vaartpagina-heading2 {
+    text-shadow: none;
+  }
+  .bleu-vaart-column {
+    padding-left: 0rem;
+  }
+  .bleu-vaart-column.alt-arrangementen {
+    padding-bottom: 0rem;
   }
   .div-location {
     text-align: center;
@@ -2559,9 +2654,8 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-shadow: none;
   }
   .location-row {
-    padding-right: 0rem;
-    padding-left: 0rem;
-    text-shadow: none;
+    width: 100%;
+    padding: 0rem;
   }
   .image-boot-od {
     max-width: 10rem;
@@ -2580,8 +2674,11 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-align: center;
   }
   .alt-opstapplek.editable {
+    padding-right: 1rem;
     padding-left: 1rem;
+    font-size: 1em;
     text-align: center;
+    text-shadow: none;
   }
   .image-round {
     max-width: 15rem;
@@ -2610,28 +2707,25 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .white-line-blue-boeking {
     height: 2px;
     min-height: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+    text-shadow: none;
   }
- 
   .span-small-characters {
     font-size: 0.8em;
   }
-  .video-outline {
-    padding-top: 1rem;
-    padding-bottom: 0.4rem;
-    text-align: center;
-    text-shadow: none;
-  }
   .lightbox-video-top-image {
     padding-top: 0rem;
-    text-align: center;
     text-shadow: none;
   }
   .play-video {
     text-shadow: none;
   }
   .alt-intend-opstap.editable {
-    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1em;
     text-align: left;
+    text-shadow: none;
   }
   .column-opstarplek-naast-icoon {
     text-shadow: none;
@@ -2642,12 +2736,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .oude-dirk {
     padding: 3rem;
-  }
-  .div-test {
     text-shadow: none;
   }
-  .top-prijslijst-left-column.white-black-text {
-    text-shadow: none;
+  .arrangementen-column-right {
+    padding-bottom: 1rem;
   }
   .invisable-para {
     padding-right: 0.5rem;
@@ -2655,15 +2747,45 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     float: right;
     text-align: left;
   }
+  .row-arrngement-test {
+    padding-bottom: 2px;
+  }
+  .titel-arrangementen-blok.editable {
+    text-shadow: none;
+  }
+  .arrangementen-para.editable {
+    text-shadow: none;
+  }
+  .div-but-arr {
+    text-shadow: none;
+  }
   .text-arr-blue-right {
     font-size: 1em;
+    text-shadow: none;
   }
   .arr-pag-white {
     text-align: center;
   }
+  .arr-pag-white.editable {
+    text-shadow: none;
+  }
+  .social {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
   .menu-text-next-hamburger {
     left: 3.7rem;
     font-size: 1em;
+  }
+  .rondvaarteen {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .normal-text-para {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .footer-row {
     padding-bottom: 2rem;
@@ -2679,23 +2801,20 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .tochten-row-first {
     padding: 0rem;
     text-align: center;
+    text-shadow: none;
   }
   .tochten-second-row {
     padding: 1rem 0rem 3px;
     text-shadow: none;
   }
-  .contact-column-boeken {
-    text-shadow: none;
-  }
-  .contact-column-mail {
-    text-shadow: none;
-  }
   .row-conatct {
     min-height: 45rem;
-    text-shadow: none;
   }
   .contact-blue {
     padding-top: 0.5rem;
+  }
+  .contact-text {
+    font-size: 1.5em;
     text-shadow: none;
   }
   .modal-form {
@@ -2741,20 +2860,15 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-  .column-prijslijst-basic-left {
-    text-shadow: none;
-  }
   .row-dranken {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
   .column-prijslijst-basic-right {
     padding-left: 0rem;
-    text-shadow: none;
   }
   .sectie-prijs {
     padding-top: 0rem;
-    text-shadow: none;
   }
   .column-top-prijslijst {
     text-shadow: none;
@@ -2764,17 +2878,16 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-bottom: 0.5rem;
     padding-left: 0rem;
     font-size: 1.3em;
-    text-shadow: none;
   }
   .heading-item-prijs-right {
     font-size: 1.3em;
-    text-shadow: none;
-  }
-  .row-left {
-    text-shadow: none;
   }
   .div-naam {
     min-height: 5rem;
+  }
+  .video {
+    text-align: center;
+    text-shadow: none;
   }
 }
 
