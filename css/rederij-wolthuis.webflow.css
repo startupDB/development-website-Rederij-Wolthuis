@@ -612,7 +612,7 @@ p {
   padding-top: 1rem;
 }
 .vaart-pagina-para {
-  padding: 0rem 3rem;
+  padding: 0rem 4rem;
   color: white;
   font-weight: 300;
   text-align: center;
@@ -620,7 +620,7 @@ p {
 .vaart-pagina-para.alt-zwart {
   padding-top: 1rem;
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-left: 4rem;
   color: #706b6b;
   font-size: 1em;
   text-align: left;
@@ -701,8 +701,8 @@ p {
   box-shadow: rgba(0, 0, 0, 0.2) 6px 16px 28px 0px;
 }
 .div-text {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
 }
 .opstapplek-basic-row {
   padding-top: 0rem;
