@@ -66,7 +66,7 @@ p {
   display: inline-block;
   padding: 0.4rem 2rem;
   border: 1px solid #189bce;
-  border-radius: 13px;
+  border-radius: 6px;
   background-color: transparent;
   font-family: Raleway, sans-serif;
   color: #189bce;
@@ -79,13 +79,24 @@ p {
   padding-right: 4rem;
 }
 .button.alt-boot {
-  padding: 0.5rem 4rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
   border-color: rgba(255, 255, 255, 0.52);
+  border-radius: 6px;
   color: white;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+.button.alt-boot:hover {
+  background-color: rgba(255, 255, 255, 0.09);
 }
 .button.alt-boot.altfooter {
   padding-right: 3rem;
   padding-left: 3rem;
+  border-radius: 6px;
+}
+.button.alt-boot.altfooter:hover {
+  background-color: rgba(255, 255, 255, 0.09);
 }
 .button.events {
   border-color: #189bce;
@@ -93,6 +104,7 @@ p {
   border-radius: 5px;
   background-color: transparent;
   font-size: 1.2em;
+  line-height: 1.5em;
 }
 .button.events:hover {
   border-bottom-width: 3px;
@@ -100,16 +112,24 @@ p {
   font-size: 1.2em;
 }
 .button.boten-blue {
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.54);
+  border-radius: 6px;
   color: white;
 }
 .button.vaart-pagina {
   border-color: rgba(24, 155, 206, 0.61);
+  border-radius: 6px;
   font-weight: 600;
 }
-.button.white {
-  border-color: white;
-  color: white;
+.button.vaart-pagina:hover {
+  background-color: rgba(24, 155, 206, 0.09);
+}
+.button.vaart-pagina.modal-open-button.vaart-pagina {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+  font-size: 1em;
+  line-height: 1.4em;
 }
 .section-top {
   background-image: url('../images/Den_Bosch_home.jpg');
@@ -118,15 +138,67 @@ p {
   background-repeat: no-repeat;
 }
 .section-top.alt-boot-ouade-dirk {
-  background-image: url('../images/DSC03290.jpg');
-  background-position: 50% 94%;
+  max-height: 30rem;
+  min-height: 30rem;
+}
+.section-top.alt-boot-ouade-dirk.alt-arrangement-detail.admiraal-arr {
+  background-image: url('../images/Oude_Dirk_redederij_wolthuis.jpg');
+}
+.section-top.alt-boot-ouade-dirk.alt-arrangement-detail.heusden-arr {
+  background-image: url('../images/JB op de Maas_2.jpg');
+}
+.section-top.alt-boot-ouade-dirk.alt-arrangement-detail.bourgongondisch-arr {
+  background-image: url('../images/boot-oude dirk.jpg');
+  background-position: 50% 86%;
+}
+.section-top.alt-boot-ouade-dirk.alt-arrangement-detail.bossche-bollen-arr {
+  background-image: url('../images/Ontdek DB.JPG');
+}
+.section-top.alt-boot-ouade-dirk.alt-arrangement-detail.arr-casino {
+  background-image: url('../images/JB op de Maas_2.jpg');
+}
+.section-top.alt-boot-ouade-dirk.alt-arrangement-detail.arr-games {
+  background-image: url('../images/JB op de Maas_2.jpg');
+}
+.section-top.alt-boot-ouade-dirk.dagtocht-heusden {
+  background-image: url('../images/JB op de Maas.jpg');
+  background-position: 50% 47%;
+}
+.section-top.alt-boot-ouade-dirk.maxima {
+  background-image: url('../images/Kade en zon.JPG');
+  background-position: 50% 26%;
+}
+.section-top.alt-boot-ouade-dirk.ammerzoden {
+  background-image: url('../images/Jeronimus Bosch in de sluis.JPG');
+  background-position: 0% 26%;
+}
+.section-top.alt-boot-ouade-dirk.bommelerwaard {
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0) 53%), url('../images/JB op de Maas.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0) 53%), url('../images/JB op de Maas.jpg');
+  background-position: 0% 0%, 50% 55%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+.section-top.alt-boot-ouade-dirk.jeronimus {
+  background-image: url('../images/JB op de Maas_1.jpg');
+  background-position: 50% 54%;
+}
+.section-top.alt-boot-ouade-dirk.fleur {
+  background-image: url('../images/Fleur - Zuid Willemsvaart_kopie.jpg');
 }
 .section-top.alt-vaart {
-  max-height: 33rem;
-  min-height: 32rem;
+  max-height: 30rem;
+  min-height: 30rem;
   background-image: url('../images/boot-oude dirk_front.jpg');
   background-position: 50% 49%;
   background-attachment: scroll;
+}
+.section-top.alt-vaart.pannenkoeken {
+  background-image: url('../images/Pannenkoekenboot - Eten.JPG');
+}
+.section-top.alt-vaart.wijnproeven {
+  background-image: url('../images/OD Varen.JPG');
+  background-position: 50% 73%;
 }
 .section-top.alt-oliemolensingel {
   background-image: url('../images/Oliemolensingel.jpg');
@@ -134,9 +206,10 @@ p {
   background-attachment: scroll;
 }
 .section-top.homepage {
-  min-height: 36rem;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.31) 57%), url('../images/Den_Bosch_home_1.jpg');
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.31) 57%), url('../images/Den_Bosch_home_1.jpg');
+  max-height: 30rem;
+  min-height: 30rem;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 57%), url('../images/Den_Bosch_home_1.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 57%), url('../images/Den_Bosch_home_1.jpg');
   background-position: 0% 0%, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -145,33 +218,46 @@ p {
   text-decoration: none;
 }
 .section-top.alt-arrangementen {
-  position: static;
-  width: 100%;
   background-image: url('../images/boot-oude dirk.jpg');
 }
-.container {
-  display: block;
-  padding-right: 0px;
-  padding-left: 0px;
-}
 .div-top {
-  min-height: 36rem;
+  min-height: 30rem;
   padding-top: 17rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 .div-top.alt-homepage {
-  padding-top: 14rem;
+  padding-top: 10rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
 }
-.div-top.arrangementen {
-  padding-top: 20rem;
-  text-shadow: none;
+.div-top.vaarten {
+  max-height: 30rem;
+  min-height: 30rem;
+  padding-top: 14rem;
+  padding-left: 4rem;
+}
+.div-top.boten {
+  max-height: 30rem;
+  min-height: 30rem;
+  padding-top: 17rem;
+  padding-left: 3rem;
+}
+.div-top.boten.alt-oude-dirk {
+  padding-top: 15rem;
+  background-image: url('../images/DSC03290.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.div-top.opstapplek {
+  max-height: 30rem;
+  min-height: 30rem;
+  padding-left: 3rem;
 }
 .column-top-right {
   padding-top: 0rem;
   padding-right: 0rem;
   padding-left: 0rem;
-  text-align: left;
 }
 .blue-background-text-div {
   height: auto;
@@ -185,7 +271,7 @@ p {
   right: 0px;
   min-height: 4rem;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 5px 0px;
 }
 .wolthuis-logo {
   padding-top: 0.7rem;
@@ -195,14 +281,18 @@ p {
 }
 .button-menu {
   position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
   z-index: 6;
-  overflow-x: visible;
-  overflow-y: visible;
-  max-height: 3.7rem;
-  padding-top: 1rem;
+  max-height: 4rem;
+  max-width: 10rem;
+  min-width: 10rem;
   padding-bottom: 1rem;
   padding-left: 3rem;
   float: none;
+  background-color: transparent;
   font-size: 1em;
 }
 .button-menu.w--open {
@@ -212,13 +302,12 @@ p {
 .nav-menu {
   position: fixed;
   z-index: 35;
+  display: block;
   width: 25%;
-  max-width: 30%;
-  min-width: 25%;
   padding-top: 4rem;
   padding-right: 1rem;
   padding-left: 0rem;
-  background-color: rgba(24, 155, 206, 0.95);
+  background-color: transparent;
   text-align: left;
 }
 .nav-link {
@@ -294,7 +383,6 @@ p {
 .alt-blue {
   margin-bottom: 0px;
   padding-top: 1rem;
-  padding-right: 0rem;
   opacity: 1;
   color: white;
   font-size: 1em;
@@ -304,12 +392,11 @@ p {
   padding-top: 0rem;
   padding-right: 4rem;
   padding-left: 4rem;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: 300;
   text-align: center;
 }
 .alt-blue.boten {
-  overflow-x: visible;
-  overflow-y: visible;
   margin-bottom: auto;
   padding-top: 1rem;
   padding-right: 2rem;
@@ -317,14 +404,13 @@ p {
   color: white;
   font-weight: 300;
   text-align: center;
-}
-.alt-blue.editable {
-  padding-right: 1rem;
+  text-shadow: none;
 }
 .div-button-event-1 {
-  margin-top: 0px;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  display: block;
+  margin-top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
   text-align: center;
 }
 .div-button-event-1.alt-vaart {
@@ -334,6 +420,10 @@ p {
 .div-button-event-1.alt-homepage {
   margin-top: auto;
   padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+.div-button-event-1.arrangement {
+  padding-top: 0rem;
   padding-bottom: 0rem;
 }
 .div-events-text {
@@ -389,22 +479,24 @@ p {
 .tochten-column-left {
   min-height: 44rem;
   padding-top: 0rem;
-  padding-right: 4rem;
+  padding-right: 2rem;
   padding-left: 1rem;
 }
 .left-row {
   min-height: 8rem;
-  margin: auto 1rem;
+  margin-top: auto;
+  margin-right: 1rem;
+  margin-bottom: auto;
   padding: 2rem 1rem 2rem 1.5rem;
   border-bottom: 1px solid #189bce;
 }
 .left-row.alt-last {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 0rem;
+  padding-right: 0rem;
   border-bottom-style: none;
 }
 .tochten-text-right {
-  padding: 0rem;
+  padding: 0rem 0rem 0rem 1rem;
 }
 .tochten-paragraph {
   height: auto;
@@ -437,13 +529,16 @@ p {
   padding-left: 2rem;
 }
 .image-tochten-rond {
-  display: block;
   max-width: 10rem;
   min-width: 8rem;
-  background-color: transparent;
-  opacity: 1;
-  -webkit-transition: all 977ms ease;
-  transition: all 977ms ease;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.09);
+  border-radius: 136px;
+  background-color: rgba(0, 0, 0, 0.10);
+  box-shadow: rgba(0, 0, 0, 0.29) 0px 3px 10px 0px;
+  -webkit-transition-delay: initial;
+  transition-delay: initial;
 }
 .div-menu {
   padding-left: 0rem;
@@ -453,9 +548,10 @@ p {
 }
 .image-2 {
   max-height: 25rem;
-  min-height: 23rem;
+  min-height: 25rem;
   padding-top: 15rem;
-  background-image: url('../images/PC190037.jpg');
+  background-image: url('../images/Arrangementen - Binnenhaven.jpg');
+  background-position: 0% 6%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -472,7 +568,6 @@ p {
   text-shadow: black 1px 1px 1px;
 }
 .blue-boot-column {
-  height: auto;
   padding-top: 0rem;
   padding-bottom: 0rem;
   background-color: #189bce;
@@ -483,18 +578,23 @@ p {
   text-align: center;
 }
 .column-section-vaart2 {
-  padding-top: 1rem;
+  padding-top: 0rem;
   padding-bottom: 1rem;
   background-color: #189bce;
 }
+.column-section-vaart2.vestingvaart {
+  background-color: #189bce;
+}
 .column-section-vaart1 {
-  padding: 0rem;
+  padding: 1rem 0rem 2rem;
 }
 .vaart-pagina-heading {
-  padding: 2rem 1rem 0.8rem 2rem;
+  padding: 1rem 1rem 0.8rem 2rem;
   color: #189bce;
   font-size: 1.8em;
   line-height: 1.4em;
+  font-weight: 400;
+  text-align: left;
   letter-spacing: 1px;
 }
 .vaart-pagina-heading.alt-opstapplek {
@@ -502,8 +602,14 @@ p {
   padding-top: 1rem;
   padding-left: 3rem;
   color: #189bce;
-  font-weight: 500;
+  font-weight: 400;
   text-shadow: none;
+}
+.vaart-pagina-heading.alt-opstapplek.editable {
+  text-shadow: none;
+}
+.vaart-pagina-heading.dagtocht {
+  padding-top: 1rem;
 }
 .vaart-pagina-para {
   padding: 0rem 3rem;
@@ -512,9 +618,11 @@ p {
   text-align: center;
 }
 .vaart-pagina-para.alt-zwart {
-  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
   padding-left: 2rem;
   color: #706b6b;
+  font-size: 1em;
   text-align: left;
 }
 .vaart-pagina-para.alt-location {
@@ -552,10 +660,7 @@ p {
 }
 .bleu-vaart-column {
   padding-left: 1rem;
-}
-.bleu-vaart-column.alt-arrangementen {
-  padding-top: 1rem;
-  opacity: 1;
+  background-color: transparent;
 }
 .column-blue-vaart1 {
   padding-right: 0rem;
@@ -566,15 +671,38 @@ p {
   padding-left: 0.4rem;
 }
 .location-row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+.location-row.boten {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.location-row.arrangementen {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  background-color: white;
+}
+.location-row.arrangementen.overveiw {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background-color: white;
+  opacity: 0.99;
 }
 .image-boot-od {
   max-width: 13rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 136px;
+  background-color: rgba(0, 0, 0, 0.10);
+  box-shadow: rgba(0, 0, 0, 0.2) 6px 16px 28px 0px;
 }
 .div-text {
-  max-width: 90%;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .opstapplek-basic-row {
   padding-top: 0rem;
@@ -608,6 +736,13 @@ p {
   margin-bottom: 0px;
   text-shadow: none;
 }
+.image-round {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.09);
+  border-radius: 132px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 6px 11px 0px;
+}
 .alt-boottitel {
   margin-top: 10px;
   margin-bottom: 0px;
@@ -635,7 +770,7 @@ p {
   min-height: 10rem;
   padding-top: 3rem;
   padding-right: 3rem;
-  background-image: url('../images/IMAG0243.jpg');
+  background-image: url('../images/Bossche Bol op JB - Foto 1.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   text-decoration: none;
@@ -643,17 +778,248 @@ p {
 .lightbox-div.alt-image2 {
   background-image: url('../images/wolthuis-regionaam2.jpg');
 }
+.lightbox-div.alt-image2.slide-2-wijn {
+  background-image: url('../images/Mensen en Wijn.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image2.slide-2-heusden {
+  background-image: url('../images/JB kop - Foto 2.JPG');
+  background-position: 50% 51%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image2.skide-2-maxima {
+  background-image: url('../images/Jeromimus uit de sluis.JPG');
+  background-position: 50% 29%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image2.slide-2-azoden {
+  background-image: url('../images/Jeronimus Bosch volledig.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image2.slide-2-bommel {
+  background-image: url('../images/Jeronimus Bosch in de sluis.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image2.slide-2-od {
+  background-image: url('../images/Ouwe Dirk onder de brug.JPG');
+  background-position: 50% 54%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image2.slide-2-koeken {
+  background-image: url('../images/Ouwe Dirk bij Oliemolen.JPG');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image2.slide-2-jb {
+  background-image: url('../images/JB kop - Foto 2.JPG');
+}
+.lightbox-div.alt-image2.slide-2-fl {
+  background-image: url('../images/Binnenhaven.JPG');
+}
+.lightbox-div.alt-image2.slide-2-ad {
+  background-image: url('../images/DB - Foto 1.jpg');
+}
+.lightbox-div.alt-image2.slide-2-aheusden {
+  background-image: url('../images/JB kop - Foto 2.JPG');
+}
+.lightbox-div.alt-image2.slide-2-bour {
+  background-image: url('../images/Draaibrug Ouwe Dirk.jpg');
+}
+.lightbox-div.alt-image2.slide-2-ontdek {
+  background-image: url('../images/Dommel kade stadsmuur.JPG');
+}
+.lightbox-div.alt-image2.slide-2-bb {
+  background-image: url('../images/Bossche bollen maken.JPG');
+}
+.lightbox-div.alt-image2.slide-2-casino {
+  background-image: url('../images/Jeronimus Bosch - zijkant - Engelen.jpg');
+}
+.lightbox-div.alt-image2.slide-2-games {
+  background-image: url('../images/JB kop - Foto 2.JPG');
+}
 .lightbox-div.alt-image3 {
-  background-image: url('../images/wolthuis-regionaam3.jpg');
+  background-image: url('../images/Molen in Heusden.jpg');
+  background-position: 50% 50%;
+}
+.lightbox-div.alt-image3.slide-3-vesting {
+  background-image: url('../images/DB - Foto 1.jpg');
+}
+.lightbox-div.alt-image3.slide-3-wijn {
+  background-image: url('../images/Wijnproeverij.JPG');
+  background-position: 50% 0px;
+}
+.lightbox-div.alt-image3.slide-3-heusden {
+  background-image: url('../images/Molen in Heusden.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image3.slide-3-maxima {
+  background-image: url('../images/JB op de Maas_2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image3.slide-3azoden {
+  background-image: url('../images/Kasteel Ammersoyen.JPG');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image3.slide-3-bommel {
+  background-image: url('../images/JB kop - Foto 2.JPG');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.alt-image3.slide-3-koeken {
+  background-image: url('../images/DB - Foto 1.jpg');
+}
+.lightbox-div.alt-image3.slide-3-od {
+  background-image: url('../images/Ouwe Dirk vanaf de brug.JPG');
+}
+.lightbox-div.alt-image3.slide-3-fl {
+  background-image: url('../images/Fleur met brug.JPG');
+}
+.lightbox-div.alt-image3.slide-3-ad {
+  background-image: url('../images/OD - Foto 3.jpg.jpg');
+}
+.lightbox-div.alt-image3.slide-3-bour {
+  background-image: url('../images/Ouwe Dirk op Dommel.jpg');
+}
+.lightbox-div.alt-image3.slide-3-ontdek {
+  background-image: url('../images/Stationsbrug.JPG');
+}
+.lightbox-div.alt-image3.slide-3-bb {
+  background-image: url('../images/Draaibrug Ouwe Dirk.jpg');
+}
+.lightbox-div.alt-image3.slide-3-casino {
+  background-image: url('../images/Voorkant Jeronimus Bosch.JPG');
+}
+.lightbox-div.alt-image3.slide-3-games {
+  background-image: url('../images/Voorkant Jeronimus Bosch.JPG');
 }
 .lightbox-div.alt-video {
-  background-image: url('../images/video vestingrondvaart.jpg');
+  background-image: url('../images/Ouwe Dirk op Dommel.jpg');
   background-position: 50% 50%;
+}
+.lightbox-div.alt-video.slide-4-vesting {
+  background-image: url('../images/video vestingrondvaart.jpg');
+}
+.lightbox-div.alt-video.wijn {
+  background-image: url('../images/wijnproeverij_-_thumb.png');
+}
+.lightbox-div.alt-video.slide-4-heusden {
+  background-image: url('../images/dagtocht_heusden-_thumb.png');
+}
+.lightbox-div.alt-video.slide-4azoden {
+  background-image: url('../images/JB kop - Foto 2.JPG');
+}
+.lightbox-div.alt-video.slide-4-bommel {
+  background-image: url('../images/Woudrichem.JPG');
+}
+.lightbox-div.alt-video.slide-4-od {
+  background-image: url('../images/wijnproeverij_-_thumb.png');
+}
+.lightbox-div.alt-video.slide-4-jb {
+  background-image: url('../images/dagtocht_heusden-_thumb.png');
+}
+.lightbox-div.alt-video.slide-4-maxima {
+  background-image: url('../images/JB kop - Foto 2.JPG');
+}
+.lightbox-div.alt-video.slide-4-fl {
+  background-image: url('../images/Fleur opstapplek.JPG');
+}
+.lightbox-div.alt-video.slide-4-ad {
+  background-image: url('../images/video vestingrondvaart.jpg');
+}
+.lightbox-div.alt-video.slide-4-aheusden {
+  background-image: url('../images/dagtocht_heusden-_thumb.png');
+}
+.lightbox-div.alt-video.slide-4-bour {
+  background-image: url('../images/video vestingrondvaart.jpg');
+}
+.lightbox-div.alt-video.slide-4-ontdek {
+  background-image: url('../images/video vestingrondvaart.jpg');
+}
+.lightbox-div.alt-video.slide-4-casino {
+  background-image: url('../images/wijnproeverij_-_thumb.png');
+}
+.lightbox-div.alt-video.slide-4-games {
+  background-image: url('../images/dagtocht_heusden-_thumb.png');
+}
+.lightbox-div.slide-1-vesting {
+  display: block;
+  background-image: url('../images/Oude Dirk - Dommel en draaibrug.JPG');
+  background-size: cover;
+}
+.lightbox-div.slide-2-vesting {
+  background-image: url('../images/Ouwe Dirk bij Oliemolen.JPG');
+  background-position: 56% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.slide-1-pannenkoeken {
+  background-image: url('../images/Kinderen pannenkoekenboot.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.slide-1-wijn {
+  background-image: url('../images/Lekker wijn .JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.slide-1-heusden {
+  background-image: url('../images/Bossche Bol op JB - Foto 1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.slide-1-maxima {
+  background-image: url('../images/Bossche Bol op JB - Foto 1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.slide-1-azoden {
+  background-image: url('../images/Bossche Bol op JB - Foto 1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.slide-1-bommel {
+  background-image: url('../images/Bossche Bol op JB - Foto 1.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lightbox-div.slide-1-od {
+  background-image: url('../images/Ouwe Dirk lichten.JPG');
+}
+.lightbox-div.slide-1-fl {
+  background-image: url('../images/Binnenhaven sneeuw .JPG');
+}
+.lightbox-div.slide-1-ad {
+  background-image: url('../images/Casino - Foto 2.jpg');
+}
+.lightbox-div.slide-1-bour {
+  background-image: url('../images/De Eeterij Restaurant .jpg');
+}
+.lightbox-div.slide-1-ontdek {
+  background-image: url('../images/Bossche kelders.JPG');
+}
+.lightbox-div.slide-1-bb {
+  background-image: url('../images/Bossche bol maken.JPG');
+}
+.lightbox-div.slide-1-casino {
+  background-image: url('../images/ca173c22-9e40-491f-9bf0-eff746e1f69c');
 }
 .section-boekingen {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgba(101, 210, 252, 0.32);
+  background-color: rgba(101, 210, 252, 0.30);
 }
 .initialen-boot {
   -webkit-transform: scale(1);
@@ -707,11 +1073,12 @@ p {
 }
 .div-test {
   max-height: 25rem;
-  min-height: 23rem;
+  min-height: 25rem;
   min-width: 100%;
   margin-top: 0px;
   padding-top: 14rem;
-  background-image: url('../images/Pannenkoeken_eten_op_boot.jpg');
+  background-image: url('../images/Pannenkoekenboot Ouwe Dirk.JPG');
+  background-size: cover;
 }
 .link-div-titel {
   display: block;
@@ -723,15 +1090,6 @@ p {
   line-height: 1.5em;
   text-align: left;
   text-decoration: none;
-}
-.arrangementen-column-right {
-  padding: 1rem 1rem 0.4rem 0rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(212, 203, 203, 0.72);
-  background-color: white;
-  box-shadow: rgba(212, 203, 203, 0.59) 1px 1px 3px 1px;
-  line-height: 1.6em;
 }
 .top-prijslijst-left-column.white-black-text {
   padding-top: 0.8rem;
@@ -759,24 +1117,6 @@ p {
   font-weight: 400;
   text-shadow: none;
 }
-.row-arrngement-test {
-  z-index: 17;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #189bce;
-  color: transparent;
-  font-size: 1em;
-}
-.titel-arrangementen-blok {
-  margin-top: 0px;
-  padding-left: 2rem;
-  color: #189bce;
-  font-size: 1.4em;
-  font-weight: 400;
-  text-align: left;
-}
 .arrangementen-para {
   margin-bottom: 0px;
   padding-right: 2rem;
@@ -784,129 +1124,109 @@ p {
   padding-left: 2rem;
   color: #189bce;
   font-weight: 300;
+  text-align: left;
+}
+.arrangementen-para.editable {
+  font-size: 1em;
+}
+.arrangementen-para.card-overview {
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+  font-size: 1.6em;
+  font-weight: 500;
+  text-align: left;
+}
+.arrangementen-para.card-overview.subtitel {
+  color: rgba(24, 155, 206, 0.76);
+  font-size: 1.4em;
+  font-weight: 300;
 }
 .paragraph-arragmenten-div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 0rem;
 }
 .column-arrangementren {
   position: relative;
-  z-index: 2;
+  left: 0px;
+  top: 0px;
+  z-index: 4;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
   margin-left: 0px;
   padding: 0rem 0px;
-  border-bottom-color: transparent;
-  background-color: #189bce;
-  box-shadow: rgba(212, 203, 203, 0.29) 0px 2px 3px 1px, rgba(212, 203, 203, 0.29) 3px 0px 3px 1px;
+  border-radius: 3px;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 2px 2px 0px, rgba(0, 0, 0, 0.10) 0px 0px 2px 0px, rgba(0, 0, 0, 0.29) 0px 0px 0px 0.5px inset;
+  opacity: 0.99;
 }
 .div-but-arr {
-  padding-bottom: 1rem;
+  display: block;
+  margin-top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
   text-align: center;
-  text-shadow: none;
 }
-.arr-pag-white {
-  padding-left: 1rem;
-  color: white;
-}
-.arr-pag-white.editable {
-  text-shadow: none;
-}
-.social {
+.div-but-arr.alt-overview {
+  position: relative;
+  z-index: 14;
   overflow-x: visible;
   overflow-y: visible;
-  max-height: 4rem;
-  min-height: 4rem;
-  padding-right: 3rem;
-  padding-left: 2rem;
+  min-height: 3rem;
+  border-top: 1px solid rgba(24, 155, 206, 0.49);
+  background-color: transparent;
+}
+.div-but-arr.alt-overview:hover {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  min-height: 3rem;
+  border-top-color: rgba(255, 255, 255, 0.45);
+  background-color: #189bce;
+  color: #189bce;
+}
+.div-but-arr.alt-overview:active {
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 3px 0px;
+  color: #189bce;
 }
 .image-hamberger {
-  display: inline-block;
-  float: none;
+  position: absolute;
+  left: 40px;
+  top: 1.2rem;
+  right: 0px;
+  bottom: 0px;
+  display: block;
 }
 .menu-text-next-hamburger {
   position: absolute;
-  left: 6rem;
-  top: 1.3rem;
+  left: 83px;
+  bottom: 1.3rem;
   z-index: 26;
+  display: inline;
   color: rgba(255, 255, 255, 0.76);
   font-size: 1.2em;
-}
-.link-arra-emty {
   text-decoration: none;
 }
-.menu-arrangementen {
-  margin-right: 0.8rem;
-  padding: 0.3rem 0.4rem;
-  border-radius: 5px 5px 0px 0px;
-  background-color: rgba(0, 0, 0, 0.65);
-  color: rgba(255, 255, 255, 0.81);
-  font-size: 0.9em;
-  text-decoration: none;
-}
-.menu-arrangementen.w--current {
-  background-color: rgba(0, 0, 0, 0.56);
-  text-shadow: none;
-}
-.dev-menu-arr {
-  min-height: 2rem;
+.admiraal {
   background-color: transparent;
-  text-shadow: none;
-}
-.image-example-arrangementen {
-  max-height: 3rem;
-  max-width: 3rem;
-  min-height: 3rem;
-  min-width: 3rem;
-  margin-right: 2rem;
-  padding-top: 0rem;
-  border-radius: 100px;
-  background-image: url('../images/OD - Dommel:steiger.jpg');
-  box-shadow: rgba(112, 107, 107, 0.49) 3px 1px 3px 0px;
-}
-.image-example-arrangementen.image-4 {
-  max-height: 4rem;
-  max-width: 4rem;
-  min-height: 4rem;
-  min-width: 4rem;
-  background-size: cover;
-  box-shadow: rgba(112, 107, 107, 0.49) 1px 3px 3px 0px;
-}
-.image-example-arrangementen.image-3 {
-  max-height: 4rem;
-  max-width: 4rem;
-  min-height: 4rem;
-  min-width: 4rem;
-  margin-right: 1.3rem;
-  background-image: url('../images/PC190037.jpg');
-  background-size: cover;
-  box-shadow: rgba(112, 107, 107, 0.49) 1px 3px 3px 0px;
-}
-.image-example-arrangementen.image2 {
-  max-height: 4rem;
-  max-width: 4rem;
-  min-height: 4rem;
-  min-width: 4rem;
-  margin-right: 1.3rem;
-  background-image: url('../images/Pannenkoeken_eten_op_boot.jpg');
-  background-position: 68% 0%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: rgba(112, 107, 107, 0.49) 1px 3px 3px 0px;
-}
-.image-example-arrangementen.image1 {
-  max-height: 4rem;
-  max-width: 4rem;
-  min-height: 4rem;
-  min-width: 4rem;
-  margin-right: 1.3rem;
-  background-image: url('../images/eeterij.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: rgba(112, 107, 107, 0.49) 1px 3px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.40) 0px -2px 3px 0px;
+  text-align: justify;
 }
 .rondvaarteen {
   color: #189bce;
+  line-height: 1.3em;
 }
 .normal-text-para {
   color: #706b6b;
+  font-size: 1.1em;
 }
 .footer-column {
   height: 16rem;
@@ -916,13 +1236,12 @@ p {
   background-color: transparent;
 }
 .footer-row {
-  padding: 0rem 1rem;
+  padding: 0rem 1rem 2rem;
 }
 .left-row-first {
   min-height: 8rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  padding: 0.5rem 1rem 2rem 1.5rem;
+  margin-right: 0rem;
+  padding: 0.5rem 0rem 2rem 1.5rem;
   border-bottom: 1px solid #189bce;
 }
 .tochten-row-first {
@@ -943,14 +1262,21 @@ p {
   padding-top: 0rem;
 }
 .telefoon {
+  display: block;
   width: 8rem;
   height: 8rem;
+  margin-right: auto;
+  margin-left: auto;
   border: 7px solid #189bce;
   border-radius: 100px;
   background-image: url('../images/ic_call_24px.svg');
   background-position: 50% 50%;
   background-size: auto 52%;
   background-repeat: no-repeat;
+  text-align: center;
+}
+.telefoon:hover {
+  opacity: 0.8;
 }
 .row-conatct {
   min-height: 14rem;
@@ -965,6 +1291,9 @@ p {
   background-size: auto 44%;
   background-repeat: no-repeat;
 }
+.mail-contact:hover {
+  opacity: 0.8;
+}
 .boeken {
   display: inline-block;
   width: 8rem;
@@ -975,6 +1304,9 @@ p {
   background-position: 50% 50%;
   background-size: auto 50%;
   background-repeat: no-repeat;
+}
+.boeken:hover {
+  opacity: 0.74;
 }
 .contact-blue {
   padding-top: 1.2rem;
@@ -987,6 +1319,7 @@ p {
   color: #189bce;
   font-size: 1.5em;
   text-align: center;
+  text-decoration: none;
   text-shadow: none;
 }
 .modal-form {
@@ -1005,6 +1338,7 @@ p {
 }
 .form {
   z-index: 24;
+  display: block;
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
@@ -1039,6 +1373,9 @@ p {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 1px 3px 0px;
   text-align: center;
 }
+.submit:hover {
+  background-color: rgba(24, 155, 206, 0.77);
+}
 .form-wrapper {
   position: relative;
   z-index: 8000;
@@ -1070,12 +1407,16 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
+  clear: left;
   border-right-width: 0px;
   border-left-width: 0px;
   border-radius: 0px;
   color: black;
   font-weight: 500;
   text-align: left;
+}
+.text-afvaart.form-heusden {
+  font-size: 1em;
 }
 .radion-button-field {
   padding-left: 2rem;
@@ -1088,10 +1429,6 @@ p {
 .radion-button-field.alt {
   clear: left;
 }
-.radion-button-field.de-luxe {
-  display: block;
-  float: none;
-}
 .radion-button-field.reservering {
   display: block;
   float: left;
@@ -1100,6 +1437,7 @@ p {
 .padding-wrapper-form {
   overflow-x: visible;
   overflow-y: visible;
+  padding-top: 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -1125,16 +1463,12 @@ p {
 .text-label-form.let-op-text {
   display: block;
   padding-top: 1rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
   color: #706b6b;
   font-weight: 300;
   text-align: center;
   text-shadow: none;
-}
-.text-spam-form-de-luxe {
-  color: black;
-  font-weight: 500;
 }
 .hulp-column {
   height: 50rem;
@@ -1145,15 +1479,8 @@ p {
 .link-clsoe {
   text-align: center;
 }
-.image-arrow {
-  display: block;
-  float: none;
-  opacity: 0;
-  -webkit-transform: translate(0px, -29px) rotate(-40deg);
-  -ms-transform: translate(0px, -29px) rotate(-40deg);
-  transform: translate(0px, -29px) rotate(-40deg);
-  -webkit-transition: all 648ms ease;
-  transition: all 648ms ease;
+.link-hamburger {
+  text-decoration: none;
 }
 .topmenu {
   min-height: 4rem;
@@ -1172,7 +1499,13 @@ p {
   max-height: 1px;
   min-height: 1px;
 }
+.vestingsvaart {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  text-shadow: black 1px 1px 1px;
+}
 .vestingsvaart.editable {
+  padding-top: 0rem;
   text-shadow: black 1px 1px 1px;
 }
 .home-sub-header {
@@ -1233,11 +1566,6 @@ p {
   padding-top: 4rem;
   text-align: center;
 }
-.div-prijslijst-pagina {
-  padding-top: 2rem;
-  text-align: left;
-  text-shadow: none;
-}
 .heading-pagina-prijslijst {
   color: #189bce;
   text-align: center;
@@ -1260,6 +1588,11 @@ p {
 .footer-heading4 {
   padding-top: 1rem;
   padding-bottom: 2rem;
+  font-weight: 500;
+}
+.flex-row {
+  opacity: 1;
+  font-family: Roboto, sans-serif;
 }
 .close-div {
   position: static;
@@ -1267,17 +1600,256 @@ p {
   right: 0px;
   bottom: 0px;
   z-index: 3;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 }
-.info-image {
-  opacity: 1;
+.flex-cont {
+  padding-bottom: 4rem;
+  background-color: #189bce;
 }
-html.w-mod-js *[data-ix="new-interaction"] {
+.form-heusden-modal {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1200;
+  display: none;
+  width: 100%;
+  padding-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.29);
+  opacity: 0.99;
+}
+.checkbox-de-luxe {
+  padding-left: 2rem;
+}
+.label-de-luxe {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 500;
+}
+.label-de-luxe.black {
+  color: black;
+}
+.heusden {
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+.modal-boeken-overall {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3000;
+  display: none;
+  padding-top: 7rem;
+  background-color: rgba(0, 0, 0, 0.49);
+}
+.modal-contact {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  display: none;
+  padding-top: 7rem;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+.mail-link {
+  text-decoration: none;
+}
+.span-titel-programma {
+  color: black;
+}
+.container-arrangement {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.open-door {
+  background-color: white;
+}
+.erover {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  right: 0px;
+  z-index: 1;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #189bce;
+}
+.erover-tekst {
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 1em;
+  font-weight: 200;
+}
+.image-card {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.wrapper-image-card {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-height: 11rem;
+  min-height: 11rem;
+  background-image: url('../images/JB op de Maas_2.jpg');
+  background-position: 50% 47%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper-image-card.admiraal-image {
+  background-image: url('../images/OD Brug - overzicht.JPG');
+}
+.wrapper-image-card.bourgondisch {
+  background-image: url('../images/De Eeterij Restaurant .jpg');
+}
+.wrapper-image-card.den-bosch {
+  background-image: url('../images/Ontdek DB.JPG');
+}
+.wrapper-image-card.bossche-bollen {
+  background-image: url('../images/BB - Maken_1.JPG');
+}
+.wrapper-image-card.casiono {
+  background-image: url('../images/Casino - Foto 2.jpg');
+}
+.link-card {
+  text-decoration: none;
+}
+.meer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 15;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  border-top: 1px solid rgba(24, 155, 206, 0.45);
+  background-color: white;
+  opacity: 0.99;
+  font-family: Roboto, sans-serif;
+  color: #189bce;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+.meer:hover {
+  background-color: #189bce;
+  opacity: 1;
+  color: white;
+}
+.meer:active {
+  opacity: 0.99;
+  color: white;
+}
+.close {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9;
+  overflow-x: visible;
+  overflow-y: visible;
+  width: 100%;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: #189bce;
   opacity: 0;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+.close:hover {
+  bottom: -1px;
+  z-index: 11;
+  opacity: 0.99;
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+.section-overview-columns {
+  background-color: rgba(238, 132, 52, 0);
+}
+.row {
+  height: 100%;
+  padding: 2rem 0.5rem;
+}
+.row-item-center-blue {
+  background-color: #189bce;
+}
+.column-center-middle {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0.5rem;
+  background-color: transparent;
+}
+.hidden-information {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 1rem 1.5rem;
+  background-color: rgba(24, 155, 206, 0.8);
+  opacity: 0;
+}
+.para-hidden-explanation {
+  position: relative;
+  display: block;
   height: 0px;
-  -webkit-transform: scale(0.29);
-  -ms-transform: scale(0.29);
-  transform: scale(0.29);
+  margin-bottom: 0px;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+}
+.basic-text-block {
+  padding: 0.5rem;
+}
+.row-item-left-aligned {
+  display: none;
+  background-color: #189bce;
+}
+.row-2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 2rem 0.5rem;
+  background-color: transparent;
+  opacity: 0;
+}
+.span {
+  font-family: Icomoon, sans-serif;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+.test {
+  font-family: Icomoon, sans-serif;
+}
+.span-tussenkopje {
+  font-weight: 500;
+}
+.telefoon-link {
+  text-align: center;
+  text-decoration: none;
 }
 html.w-mod-js *[data-ix="intro-header-homepage"] {
   opacity: 0;
@@ -1303,22 +1875,45 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   p {
     float: none;
     text-align: center;
+    text-shadow: none;
   }
   .button.alt-boot.altfooter {
     padding: 0.3rem 2rem;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.5em;
   }
-  .button.white.editable {
+  .button.boten-blue {
+    text-shadow: none;
+  }
+  .button.boten-blue:hover {
+    background-color: rgba(255, 255, 255, 0.09);
+    text-shadow: none;
+  }
+  .button.vaart-pagina:hover {
+    text-shadow: none;
+  }
+  .button.vaart-pagina.modal-open-button.vaart-pagina {
+    text-shadow: none;
+  }
+  .button.vaart-pagina.modal-open-button.vaart-pagina:hover {
+    background-color: rgba(24, 155, 206, 0.09);
     text-shadow: none;
   }
   .section-top.alt-boot-ouade-dirk {
     max-height: 30rem;
   }
   .section-top.alt-vaart {
-    max-height: 24rem;
+    max-height: 30rem;
+  }
+  .section-top.alt-vaart.wijnproeven {
+    background-position: 50% 96%;
+  }
+  .section-top.alt-oliemolensingel {
+    max-height: 30rem;
+    min-height: 30rem;
   }
   .section-top.homepage {
-    min-height: 31rem;
+    min-height: 30rem;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 68%), url('../images/Den_Bosch_home_1.jpg');
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 68%), url('../images/Den_Bosch_home_1.jpg');
     background-position: 0% 0%, 28% 50%;
@@ -1331,36 +1926,45 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 2rem;
   }
   .div-top.alt-homepage {
-    padding-top: 9rem;
+    padding-top: 7rem;
     padding-right: 2rem;
-  }
-  .div-top.arrangementen {
-    text-shadow: none;
+    padding-left: 2rem;
   }
   .div-top.vaarten {
+    height: 30rem;
+    max-height: 30rem;
+    min-height: 30rem;
+    padding-top: 14rem;
+    padding-left: 1.5rem;
+  }
+  .div-top.boten {
+    height: 30rem;
+    max-height: 30rem;
+    min-height: 30rem;
     padding-top: 16rem;
+    padding-left: 1.5rem;
+  }
+  .div-top.opstapplek {
+    height: 30rem;
+    max-height: 30rem;
+    min-height: 30rem;
+    padding-left: 1.5rem;
   }
   .column-top-left {
-    padding-left: 2rem;
+    padding-left: 0rem;
   }
   .column-top-right {
     margin-top: 0rem;
     padding-right: 0rem;
     padding-left: 0rem;
-    text-shadow: none;
-  }
-  .blue-background-text-div {
-    text-shadow: none;
   }
   .button-menu.w--open {
     padding-left: 2rem;
   }
   .nav-menu {
-    width: 30%;
-    max-width: 35%;
-    min-width: 35%;
+    width: 40%;
     padding-bottom: 0rem;
-    padding-left: 1rem;
+    padding-left: 0rem;
     text-align: left;
   }
   .nav-link {
@@ -1383,6 +1987,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .image-event-1 {
+    text-shadow: none;
+  }
   .alt-blue {
     padding-right: 1rem;
     text-align: center;
@@ -1390,13 +1997,17 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .alt-blue.footer {
     padding-right: 1rem;
     padding-left: 1rem;
+    font-size: 1.1em;
     text-align: center;
   }
-  .alt-blue.editable {
-    padding-right: 2rem;
+  .div-button-event-1 {
+    text-shadow: none;
   }
   .div-button-event-1.alt-homepage {
     padding-bottom: 0rem;
+  }
+  .div-button-event-1.arrangement {
+    text-shadow: none;
   }
   .div-events-text {
     float: none;
@@ -1418,20 +2029,19 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .tochten-column-left {
     min-height: 40rem;
-    padding-top: 1rem;
-    padding-bottom: 0px;
+    padding: 1rem 0rem 0px;
   }
   .left-row {
     min-height: 9rem;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 1.5rem;
+    padding-left: 0.5rem;
   }
   .left-row.alt-last {
     padding-top: 1.5rem;
   }
   .tochten-text-right {
-    padding: 0rem 1rem 1rem;
+    padding: 0rem 0rem 1rem 1rem;
   }
   .tochten-paragraph {
     margin-bottom: 0px;
@@ -1478,27 +2088,29 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     margin-top: auto;
     border-bottom-style: none;
   }
-  .homepage-header.editable {
-    line-height: 1.2em;
+  .homepage-header {
+    font-size: 3.9em;
   }
   .blue-boot-column {
-    height: auto;
     text-shadow: none;
   }
   .boten-blue-image-column {
-    height: auto;
     padding-bottom: 1rem;
     text-shadow: none;
   }
   .column-section-vaart1 {
-    padding: 1rem;
+    padding: 1rem 0rem 2rem;
     text-shadow: none;
   }
   .vaart-pagina-heading {
     padding-top: 1rem;
-    padding-right: 1rem;
-    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
     text-align: left;
+    text-shadow: none;
+  }
+  .vaart-pagina-heading.alt-opstapplek {
+    padding-left: 1.5rem;
     text-shadow: none;
   }
   .vaart-pagina-heading.alt-opstapplek.editable {
@@ -1510,8 +2122,8 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0rem;
   }
   .vaart-pagina-para.alt-zwart {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1.5rem;
     text-shadow: none;
   }
   .vaart-pagina-para.alt-location.editable {
@@ -1523,6 +2135,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-right: 1rem;
     font-size: 0.9em;
     line-height: 1.6em;
+    text-shadow: none;
+  }
+  .div-column-boot {
+    text-shadow: none;
   }
   .event-par {
     font-size: 1em;
@@ -1535,13 +2151,27 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-bottom: 0rem;
     padding-left: 0.4rem;
   }
+  .location-row.boten {
+    padding-bottom: 1rem;
+  }
+  .location-row.arrangementen {
+    padding-bottom: 1rem;
+    padding-left: 0.4rem;
+  }
+  .image-boot-od {
+    text-shadow: none;
+  }
   .div-text {
     max-width: 100%;
+    padding-left: 0rem;
     text-shadow: none;
   }
   .opstapplek-basic-row {
     padding-bottom: 0rem;
     text-align: left;
+  }
+  .column-left-opstapplek {
+    text-shadow: none;
   }
   .div-opstapplek-right-top-blue {
     padding-left: 1rem;
@@ -1554,6 +2184,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-align: left;
   }
   .alt-opstapplek.editable {
+    padding-left: 1.5rem;
     text-shadow: none;
   }
   .lightbox-div {
@@ -1607,37 +2238,41 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 1rem;
     text-align: left;
   }
-  .titel-arrangementen-blok {
-    padding-left: 1rem;
-  }
   .arrangementen-para {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     text-align: left;
+    text-shadow: none;
   }
   .arrangementen-para.editable {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1em;
     text-shadow: none;
+  }
+  .arrangementen-para.card-overview {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    font-size: 1.5em;
+    text-shadow: none;
+  }
+  .arrangementen-para.card-overview.subtitel {
+    font-size: 1.3em;
+    text-shadow: none;
+  }
+  .paragraph-arragmenten-div {
+    padding-top: 1rem;
+    text-shadow: none;
+  }
+  .div-but-arr {
+    margin-top: auto;
   }
   .text-arr-blue-right {
     text-shadow: none;
   }
-  .arr-pag-white {
-    text-align: left;
-  }
-  .arr-pag-white.editable {
-    text-shadow: none;
-  }
-  .image-example-arrangementen.image-4 {
-    margin-right: 1rem;
-  }
-  .image-example-arrangementen.image-3 {
-    margin-right: 1rem;
-  }
-  .image-example-arrangementen.image2 {
-    margin-right: 1rem;
-  }
-  .image-example-arrangementen.image1 {
-    margin-right: 1rem;
+  .image-hamberger {
+    left: 30px;
+    top: 19px;
   }
   .left-row-first {
     display: block;
@@ -1646,7 +2281,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     margin-left: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 0rem;
-    padding-left: 1.5rem;
+    padding-left: 0.5rem;
   }
   .tochten-row-first {
     padding: 0rem;
@@ -1663,12 +2298,16 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .contact-heading-white {
     font-size: 1.8em;
+    text-shadow: none;
   }
   .text-label-form.let-op-text {
     text-align: center;
   }
   .text-menu-item {
     margin-left: 1rem;
+  }
+  .vestingsvaart {
+    padding-bottom: 1rem;
   }
   .prijslijst-heading {
     text-align: center;
@@ -1701,10 +2340,31 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-align: left;
   }
   .footer-heading4 {
-    font-size: 1.2em;
+    font-size: 1.3em;
+  }
+  .flex-row {
+    box-shadow: none;
+  }
+  .close-div {
+    display: block;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
   }
   .video {
     text-shadow: none;
+  }
+  .flex-cont {
+    padding-bottom: 4rem;
+  }
+  .modal-boeken-overall {
+    display: none;
+  }
+  .modal-contact {
+    display: none;
+  }
+  .container-arrangement {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 @media (max-width: 767px) {
@@ -1738,6 +2398,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 1rem;
     color: #189bce;
     font-size: 1.5em;
+    text-shadow: none;
   }
   .button.events:hover {
     color: #189bce;
@@ -1746,17 +2407,38 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .button.boten-blue {
     font-size: 0.9em;
   }
-  .button.white {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    font-size: 0.8em;
+  .button.vaart-pagina:hover {
+    text-shadow: none;
   }
   .section-top {
     max-height: 21rem;
     background-position: 28% 75%;
   }
   .section-top.alt-boot-ouade-dirk {
-    max-height: 19rem;
+    max-height: 18rem;
+    min-height: 18rem;
+    background-position: 28% -22%;
+  }
+  .section-top.alt-boot-ouade-dirk.alt-arrangement-detail {
+    max-height: 20rem;
+    min-height: 20rem;
+  }
+  .section-top.alt-boot-ouade-dirk.alt-arrangement-detail.admiraal-arr {
+    background-position: 50% -62px;
+  }
+  .section-top.alt-boot-ouade-dirk.alt-arrangement-detail.bossche-bollen-arr {
+    background-position: 28% 87%;
+  }
+  .section-top.alt-boot-ouade-dirk.dagtocht-heusden {
+    background-position: 28% -49%;
+  }
+  .section-top.alt-boot-ouade-dirk.maxima {
+    background-position: 28% 10%;
+  }
+  .section-top.alt-boot-ouade-dirk.fleur {
+    max-height: 20rem;
+    min-height: 20rem;
+    background-position: 28% 58%;
   }
   .section-top.alt-vaart {
     max-height: 20rem;
@@ -1765,8 +2447,16 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     background-size: cover;
     background-attachment: scroll;
   }
+  .section-top.alt-vaart.wijnproeven {
+    background-position: 10% 47%;
+  }
+  .section-top.alt-oliemolensingel {
+    max-height: 20rem;
+    min-height: 20rem;
+  }
   .section-top.homepage {
-    min-height: 18rem;
+    max-height: 17rem;
+    min-height: 17rem;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 84%), url('../images/Den_Bosch_home_1.jpg');
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 84%), url('../images/Den_Bosch_home_1.jpg');
     background-position: 28% 75%, 0px 50%;
@@ -1778,28 +2468,63 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 9rem;
   }
   .div-top.alt-homepage {
-    height: 17rem;
+    height: 15rem;
     max-height: 17rem;
-    min-height: 17rem;
+    min-height: 15rem;
     padding-top: 11rem;
     padding-left: 2rem;
   }
-  .div-top.arrangementen {
-    padding-top: 11rem;
-    text-shadow: none;
-  }
   .div-top.vaarten {
-    padding-top: 8rem;
+    height: 20rem;
+    max-height: 20rem;
+    min-height: 20rem;
+    padding-top: 7rem;
   }
   .div-top.boten {
+    height: 18rem;
+    max-height: 18rem;
+    min-height: 18rem;
+    padding-top: 11rem;
+    padding-left: 1rem;
+  }
+  .div-top.boten.ammerzoden {
+    height: 18rem;
+    max-height: 18rem;
+    min-height: 18rem;
+    padding-top: 10rem;
+  }
+  .div-top.boten.alt-oude-dirk {
     padding-top: 8rem;
   }
+  .div-top.boten.admiraal-arr {
+    padding-top: 11rem;
+  }
+  .div-top.boten.bossche-bollen-arr {
+    height: 20rem;
+    max-height: 20rem;
+    min-height: 20rem;
+    padding-top: 11rem;
+  }
+  .div-top.boten.maximakanaal {
+    height: 18rem;
+    max-height: 18rem;
+    min-height: 18rem;
+    padding-top: 9rem;
+  }
+  .div-top.boten.bommerlaarwaard {
+    padding-top: 9rem;
+  }
+  .div-top.opstapplek {
+    padding-top: 10rem;
+  }
   .column-top-left {
+    padding-left: 1rem;
+  }
+  .column-top-left.opstapplek {
     padding-left: 0rem;
   }
   .column-top-right {
     padding-left: 6rem;
-    text-shadow: none;
   }
   .button-menu.w--open {
     background-color: rgba(24, 155, 206, 0.2);
@@ -1808,40 +2533,51 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
-    padding-left: 1rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
   }
   .nav-link {
     margin-left: 1.5rem;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .nav-link:hover {
     color: rgba(255, 255, 255, 0.74);
   }
   .nav-link.w--current {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .nav-link.intend {
-    max-width: 29rem;
-    font-size: 1em;
+    max-width: 17rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.3em;
   }
   .nav-link.intend.w--current {
     max-width: 29rem;
+    font-size: 1.3em;
   }
   .nav-link.bold {
-    font-size: 1.2em;
+    max-width: 17rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4em;
+  }
+  .nav-link.bold.home {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .nav-link.bold.home.w--current {
     margin-left: 1.5rem;
+    font-size: 1.4em;
   }
   .section-events {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
   .image-event-1 {
-    min-width: 14rem;
-    padding-top: 3rem;
     padding-right: 0rem;
     padding-left: 0rem;
+    text-shadow: none;
   }
   .image-event-1.first {
     padding-top: 1rem;
@@ -1849,6 +2585,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .alt-blue {
     margin-bottom: 0px;
     padding-right: 0.5rem;
+    font-size: 1.1em;
     text-align: center;
   }
   .alt-blue.footer {
@@ -1859,6 +2596,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .div-button-event-1 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    text-shadow: none;
+  }
+  .div-button-event-1.arrangement {
+    text-shadow: none;
   }
   .div-events-text.boten-blue {
     padding-right: 0rem;
@@ -1873,6 +2614,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .boot-jeronimus.alt-fleur {
     max-height: 21rem;
     padding: 1px;
+  }
+  .div-button-boot {
+    padding-bottom: 0rem;
   }
   .section-populaire-tochten {
     padding-top: 0rem;
@@ -1890,7 +2634,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0rem;
   }
   .tochten-text-right {
-    padding: 2rem 0rem 1rem;
+    padding: 0rem 0rem 1rem;
   }
   .tochten-paragraph {
     padding-left: 0.8rem;
@@ -1923,8 +2667,8 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .image-tochten-rond {
     display: block;
-    max-width: 14rem;
-    min-width: 14rem;
+    max-width: 9rem;
+    min-width: 9rem;
   }
   .div-menu {
     padding-left: 0.5rem;
@@ -1941,22 +2685,29 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     font-size: 2.6em;
   }
   .blue-boot-column {
-    height: auto;
+    text-shadow: none;
+  }
+  .boten-blue-image-column {
     text-shadow: none;
   }
   .column-section-vaart1 {
-    padding: 1rem 1rem 0rem;
+    padding: 1rem 0rem 2rem;
     text-shadow: none;
   }
   .vaart-pagina-heading {
-    padding-top: 1rem;
-    padding-right: 1rem;
-    padding-left: 2rem;
+    padding: 0rem 1rem 0rem 2rem;
     font-size: 1.4em;
+    text-shadow: none;
+  }
+  .vaart-pagina-heading.alt-opstapplek {
+    font-size: 2.2em;
     text-shadow: none;
   }
   .vaart-pagina-heading.alt-opstapplek.editable {
     font-size: 2.2em;
+    text-shadow: none;
+  }
+  .vaart-pagina-heading.dagtocht {
     text-shadow: none;
   }
   .vaart-pagina-para {
@@ -1966,7 +2717,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .vaart-pagina-para.alt-zwart {
     padding-right: 2rem;
     padding-left: 2rem;
-    font-size: 0.9em;
+    font-size: 1.1em;
     text-shadow: none;
   }
   .vaart-pagina-para.alt-location {
@@ -1974,6 +2725,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0rem;
     font-size: 1em;
     text-align: center;
+    text-shadow: none;
   }
   .vaart-pagina-para.alt-location.editable {
     text-shadow: none;
@@ -1989,45 +2741,66 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-shadow: none;
   }
   .vaart-pagina-para.editable {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-shadow: none;
+  }
+  .vaart-pagina-para.alt-white {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.1em;
+    text-shadow: none;
+  }
+  .div-column-boot {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-shadow: none;
   }
   .event-par {
     font-size: 1.2em;
   }
   .vaartpagina-heading2 {
-    font-size: 1.8em;
+    font-size: 2em;
+    text-shadow: none;
+  }
+  .div-heading-vaart {
     text-shadow: none;
   }
   .bleu-vaart-column {
     padding-left: 0rem;
   }
-  .bleu-vaart-column.alt-arrangementen {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
   .div-location {
     padding-bottom: 1rem;
     text-align: center;
   }
-  .div-location.div-personen {
-    padding-right: 2rem;
-    padding-bottom: 0rem;
-    padding-left: 2rem;
-  }
   .location-row {
-    width: 33%;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
   }
   .location-row.boten {
     width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+  }
+  .location-row.arrangementen {
+    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 0rem;
+  }
+  .location-row.arrangementen.overveiw {
+    padding-bottom: 2rem;
   }
   .image-boot-od {
-    max-width: 7rem;
+    max-width: 12rem;
+    min-height: 12rem;
+    min-width: 12rem;
+    text-shadow: none;
   }
   .div-text {
+    padding-right: 0rem;
     text-shadow: none;
   }
   .opstapplek-basic-row {
@@ -2041,6 +2814,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .alt-opstapplek.editable {
     text-shadow: none;
+  }
+  .image-round {
+    border-radius: 124px;
   }
   .mobile-section-blue-description {
     background-color: #189bce;
@@ -2085,6 +2861,11 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     min-height: 6rem;
     min-width: 6rem;
   }
+  .white-line-blue-boeking.vestingvaart {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.49);
+  }
   .lightbox-video-top-image {
     padding-top: 0rem;
     text-shadow: none;
@@ -2116,78 +2897,57 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .link-div-titel {
     font-size: 1em;
   }
-  .arrangementen-column-right {
-    padding-bottom: 1.4rem;
-  }
   .invisable-para {
     display: block;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
     text-align: left;
   }
-  .row-arrngement-test {
-    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 3px 0px;
-  }
-  .titel-arrangementen-blok {
-    font-size: 1.4em;
-  }
-  .titel-arrangementen-blok.editable {
-    line-height: 2em;
+  .arrangementen-para {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1em;
     text-shadow: none;
   }
-  .arrangementen-para {
-    font-size: 1em;
-  }
   .arrangementen-para.editable {
+    font-size: 1.1em;
     text-shadow: none;
   }
   .paragraph-arragmenten-div {
     text-shadow: none;
   }
+  .column-arrangementren {
+    margin-right: 0rem;
+    background-color: white;
+  }
   .div-but-arr {
-    text-shadow: none;
+    margin-top: auto;
   }
   .text-arr-blue-right {
-    font-size: 0.8em;
+    padding-top: 0rem;
+    padding-left: 0rem;
     text-shadow: none;
   }
-  .arr-pag-white {
-    font-size: 1em;
-    text-align: left;
-  }
-  .arr-pag-white.editable {
-    margin-top: auto;
-    padding-top: 0.4rem;
-    font-size: 1.2em;
-    text-align: center;
-    text-shadow: none;
-  }
-  .social {
-    padding-right: 2rem;
-  }
-  .link-arra-emty {
-    text-shadow: none;
-  }
-  .image-example-arrangementen.image-4 {
-    margin-right: 0.7rem;
-  }
-  .image-example-arrangementen.image-3 {
-    margin-right: 0.7rem;
-  }
-  .image-example-arrangementen.image2 {
-    margin-right: 0.7rem;
-  }
-  .image-example-arrangementen.image1 {
-    margin-right: 0.7rem;
+  .image-hamberger {
+    left: 27px;
+    top: 20px;
   }
   .rondvaarteen {
     font-size: 2em;
+  }
+  .normal-text-para {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .footer-column {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+  .footer-row {
+    padding-bottom: 2rem;
+  }
   .left-row-first {
+    min-height: 0rem;
     padding-right: 0rem;
     padding-bottom: 1rem;
     padding-left: 0rem;
@@ -2228,21 +2988,25 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     font-size: 1.5em;
     text-shadow: none;
   }
-  .cont-arr {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
   .text-label-form.let-op-text {
     text-align: center;
   }
   .text-menu-item {
-    font-size: 1.2em;
+    max-width: 17rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4em;
   }
   .white-line {
     max-height: 1px;
     margin-right: 1rem;
     margin-left: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+  }
+  .vestingsvaart {
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
   }
   .vestingsvaart.editable {
     font-weight: 300;
@@ -2270,6 +3034,8 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-shadow: none;
   }
   .heading-pagina-prijslijst {
+    padding-top: 2rem;
+    line-height: 1.4em;
     text-shadow: none;
   }
   .heading-item-prijslijst {
@@ -2291,15 +3057,44 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .footer-heading4 {
     font-size: 1.6em;
   }
+  .flex-row {
+    box-shadow: none;
+  }
+  .close-div {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
   .video {
     text-shadow: none;
+  }
+  .form-heusden-modal {
+    opacity: 1;
+  }
+  .heusden.dagtocht-heusden {
+    padding-top: 9rem;
+  }
+  .modal-boeken-overall {
+    display: none;
+  }
+  .modal-contact {
+    display: none;
+  }
+  .open-door {
+    background-color: white;
+  }
+  .image-card {
+    width: 100%;
+  }
+  .wrapper-image-card {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 11rem;
   }
 }
 @media (max-width: 479px) {
   h1 {
     color: white;
     font-size: 3em;
-    text-shadow: none;
   }
   h2 {
     color: white;
@@ -2318,10 +3113,14 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   p {
     text-align: center;
   }
+  .button.alt-boot {
+    font-size: 1.1em;
+  }
   .button.alt-boot.altfooter {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.4em;
   }
   .button.events {
     padding-top: 0.6rem;
@@ -2331,20 +3130,69 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .button.events:hover {
     font-size: 1.5em;
   }
+  .button.vaart-pagina {
+    text-shadow: none;
+  }
+  .button.vaart-pagina:hover {
+    text-shadow: none;
+  }
+  .button.vaart-pagina.modal-open-button.vaart-pagina {
+    text-shadow: none;
+  }
   .section-top {
     max-height: 26rem;
     background-position: 24% 72%;
   }
   .section-top.alt-boot-ouade-dirk {
-    max-height: 24rem;
-    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.29) 86%), url('../images/DSC03290.jpg');
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.29) 86%), url('../images/DSC03290.jpg');
-    background-position: 0% 0%, 39% 38%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
+    max-height: 25rem;
+    min-height: 25rem;
+  }
+  .section-top.alt-boot-ouade-dirk.alt-arrangement-detail {
+    max-height: 25rem;
+    min-height: 25rem;
+  }
+  .section-top.alt-boot-ouade-dirk.alt-arrangement-detail.admiraal-arr {
+    max-height: 25rem;
+    min-height: 25rem;
+    background-position: 50% 1px;
+  }
+  .section-top.alt-boot-ouade-dirk.alt-arrangement-detail.bourgongondisch-arr {
+    background-position: 66% 50%;
+  }
+  .section-top.alt-boot-ouade-dirk.alt-arrangement-detail.bossche-bollen-arr {
+    background-image: url('../images/BB - Maken.JPG');
+    background-position: 51% 100%;
+  }
+  .section-top.alt-boot-ouade-dirk.dagtocht-heusden {
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.29) 86%), url('../images/JB op de Maas.jpg');
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.29) 86%), url('../images/JB op de Maas.jpg');
+    background-position: 0% 0%, 65% 38%;
+  }
+  .section-top.alt-boot-ouade-dirk.maxima {
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.29) 86%), url('../images/Kade en zon.JPG');
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.29) 86%), url('../images/Kade en zon.JPG');
+    background-position: 0% 0%, 50% 50%;
+    background-attachment: scroll, scroll;
+  }
+  .section-top.alt-boot-ouade-dirk.bommelerwaard {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0) 64%), url('../images/JB op de Maas.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0) 64%), url('../images/JB op de Maas.jpg');
+  }
+  .section-top.alt-boot-ouade-dirk.jeronimus {
+    background-image: url('../images/JB op de Maas.jpg'), none;
+    background-position: 0% 0%, 0% 0%;
+    background-size: cover, auto;
+    background-repeat: repeat, repeat;
+    background-attachment: scroll, scroll;
+  }
+  .section-top.alt-boot-ouade-dirk.fleur {
+    max-height: 25rem;
+    min-height: 25rem;
+    background-position: 72% 0px;
   }
   .section-top.alt-vaart {
-    max-height: 24rem;
+    max-height: 25rem;
+    min-height: 25rem;
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.38) 72%), url('../images/boot-oude dirk_front.jpg');
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.38) 72%), url('../images/boot-oude dirk_front.jpg');
     background-position: 0% 0%, 50% 9%;
@@ -2352,7 +3200,18 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, scroll;
   }
+  .section-top.alt-vaart.pannenkoeken {
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.38) 72%), url('../images/Pannenkoekenboot - Eten.JPG');
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.38) 72%), url('../images/Pannenkoekenboot - Eten.JPG');
+  }
+  .section-top.alt-vaart.wijnproeven {
+    background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.38) 72%), url('../images/OD Varen.JPG');
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.38) 72%), url('../images/OD Varen.JPG');
+    background-position: 0% 0%, 31% 3%;
+  }
   .section-top.alt-oliemolensingel {
+    max-height: 25rem;
+    min-height: 25rem;
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.27) 69%), url('../images/Oliemolensingel.jpg');
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.27) 69%), url('../images/Oliemolensingel.jpg');
     background-position: 0% 0%, 24% 72%;
@@ -2361,6 +3220,8 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     background-attachment: scroll, scroll;
   }
   .section-top.homepage {
+    max-height: 20rem;
+    min-height: 20rem;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 81%), url('../images/Den_Bosch_home_1.jpg');
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.29) 81%), url('../images/Den_Bosch_home_1.jpg');
     background-position: 24% 72%, -104px 50%;
@@ -2376,32 +3237,83 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 1rem;
   }
   .div-top.alt-homepage {
-    height: 16rem;
+    height: 17rem;
     max-height: 17rem;
     min-height: 17rem;
     padding-top: 12rem;
     padding-right: 1rem;
     padding-left: 1rem;
   }
-  .div-top.arrangementen {
-    text-shadow: none;
+  .div-top.vaarten {
+    height: 25rem;
+    max-height: 25rem;
+    min-height: 25rem;
+    padding-top: 10rem;
+    padding-left: 1rem;
+  }
+  .div-top.vaarten.alt-wijn {
+    padding-top: 8rem;
   }
   .div-top.boten {
+    height: 25rem;
+    max-height: 25rem;
+    min-height: 25rem;
+    padding-top: 15rem;
+    padding-right: 0rem;
+    padding-left: 0px;
+    text-shadow: none;
+  }
+  .div-top.boten.ammerzoden {
+    height: 25rem;
+    max-height: 25rem;
+    min-height: 25rem;
     padding-top: 8rem;
     text-shadow: none;
   }
-  .div-top.opstapplek {
+  .div-top.boten.alt-oude-dirk {
+    background-image: url('../images/OD - Kop.JPG');
+    background-position: 50% 50%;
+    text-shadow: none;
+  }
+  .div-top.boten.admiraal-arr {
+    padding-top: 12rem;
+    text-shadow: none;
+  }
+  .div-top.boten.bossche-bollen-arr {
+    padding-top: 12rem;
+    text-shadow: none;
+  }
+  .div-top.boten.heusden-arr {
     padding-top: 10rem;
+    text-shadow: none;
+  }
+  .div-top.boten.bourgondisch-arr {
+    padding-top: 10rem;
+    text-shadow: none;
+  }
+  .div-top.boten.maximakanaal {
+    padding-top: 14rem;
+    text-shadow: none;
+  }
+  .div-top.boten.bommerlaarwaard {
+    padding-top: 12rem;
+    text-shadow: none;
+  }
+  .div-top.opstapplek {
+    height: 25rem;
+    max-height: 25rem;
+    min-height: 25rem;
+    padding-top: 15rem;
     font-size: 1em;
   }
   .column-top-left {
     padding-top: 0rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    text-shadow: none;
   }
   .column-top-right {
     padding-left: 7rem;
-    text-shadow: none;
   }
   .wolthuis-logo {
     text-shadow: none;
@@ -2414,7 +3326,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     background-color: rgba(24, 155, 206, 0.2);
   }
   .nav-menu {
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
   .nav-link {
     margin-right: 0rem;
@@ -2450,7 +3362,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     color: rgba(255, 255, 255, 0.61);
   }
   .nav-link.bold.home {
-    padding-top: 0rem;
+    padding-top: 1rem;
   }
   .nav-link.bold.home.w--current {
     margin-right: 0rem;
@@ -2467,20 +3379,32 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 2rem;
     padding-bottom: 0rem;
     text-align: center;
+    text-shadow: none;
   }
   .alt-blue {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
   }
   .alt-blue.footer {
     margin-bottom: 0px;
     padding-bottom: 1rem;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
   }
   .alt-blue.boten {
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+  .div-button-event-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-shadow: none;
+  }
+  .div-button-event-1.alt-homepage {
+    text-shadow: none;
+  }
+  .div-button-event-1.arrangement {
+    text-shadow: none;
   }
   .div-events-text {
     padding-top: 1rem;
@@ -2525,7 +3449,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     margin-left: 0rem;
   }
   .tochten-text-right {
-    padding: 0rem 0rem 3rem;
+    padding: 0rem 0rem 1rem;
     text-shadow: none;
   }
   .tochten-paragraph {
@@ -2573,22 +3497,26 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     line-height: 1.3em;
     text-align: center;
   }
-  .homepage-header.editable {
-    font-size: 2em;
-    text-shadow: none;
-  }
   .blue-boot-column {
     height: auto;
     text-shadow: none;
   }
+  .boten-blue-image-column {
+    text-shadow: none;
+  }
+  .column-section-vaart2 {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
   .column-section-vaart1 {
-    padding-right: 0.5rem;
-    padding-bottom: 1rem;
-    padding-left: 0.5rem;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
     text-shadow: none;
   }
   .vaart-pagina-heading {
-    padding-right: 0.4rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
     padding-left: 1rem;
     font-size: 1.8em;
     text-align: center;
@@ -2608,8 +3536,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 1rem;
   }
   .vaart-pagina-para.alt-zwart {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
     padding-left: 1rem;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
     text-shadow: none;
   }
@@ -2618,6 +3548,12 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0rem;
     font-size: 1.1em;
     text-align: center;
+    text-shadow: none;
+  }
+  .vaart-pagina-para.alt-location.editable {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-shadow: none;
   }
   .vaart-pagina-para.alt-money {
     padding-right: 1rem;
@@ -2628,6 +3564,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .vaart-pagina-para.alt-money.editable {
     font-size: 1.1em;
     line-height: 1.6em;
+    text-shadow: none;
+  }
+  .div-column-boot {
     text-shadow: none;
   }
   .event-par {
@@ -2641,26 +3580,39 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .bleu-vaart-column {
     padding-left: 0rem;
   }
-  .bleu-vaart-column.alt-arrangementen {
-    padding-bottom: 0rem;
-  }
   .div-location {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
-    text-shadow: none;
-  }
-  .div-location.div-personen {
-    padding-right: 5rem;
-    padding-left: 5rem;
     text-shadow: none;
   }
   .location-row {
     width: 100%;
-    padding: 0rem;
+    padding: 2rem 0rem;
+  }
+  .location-row.boten {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .location-row.arrangementen {
+    width: 100%;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-shadow: none;
+  }
+  .location-row.arrangementen.overveiw {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-shadow: none;
   }
   .image-boot-od {
     max-width: 10rem;
+    min-height: 10rem;
+    min-width: 10rem;
+    text-shadow: none;
   }
   .div-text {
+    padding-right: 0rem;
     text-shadow: none;
   }
   .opstapplek-basic-row {
@@ -2676,7 +3628,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .alt-opstapplek.editable {
     padding-right: 1rem;
     padding-left: 1rem;
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
     text-shadow: none;
   }
@@ -2710,6 +3662,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     border-bottom: 1px solid rgba(255, 255, 255, 0.49);
     text-shadow: none;
   }
+  .white-line-blue-boeking.vestingvaart {
+    text-shadow: none;
+  }
   .span-small-characters {
     font-size: 0.8em;
   }
@@ -2738,42 +3693,42 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding: 3rem;
     text-shadow: none;
   }
-  .arrangementen-column-right {
-    padding-bottom: 1rem;
-  }
   .invisable-para {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     float: right;
     text-align: left;
   }
-  .row-arrngement-test {
-    padding-bottom: 2px;
-  }
-  .titel-arrangementen-blok.editable {
+  .arrangementen-para {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
     text-shadow: none;
   }
   .arrangementen-para.editable {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.1em;
+    text-align: center;
+    text-shadow: none;
+  }
+  .paragraph-arragmenten-div {
     text-shadow: none;
   }
   .div-but-arr {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .div-but-arr.alt-overview:hover {
     text-shadow: none;
   }
   .text-arr-blue-right {
     font-size: 1em;
     text-shadow: none;
   }
-  .arr-pag-white {
-    text-align: center;
-  }
-  .arr-pag-white.editable {
-    text-shadow: none;
-  }
-  .social {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-right: 1rem;
-    padding-left: 1rem;
+  .image-hamberger {
+    left: 18px;
+    top: 20px;
   }
   .menu-text-next-hamburger {
     left: 3.7rem;
@@ -2786,9 +3741,10 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .normal-text-para {
     padding-right: 1rem;
     padding-left: 1rem;
+    font-size: 1em;
   }
   .footer-row {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   .left-row-first {
     margin-right: 0rem;
@@ -2804,7 +3760,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-shadow: none;
   }
   .tochten-second-row {
-    padding: 1rem 0rem 3px;
+    padding: 0.4rem 0rem 1rem;
     text-shadow: none;
   }
   .row-conatct {
@@ -2823,6 +3779,7 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .contact-heading-white {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+    text-shadow: none;
   }
   .text-label-form.let-op-text {
     padding-right: 1rem;
@@ -2844,9 +3801,15 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 0.4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.54);
   }
+  .vestingsvaart {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+  }
   .vestingsvaart.editable {
     margin-bottom: 0px;
-    font-weight: 300;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    font-weight: 200;
   }
   .home-sub-header.editable {
     font-weight: 300;
@@ -2873,6 +3836,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .column-top-prijslijst {
     text-shadow: none;
   }
+  .heading-pagina-prijslijst {
+    text-shadow: none;
+  }
   .heading-item-prijslijst {
     margin-top: 1px;
     padding-bottom: 0.5rem;
@@ -2882,12 +3848,45 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .heading-item-prijs-right {
     font-size: 1.3em;
   }
+  .line {
+    text-shadow: none;
+  }
   .div-naam {
     min-height: 5rem;
+  }
+  .flex-row {
+    box-shadow: none;
+    font-size: 1em;
+  }
+  .close-div {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
   }
   .video {
     text-align: center;
     text-shadow: none;
   }
+  .heusden {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    text-shadow: none;
+  }
+  .heusden.dagtocht-heusden {
+    padding-top: 13rem;
+    text-shadow: none;
+  }
+  .modal-contact {
+    display: none;
+  }
+  .link-card {
+    width: 100%;
+    text-shadow: none;
+  }
 }
 
+@font-face {
+  font-family: 'Icomoon';
+  src: url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
