@@ -274,7 +274,7 @@ p {
   right: 0px;
   min-height: 4rem;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.20) 0px 0px 5px 0px;
 }
 .wolthuis-logo {
   padding-top: 0.7rem;
@@ -535,9 +535,9 @@ p {
   min-width: 8rem;
   border-style: solid;
   border-width: 1px;
-  border-color: rgba(0, 0, 0, 0.10);
+  border-color: rgba(0, 0, 0, 0.09);
   border-radius: 136px;
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.13);
   box-shadow: rgba(0, 0, 0, 0.29) 0px 3px 10px 0px;
   -webkit-transition-delay: initial;
   transition-delay: initial;
@@ -699,7 +699,7 @@ p {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.2);
   border-radius: 136px;
-  background-color: rgba(0, 0, 0, 0.10);
+  background-color: rgba(0, 0, 0, 0.09);
   box-shadow: rgba(0, 0, 0, 0.2) 6px 16px 28px 0px;
 }
 .div-text {
@@ -1020,7 +1020,7 @@ p {
 .section-boekingen {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgba(101, 210, 252, 0.30);
+  background-color: rgba(101, 210, 252, 0.29);
 }
 .initialen-boot {
   -webkit-transform: scale(1);
@@ -1166,7 +1166,7 @@ p {
   background-size: auto;
   background-repeat: repeat;
   background-attachment: scroll;
-  box-shadow: rgba(0, 0, 0, 0.22) 0px 2px 2px 0px, rgba(0, 0, 0, 0.10) 0px 0px 2px 0px, rgba(0, 0, 0, 0.29) 0px 0px 0px 0.5px inset;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 2px 2px 0px, rgba(0, 0, 0, 0.09) 0px 0px 2px 0px, rgba(0, 0, 0, 0.29) 0px 0px 0px 0.5px inset;
   opacity: 0.99;
 }
 .div-but-arr {
@@ -1219,7 +1219,7 @@ p {
 }
 .admiraal {
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.40) 0px -2px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 3px 0px;
   text-align: justify;
 }
 .rondvaarteen {
@@ -1506,10 +1506,6 @@ p {
   padding-bottom: 1rem;
   text-shadow: black 1px 1px 1px;
 }
-.vestingsvaart.editable {
-  padding-top: 0rem;
-  text-shadow: black 1px 1px 1px;
-}
 .home-sub-header {
   text-shadow: black 1px 1px 2px;
 }
@@ -1694,10 +1690,6 @@ p {
   font-size: 1em;
   font-weight: 200;
 }
-.image-card {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
 .wrapper-image-card {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -1782,61 +1774,6 @@ p {
   opacity: 0.99;
   font-size: 1.4em;
   line-height: 1.3em;
-}
-.section-overview-columns {
-  background-color: rgba(238, 132, 52, 0);
-}
-.row {
-  height: 100%;
-  padding: 2rem 0.5rem;
-}
-.row-item-center-blue {
-  background-color: #189bce;
-}
-.column-center-middle {
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding: 0.5rem;
-  background-color: transparent;
-}
-.hidden-information {
-  display: block;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding: 1rem 1.5rem;
-  background-color: rgba(24, 155, 206, 0.8);
-  opacity: 0;
-}
-.para-hidden-explanation {
-  position: relative;
-  display: block;
-  height: 0px;
-  margin-bottom: 0px;
-  padding-right: 0rem;
-  padding-bottom: 0rem;
-  padding-left: 0rem;
-  color: white;
-  font-size: 1em;
-  font-weight: 300;
-}
-.basic-text-block {
-  padding: 0.5rem;
-}
-.row-item-left-aligned {
-  display: none;
-  background-color: #189bce;
-}
-.row-2 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding: 2rem 0.5rem;
-  background-color: transparent;
-  opacity: 0;
 }
 .span {
   font-family: Icomoon, sans-serif;
@@ -3013,9 +2950,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 0rem;
     padding-bottom: 1rem;
   }
-  .vestingsvaart.editable {
-    font-weight: 300;
-  }
   .home-sub-header.editable {
     font-weight: 300;
   }
@@ -3086,9 +3020,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .open-door {
     background-color: white;
-  }
-  .image-card {
-    width: 100%;
   }
   .wrapper-image-card {
     overflow-x: hidden;
@@ -3809,12 +3740,6 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .vestingsvaart {
     padding-top: 0rem;
     padding-bottom: 1rem;
-  }
-  .vestingsvaart.editable {
-    margin-bottom: 0px;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
-    font-weight: 200;
   }
   .home-sub-header.editable {
     font-weight: 300;
