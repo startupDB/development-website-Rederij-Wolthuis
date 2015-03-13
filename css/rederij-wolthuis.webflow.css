@@ -1239,7 +1239,8 @@ p {
 }
 .left-row-first {
   min-height: 8rem;
-  margin-right: 0rem;
+  margin-right: 0.5rem;
+    margin-left: 0.5rem;
   padding: 0.5rem 0rem 2rem 1.5rem;
   border-bottom: 1px solid #189bce;
 }
