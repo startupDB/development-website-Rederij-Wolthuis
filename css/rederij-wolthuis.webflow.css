@@ -486,7 +486,7 @@ p {
   min-height: 8rem;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 2rem 1rem 2rem 1.5rem;
+  padding: 2rem 0rem 2rem 1.5rem;
   border-bottom: 1px solid #189bce;
 }
 .left-row.alt-last {
