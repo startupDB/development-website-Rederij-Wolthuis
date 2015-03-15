@@ -2326,6 +2326,15 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  .black-text {
+    text-align: center;
+  }
+  .black-h1-arr {
+    text-align: center;
+  }
+  .header-column-arr {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   h2 {
@@ -2751,7 +2760,8 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     padding-left: 0rem;
   }
   .location-row.arrangementen.overveiw {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
   }
   .image-boot-od {
     max-width: 12rem;
@@ -3553,8 +3563,9 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
     text-shadow: none;
   }
   .location-row.arrangementen.overveiw {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
     text-shadow: none;
   }
   .image-boot-od {
@@ -3803,6 +3814,11 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   .div-home-title {
     text-shadow: none;
   }
+  .div-home-title.alt-desigm {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    text-shadow: none;
+  }
   .div-naam {
     min-height: 5rem;
   }
@@ -3832,6 +3848,14 @@ html.w-mod-js *[data-ix="intro-sub-header-home"] {
   }
   .link-card {
     width: 100%;
+    text-shadow: none;
+  }
+  .black-text {
+    font-size: 1.5em;
+    text-shadow: none;
+  }
+  .black-h1-arr {
+    font-size: 2.8em;
     text-shadow: none;
   }
 }
