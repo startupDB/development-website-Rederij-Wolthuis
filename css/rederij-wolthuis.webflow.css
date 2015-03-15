@@ -274,7 +274,7 @@ p {
   right: 0px;
   min-height: 4rem;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 5px 0px;
 }
 .wolthuis-logo {
   padding-top: 0.7rem;
@@ -306,7 +306,7 @@ p {
   position: fixed;
   z-index: 35;
   display: block;
-  width: 25%;
+  width: 29%;
   padding-top: 4rem;
   padding-right: 1rem;
   padding-left: 0rem;
@@ -537,7 +537,7 @@ p {
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.09);
   border-radius: 136px;
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.09);
   box-shadow: rgba(0, 0, 0, 0.29) 0px 3px 10px 0px;
   -webkit-transition-delay: initial;
   transition-delay: initial;
@@ -1166,7 +1166,7 @@ p {
   background-size: auto;
   background-repeat: repeat;
   background-attachment: scroll;
-  box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 2px 0px, rgba(0, 0, 0, 0.09) 0px 0px 2px 0px, rgba(0, 0, 0, 0.29) 0px 0px 0px 0.5px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px 0px, rgba(0, 0, 0, 0.09) 0px 0px 2px 0px, rgba(0, 0, 0, 0.29) 0px 0px 0px 0.5px inset;
   opacity: 0.99;
 }
 .div-but-arr {
@@ -1583,6 +1583,12 @@ p {
   font-weight: 400;
   text-align: left;
 }
+.div-home-title {
+  background-color: rgba(24, 155, 206, 0.06);
+}
+.div-home-title.alt-desigm {
+  padding-top: 6rem;
+}
 .footer-heading4 {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -1731,20 +1737,21 @@ p {
   padding-bottom: 0.6rem;
   padding-left: 1rem;
   border-top: 1px solid rgba(24, 155, 206, 0.45);
-  background-color: white;
+  background-color: #189bce;
   opacity: 0.99;
   font-family: Roboto, sans-serif;
-  color: #189bce;
+  color: white;
   font-size: 1.4em;
   line-height: 1.3em;
   font-weight: 300;
 }
 .meer:hover {
-  background-color: #189bce;
+  background-color: #0c83b3;
   opacity: 1;
   color: white;
 }
 .meer:active {
+  background-color: #189bce;
   opacity: 0.99;
   color: white;
 }
@@ -1789,6 +1796,17 @@ p {
 .telefoon-link {
   text-align: center;
   text-decoration: none;
+}
+.black-text {
+  color: #189bce;
+  font-weight: 400;
+  text-align: center;
+}
+.black-h1-arr {
+  color: #189bce;
+}
+.alternative-arr {
+  background-color: rgba(24, 155, 206, 0.05);
 }
 html.w-mod-js *[data-ix="intro-header-homepage"] {
   opacity: 0;
