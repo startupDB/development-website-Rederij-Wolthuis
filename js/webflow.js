@@ -29,8 +29,8 @@ define('navbar'   , require('./webflow-navbar'));
 define('dropdown' , require('./webflow-dropdown'));
 define('tabs'     , require('./webflow-tabs'));
 define('brand'    , require('./webflow-brand'));
-// define('edit'     , require('./webflow-edit'));
-// define('content'  , require('./webflow-content'));
+
+
 
 },{"./webflow-brand":2,"./webflow-dropdown":3,"./webflow-forms":4,"./webflow-gplus":5,"./webflow-ix":6,"./webflow-lib":7,"./webflow-lightbox":8,"./webflow-links":9,"./webflow-maps":10,"./webflow-navbar":11,"./webflow-scroll":12,"./webflow-slider":13,"./webflow-tabs":14,"./webflow-touch":15}],2:[function(require,module,exports){
 'use strict';
@@ -52,12 +52,12 @@ module.exports = function($, _) {
   // Module methods
 
   api.ready = function() {
-    var doBranding = $html.attr("data-wf-status") && location.href.match(/webflow.com|webflowtest.com/);
+    var doBranding = $html.attr("data-wf-status") && location.href.match(/webflow.com/);
 
     if (doBranding) {
       var $branding = $('<div></div>');
       var $link = $('<a></a>');
-      $link.attr('href', 'http://webflow.com');
+      $link.attr('href', 'http://webflow.com?utm_campaign=brandjs');
 
       $branding.css({
         position: 'fixed',
@@ -430,9 +430,9 @@ module.exports = function($, _) {
   function getStatus(field, name, value) {
     var status = null;
     if (!field.attr('required')) return null;
-    if (!value) status = 'Please fill out the required field: ' + name;
+    if (!value) status = 'Vult u a.u.b. de verplichte velden in:' + name;
     else if (emailField.test(name) || emailField.test(field.attr('type'))) {
-      if (!emailValue.test(value)) status = 'Please enter a valid email address for: ' + name;
+      if (!emailValue.test(value)) status = 'Graag een geldig emailadres invulen:' + name;
     }
     return status;
   }
@@ -571,7 +571,7 @@ module.exports = function($, _) {
   }
 
   var disconnected = _.debounce(function() {
-    alert('Oops! This page has a form that is powered by Webflow, but important code was removed that is required to make the form work. Please contact support@webflow.com to fix this issue.');
+    alert('Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.');
   }, 100);
 
   // Export module
@@ -2515,7 +2515,7 @@ module.exports = function($, _) {
     // Close menu when tapped outside, debounced to wait for state
     return _.debounce(function(evt) {
       if (!data.open) return;
-      var menu = $(evt.target).closest('.w-nav-menu');
+      //var menu = $(evt.target).closest('.w-nav-menu');
       if (!data.menu.is(menu)) {
         close(data);
       }
@@ -4000,7 +4000,7 @@ module.exports=function($){if($.support.cors||!$.ajaxTransport||!window.XDomainR
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"more-info-arrangementen","name":"more info arrangementen","value":{"style":{},"triggers":[{"type":"click","stepsA":[{"opacity":0}],"stepsB":[{"opacity":1}]},{"type":"click","selector":".close","stepsA":[{"opacity":0.99}],"stepsB":[{"opacity":0}]}]}},
+  {"slug":"more-info-arrangementen","name":"more info arrangementen","value":{"style":{},"triggers":[{"type":"click","stepsA":[{"opacity":0}],"stepsB":[{"opacity":1}]},{"type":"click","selector":".close","siblings":true,"stepsA":[{"opacity":0.99}],"stepsB":[{"opacity":0}]}]}},
   {"slug":"image-tochten-rond","name":"image tochten rond","value":{"style":{},"triggers":[{"type":"hover","selector":".image-tochten-rond","descend":true,"stepsA":[{"transition":"transform 800ms ease 0ms","scale":1.13}],"stepsB":[{"transition":"transform 500ms ease 0ms","scale":1}]}]}},
   {"slug":"hoover-voor-titels-over-images-vaarten","name":"Hoover voor titels over images vaarten","value":{"style":{},"triggers":[{"type":"hover","selector":".blue-titel-vlak-images","descend":true,"stepsA":[{"width":"0px","transition":"width 900ms ease 0ms"},{"display":"block","width":"100%","transition":"width 500ms ease 0ms"}],"stepsB":[]}]}},
   {"slug":"hoover-tekst-kleur","name":"hoover tekst kleur","value":{"style":{},"triggers":[{"type":"hover","selector":".tochten-h3","descend":true,"stepsA":[{"opacity":0.73,"transition":"opacity 500ms ease 0ms"}],"stepsB":[{"opacity":1,"transition":"opacity 500ms ease 0ms"}]}]}},
@@ -4011,18 +4011,28 @@ Webflow.require('ix').init([
   {"slug":"new-interaction-3","name":"New Interaction 3","value":{"style":{},"triggers":[{"type":"load","stepsA":[{"wait":800},{"transition":"transform 1750ms ease 0ms","scale":0.01}],"stepsB":[]}]}},
   {"slug":"overlay-arrangementen","name":"Overlay arrangementen","value":{"style":{},"triggers":[{"type":"click","selector":".erover","siblings":true,"stepsA":[{"transition":"transform 1900ms ease 0ms","x":"0px","y":"-119%"}],"stepsB":[{"transition":"transform 700ms ease 0ms","x":"0px","y":"0px"}]},{"type":"click","selector":".open-door","siblings":true,"stepsA":[{"transition":"transform 900ms ease-in-out 0ms","x":"0px","y":"-55%"}],"stepsB":[{"transition":"transform 600ms ease 0ms","x":"0px","y":"0px"}]}]}},
   {"slug":"show-prijzen-section-3","name":"show prijzen section 3","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-row-price-section3","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
-  {"slug":"intro-header-homepage","name":"intro header homepage","value":{"style":{"opacity":0,"x":"0px","y":"-19rem"},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"transform 1000ms ease 0ms, opacity 900ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}},
-  {"slug":"intro-sub-header-home","name":"intro sub header home","value":{"style":{"opacity":0},"triggers":[{"type":"load","stepsA":[{"wait":1100},{"opacity":1,"transition":"opacity 1500ms ease 0ms"}],"stepsB":[]}]}},
+  {"slug":"intro-header-homepage","name":"intro header homepage","value":{"style":{"opacity":0,"x":"0px","y":"-19rem"},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":400},{"opacity":1,"transition":"transform 1400ms ease-out 0ms, opacity 900ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}},
+  {"slug":"intro-sub-header-home","name":"intro sub header home","value":{"style":{"opacity":0},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":1400},{"opacity":1,"transition":"opacity 1500ms ease 0ms"}],"stepsB":[]}]}},
   {"slug":"hide-hamburger-show-arrow-2","name":"Hide Hamburger | show arrow 2","value":{"style":{},"triggers":[{"type":"click","selector":".image-hamberger","stepsA":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":1,"transition":"opacity 800ms ease 0ms"}]},{"type":"click","selector":".image-arrow","stepsA":[{"opacity":0.99,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}]}]}},
   {"slug":"show-prijzen-hapjes","name":"show prijzen hapjes","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-hapjes","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
   {"slug":"show-prijzen-lunch","name":"show prijzen lunch","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-lunch","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
   {"slug":"show-prijzen-nagerecht","name":"show prijzen nagerecht","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-nagerecht","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
-  {"slug":"show-prijzen-buffet-luxe","name":"show prijzen buffet luxe","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
-  {"slug":"show-prijzen-buffet-luxe-aanvulling","name":"show prijzen buffet luxe aanvulling","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-aanvulling-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
+  {"slug":"show-prijzen-buffet-luxe","name":"show prijzen buffet luxe","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms","group":"A","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"8b69553e-65db-a9df-0d28-e34aa86c7ec4","style":{"modelType":"MacroStyle"}}}}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms","group":"B","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"8b69553e-65db-a9df-0d28-e34aa86c7ec4","style":{"modelType":"MacroStyle"}}}}],"macro":{"modelType":"Macro","guid":"8b69553e-65db-a9df-0d28-e34aa86c7ec4","style":{"modelType":"MacroStyle"}}}]}},
+  {"slug":"show-prijzen-buffet-aanvulling","name":"show prijzen buffet aanvulling","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-aanvulling-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms","group":"A","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"e789efc1-bbdc-c8f7-949a-8f6278ba3bb6","style":{"modelType":"MacroStyle"}}}}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms","group":"B","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"e789efc1-bbdc-c8f7-949a-8f6278ba3bb6","style":{"modelType":"MacroStyle"}}}}],"macro":{"modelType":"Macro","guid":"e789efc1-bbdc-c8f7-949a-8f6278ba3bb6","style":{"modelType":"MacroStyle"}}}]}},
   {"slug":"madal-background-show-2","name":"madal background show 2","value":{"style":{},"triggers":[{"type":"click","selector":".form-heusden-modal","stepsA":[{"display":"block"}],"stepsB":[]}]}},
   {"slug":"madal-background-show","name":"madal background show","value":{"style":{},"triggers":[{"type":"click","stepsA":[{"display":"block"}],"stepsB":[]}]}},
-  {"slug":"hide-nav-menu","name":"Hide nav menu","value":{"style":{},"triggers":[{"type":"click","stepsA":[{"display":"none"}],"stepsB":[]}]}},
   {"slug":"new-interaction-4","name":"New Interaction 4","value":{"style":{},"triggers":[{"type":"hover","selector":".tekst-overlay","stepsA":[{"transition":"transform 500ms ease 0ms","x":"0px","y":"-160px"}],"stepsB":[]}]}},
   {"slug":"show-hiiden-explanation","name":"show hiiden explanation","value":{"style":{},"triggers":[{"type":"hover","selector":".hidden-information","siblings":true,"stepsA":[{"opacity":0.99,"transition":"opacity 500ms ease 0ms"}],"stepsB":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}]},{"type":"hover","selector":".para-hidden-explanation","stepsA":[{"opacity":0.99,"height":"100%","transition":"opacity 500ms ease 0ms, height 500ms ease 0ms"}],"stepsB":[{"opacity":0,"height":"0px","transition":"opacity 800ms ease 0ms, height 800ms ease 0ms"}]}]}},
-  {"slug":"left-aligned","name":"left aligned","value":{"style":{},"triggers":[{"type":"click","selector":".row-2","stepsA":[{"opacity":0.99,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}]},{"type":"click","selector":".row","stepsA":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":0.99,"transition":"opacity 800ms ease 0ms"}]}]}}
+  {"slug":"left-aligned","name":"left aligned","value":{"style":{},"triggers":[{"type":"click","selector":".row-2","stepsA":[{"opacity":0.99,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}]},{"type":"click","selector":".row","stepsA":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":0.99,"transition":"opacity 800ms ease 0ms"}]}]}},
+  {"slug":"hamberger-arrow","name":"Hamberger-arrow","value":{"style":{},"triggers":[{"type":"click","selector":".hamburger","stepsA":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":1,"transition":"opacity 800ms ease 0ms"}]},{"type":"click","selector":".arrow","stepsA":[{"opacity":1,"transition":"opacity 800ms ease 0ms"}],"stepsB":[{"opacity":0,"transition":"opacity 800ms ease 0ms"}]}]}},
+  {"slug":"appears-on-scroll","name":"appears on scroll","value":{"style":{"opacity":0,"scale":0.5},"triggers":[{"type":"scroll","offsetBot":"4%","stepsA":[{"opacity":1,"transition":"transform 800ms ease 0ms, opacity 800ms ease 0ms","scale":1.05},{"transition":"transform 800ms ease 0ms","scale":1}],"stepsB":[]}]}},
+  {"slug":"new-interaction-5","name":"New Interaction 5","value":{"style":{},"triggers":[{"type":"scroll","stepsA":[],"stepsB":[{"height":"35rem","transition":"height 3700ms ease 0ms"}]},{"type":"load","selector":".box-events-row","stepsA":[{"opacity":1,"wait":200,"transition":"transform 900ms ease 0ms","x":"0px","y":"-12rem"},{"transition":"transform 1000ms ease 0ms","x":"0px","y":"0px"}],"stepsB":[]}]}},
+  {"slug":"appears-on-scroll-2","name":"appears on scroll 2","value":{"style":{"opacity":0,"scale":0.5},"triggers":[{"type":"scroll","offsetBot":"4%","stepsA":[{"wait":300},{"opacity":1,"transition":"transform 800ms ease 0ms, opacity 800ms ease 0ms","scale":1.05},{"transition":"transform 800ms ease 0ms","scale":1}],"stepsB":[]}]}},
+  {"slug":"appears-on-scroll-3","name":"appears on scroll 3","value":{"style":{"opacity":0,"scale":0.5},"triggers":[{"type":"scroll","offsetBot":"4%","stepsA":[{"wait":600},{"opacity":1,"transition":"transform 800ms ease 0ms, opacity 800ms ease 0ms","scale":1.05},{"transition":"transform 800ms ease 0ms","scale":1}],"stepsB":[]}]}},
+  {"slug":"new-interaction-6","name":"New Interaction 6","value":{"style":{"rotate":"180deg"},"triggers":[{"type":"load","loopA":true,"stepsA":[{"transition":"transform 1300ms ease 0ms","scale":1.16},{"transition":"transform 1300ms ease 0ms","scale":1},{"rotate":"180deg"}],"stepsB":[]}]}},
+  {"slug":"menu-loading","name":"menu loading","value":{"style":{},"triggers":[{"type":"load","stepsA":[{"transition":"transform 1200ms ease-out 0ms","x":"0px","y":"4rem"}],"stepsB":[]}]}},
+  {"slug":"laoding","name":"laoding","value":{"style":{"display":"block","opacity":1},"triggers":[{"type":"load","preload":true,"stepsA":[{"opacity":0,"transition":"opacity 300ms ease 0ms"}],"stepsB":[]}]}},
+  {"slug":"show-prijzen-barbeque","name":"show prijzen barbeque","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-bbq","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
+  {"slug":"show-prijzen-italiaans","name":"show prijzen italiaans","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-spaans","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
+  {"slug":"show-prijzen-diverse","name":"show prijzen diverse","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-diverse","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}}
 ]);

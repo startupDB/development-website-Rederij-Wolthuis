@@ -1,0 +1,48 @@
+
+
+Redirect 301 /pannenkoeken http://www.rederijwolthuis.nl/pannenkoeken-boot-den-bosch.html
+Redirect 301 /algemene-rondvaart http://www.rederijwolthuis.nl/rondvaart-den-bosch.html
+Redirect 301 /geschiedenis http://www.rederijwolthuis.nl/geschiedenis-rederij-wolthuis.html
+Redirect 301 /privevaarten http://www.rederijwolthuis.nl/de-ouwe-dirk.html
+Redirect 301 /arrangementen http://www.rederijwolthuis.nl/arrangementen-alternative.html
+Redirect 301 /contact http://www.rederijwolthuis.nl/index.html
+Redirect 301 /dagtocht-heusden http://www.rederijwolthuis.nl/dagtocht-heusden.html  
+Redirect 301 /dagarrangement-heusden http://www.rederijwolthuis.nl/arrangement-heusden.html
+Redirect 301 /dagtocht-zaltbommel http://www.rederijwolthuis.nl/r-bommelerwaardondvaart.html
+Redirect 301 /arrangement-admiraal http://www.rederijwolthuis.nl/arrangement-admiraal.html 
+Redirect 301 /wijn-tocht http://www.rederijwolthuis.nl/wijnproeverij-den-bosch.html
+Redirect 301 /dagtocht-bommelerwaard http://www.rederijwolthuis.nl/r-bommelerwaardondvaart.html
+Redirect 301 /dagtocht-ammerzoden http://www.rederijwolthuis.nl/rondvaart-ammerzoden.html
+Redirect 301 /dagtocht-maximakanaal http://www.rederijwolthuis.nl/dagtocht-maxima-kanaal.html
+Redirect 301 /pakeer-informatie http://www.rederijwolthuis.nl/opstapplek-oliemolensingel-den-bosch.html
+Redirect 301 /bossche-bol http://www.rederijwolthuis.nl/arrangement-bossche-bollen.html
+Redirect 301 /handelsroute-rondvaart http://www.rederijwolthuis.nl/index.html   
+Redirect 301 /bourgondisch-s-hertogenbosch http://www.rederijwolthuis.nl/arrangement-bourgondisch.html
+Redirect 301 /avondtocht-met-shootinggames http://www.rederijwolthuis.nl/avondtocht-games.html
+Redirect 301 /avondtocht-met-casino http://www.rederijwolthuis.nl/avondtocht-casino.html
+Redirect 301 /ontdek-s-hertogenbosch http://www.rederijwolthuis.nl/ontdek-den-bosch.html
+Redirect 301 /de-jeronimus-bosch-verhuur http://www.rederijwolthuis.nl/jeronimus-bosch.html
+Redirect 301 /de-ouwe-dirk-verhuur http://www.rederijwolthuis.nl/de-ouwe-dirk.html
+Redirect 301 /varende-wijn-bubbels-of-champagne-vaart http://www.rederijwolthuis.nl/wijnproeverij-den-bosch.html
+
+
+
+#ErrorDocument 404 /?page_id=566
+
+
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^rederijwolthuis\.nl$ [NC]
+RewriteRule ^(.*)$ http://www.rederijwolthuis.nl/$1 [R=301,L]
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

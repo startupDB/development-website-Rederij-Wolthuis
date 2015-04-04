@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sun Mar 15 2015 19:33:12 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Apr 02 2015 19:39:51 GMT+0000 (UTC) -->
 <html data-wf-site="54b3ca1fdab6b5db23c4c33a" data-wf-page="54b93b604b796755107421d1">
 <head>
   <meta charset="utf-8">
@@ -23,7 +23,7 @@
   <script type="text/javascript" src="js/modernizr.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
   <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
-  <link rel="stylesheet" type="text/css" href="http://95.85.62.17/html-rederij/css/flex_style_alt.css">
+  <link rel="stylesheet" type="text/css" href="http://www.rederijwolthuis.nl/css/flex_style_alt.css">
   <style>
     body { -webkit-font-smoothing: subpixel-antialiased; }
   </style>
@@ -33,26 +33,26 @@
     <div class="form" data-flex="row center-md">
       <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
       <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
-        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form">
+        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form" method="post" action="http://95.85.62.17/html-rederij/submit.php">
           <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
-            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10 center-xs">
               <h3 class="contact-heading-white">Contact</h3>
             </div>
-            <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle">
+            <div class="close-div" data-flex="col-lg-1 col-md-1 col-sm-1 col-xs-1 item-flex-center item-flex-middle center-xs">
               <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
               </a>
             </div>
           </div>
           <div class="padding-wrapper-form">
             <div class="text-afvaart">Waarmee kunnen we u van dienst zijn</div>
-            <input class="w-input text-field" id="Naam-3" type="text" placeholder="Naam" name="Naam-3" data-name="Naam 3" required="required">
-            <input class="w-input text-field mail-blue-line" id="email-7" type="email" placeholder="Emailadres" name="email-7" data-name="Email 7" required="required">
-            <input class="w-input text-field" id="Telefoon-7" type="text" placeholder="Telefoonnummer" name="Telefoon-7" data-name="Telefoon 7" required="required">
-            <textarea class="w-input extar-wensen-fiels" id="Extra-wensen-7" placeholder="Uw vragen" name="Extra-wensen-7" data-name="Extra Wensen 7"></textarea>
+            <input class="w-input text-field" id="naamgroep" type="text" placeholder="Naam" name="naamgroep" data-name="naamgroep" required="required">
+            <input class="w-input text-field mail-blue-line" id="emailadres" type="email" placeholder="Emailadres" name="emailadres" data-name="emailadres" required="required">
+            <input class="w-input text-field" id="telefoon" type="text" placeholder="Telefoonnummer" name="telefoon" data-name="telefoon" required="required">
+            <textarea class="w-input extar-wensen-fiels" id="wensen" placeholder="Uw vragen" name="wensen" data-name="wensen"></textarea>
           </div>
-          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag nog varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073 – 6312048</label>
+          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag nog varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073‑6312048</label>
           <div class="submit-div" data-flex="row center-lg center-md center-sm center-xs">
-            <input class="w-button submit" type="submit" value="Versturen" data-wait="Please wait...">
+            <input class="w-button submit" id="submit" type="submit" value="Versturen" data-wait="Please wait...">
           </div>
         </form>
         <div class="w-form-done">
@@ -65,73 +65,86 @@
       <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
     </div>
   </div>
-  <div class="modal-boeken-overall" id="modal-boeken-overall" data-flex="row">
+  <div class="modal-kantoor" id="modal-contact" data-flex="row">
     <div class="form" data-flex="row center-md">
-      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
-      <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
+      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-4 col-sm-2 col-md-3"></div>
+      <div class="w-form form-wrapper kantoor" data-flex="col-lg-4 col-md-6 col-sm-8 col-xs-12">
         <form class="form-inside" id="email-form" name="email-form" data-name="Email Form">
-          <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
+          <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs center-xs middle-xs">
             <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-              <h3 class="contact-heading-white">Boek uw vaart</h3>
+              <h3 class="contact-heading-white">Postadres</h3>
             </div>
             <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle">
               <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
               </a>
             </div>
           </div>
-          <div class="w-clearfix padding-wrapper-form">
-            <div class="text-afvaart">Kies uw vaart</div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="Vestingrondvaart" type="radio" name="tochten" value="Vestingrondvaart" data-name="tochten">
-              <label class="w-form-label" for="Vestingrondvaart">Vestingrondvaart</label>
+          <label class="text-label-form let-op-text contact-adres" for="email">Leunweg 17
+            <br>5221 BC Engelen</label>
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form :(</p>
+        </div>
+      </div>
+      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-4 col-sm-2 col-md-3"></div>
+    </div>
+  </div>
+  <div class="modal-boeken-overall" id="modal-boeken-overall" data-flex="row">
+    <div class="form" data-flex="row center-md">
+      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
+      <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
+        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form" method="post" action="http://95.85.62.17/html-rederij/submit.php">
+          <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
+            <div data-flex="col-lg-10 center-lg col-md-10 col-sm-10 col-xs-10 center-xs center-md center-sm">
+              <h3 class="contact-heading-white">Boek uw vaart</h3>
             </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="dagtocht Heusden" type="radio" name="tochten" value="dagtocht Heusden" data-name="tochten">
-              <label class="w-form-label" for="dagtocht Heusden">Dagtocht Heusden</label>
-            </div>
-            <div class="text-afvaart">Afvaarttijd:</div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="12:00 uur" type="radio" name="radio" value="12:00 uur" data-name="Radio">
-              <label class="w-form-label" for="12:00 uur">12:00</label>
-            </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="15:00 uur" type="radio" name="radio" value="15:00 uur" data-name="Radio">
-              <label class="w-form-label" for="15:00 uur">15:00</label>
-            </div>
-            <div class="w-radio radion-button-field alt">
-              <input class="w-radio-input" id="13:30 uur" type="radio" name="radio" value="13:30 uur" data-name="Radio">
-              <label class="w-form-label" for="13:30 uur">13:30</label>
-            </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="16:30 uur" type="radio" name="radio" value="16:30 uur" data-name="Radio">
-              <label class="w-form-label" for="16:30 uur">16:30</label>
-            </div>
-            <input class="w-input text-field" id="vaardatum-5" type="text" placeholder="Vaardatum" name="vaardatum-5" data-name="Vaardatum 5">
-            <input class="w-input text-field" id="naam-gezelschap-5" type="text" placeholder="Naam gezelschap" name="naam-gezelschap-5" data-name="Naam Gezelschap 5" required="required">
-            <input class="w-input text-field" id="aantal-personen-5" type="text" placeholder="Aantal personen" name="aantal-personen-5" data-name="Aantal Personen 5" required="required">
-            <input class="w-input text-field mail-blue-line" id="email-5" type="email" placeholder="Emailadres" name="email-5" data-name="Email 5" required="required">
-            <input class="w-input text-field" id="Telefoon-5" type="text" placeholder="Telefoonnummer" name="Telefoon-5" data-name="Telefoon 5" required="required">
-            <textarea class="w-input extar-wensen-fiels" id="Extra-wensen-5" placeholder="Extra wensen of kortingacties" name="Extra-wensen-5" data-name="Extra Wensen 5"></textarea>
-            <div class="w-checkbox w-clearfix checkbox-de-luxe">
-              <input class="w-checkbox-input checkbox-de-luxe" id="Rondvaart-De-Luxe-3" type="checkbox" name="Rondvaart-De-Luxe-3" data-name="Rondvaart De Luxe 3">
-              <label class="label-de-luxe black" for="Rondvaart-De-Luxe-3">Rondvaart Deluxe</label>
-              <label class="w-form-label label-de-luxe" for="De-Luxe">Rondvaart met Bossche Bol en twee maal koffie of thee voor 14,00 euro per persoon.</label>
-            </div>
-            <label class="text-label-form" for="email">Soort reservering:</label>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Definitief reserveren</label>
-            </div>
-            <div class="w-radio radion-button-field reservering">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Beschikbaarheid toetsen</label>
-            </div>
-            <div class="w-radio radion-button-field reservering">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Annuleren</label>
+            <div class="close-div" data-flex="col-lg-1 col-md-1 col-sm-1 col-xs-1 item-flex-center item-flex-middle center-xs">
+              <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
+              </a>
             </div>
           </div>
-          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag no varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073 – 6312048</label>
+          <div class="padding-wrapper-form">
+            <select class="w-select select-field" id="vaart-5" name="vaart" data-name="vaart" required="required">
+              <option value="Heusden">Heusden</option>
+            </select>
+            <input class="w-input text-field" id="vaartdatum" type="text" placeholder="Vaardatum (verplicht)" name="vaartdatum" data-name="vaartdatum" required="required">
+            <input class="w-input text-field" id="naamgroep" type="text" placeholder="Naam gezelschap (verplicht)" name="naamgroep" data-name="naamgroep" required="required">
+            <input class="w-input text-field" id="aantal_personen" type="text" placeholder="Aantal personen" name="aantal_personen" data-name="aantal_personen" required="required">
+            <input class="w-input text-field mail-blue-line" id="emailadres" type="email" placeholder="Emailadres (verplicht)" name="emailadres" data-name="emailadres" required="required">
+            <input class="w-input text-field" id="telefoon-5" type="text" placeholder="Telefoonnummer" name="telefoon" data-name="telefoon" required="required">
+            <textarea class="w-input extar-wensen-fiels" id="wensen" placeholder="Extra wensen of kortingacties" name="wensen" data-name="wensen"></textarea>
+            <div class="w-checkbox checkbox-de-luxe" data-flex="row top-xs">
+              <input class="w-checkbox-input checkbox" id="bol" type="checkbox" name="bol" data-name="bol">
+              <label class="w-form-label checkbox-label" for="bol">Koffie met Bossche bol à € 5,00 p.p.</label>
+            </div>
+            <div class="w-checkbox checkbox-de-luxe" data-flex="row top-xs">
+              <input class="w-checkbox-input checkbox" id="lunch" type="checkbox" name="lunch" data-name="lunch">
+              <label class="w-form-label checkbox-label" for="lunch">Lunch à € 6,50 p.p.&nbsp;</label>
+            </div>
+            <div class="w-checkbox checkbox-de-luxe" data-flex="row top-xs">
+              <input class="w-checkbox-input checkbox" id="diner" type="checkbox" name="diner" data-name="diner">
+              <label class="w-form-label checkbox-label" for="diner">Aansluitend diner bij het restaurant 'De Eeterij'. Voor een meerprijs van € 30,00 per p.p.</label>
+            </div>
+            <label class="text-label-form" for="email">Soort reservering:</label>
+            <div class="w-clearfix" data-flex="col-xs">
+              <div class="w-radio radion-button-field" data-flex="row middle-xs">
+                <input class="w-radio-input radio-button" id="field" type="radio" name="reservering" value="Definitief reseveren" data-name="reservering">
+                <label class="w-form-label radio-button-label" for="field">Definitief reserveren</label>
+              </div>
+              <div class="w-radio radion-button-field reservering" data-flex="row middle-xs">
+                <input class="w-radio-input radio-button" id="Beschikbaarheid toetsen" type="radio" name="reservering" value="Beschikbaarheid toetsen" data-name="reservering">
+                <label class="w-form-label radio-button-label" for="Beschikbaarheid toetsen">Beschikbaarheid toetsen</label>
+              </div>
+              <div class="w-radio radion-button-field reservering" data-flex="row middle-xs">
+                <input class="w-radio-input radio-button" id="annuleren" type="radio" name="reservering" value="annuleren" data-name="reservering">
+                <label class="w-form-label radio-button-label" for="annuleren">Annuleren</label>
+              </div>
+            </div>
+          </div>
+          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag nog varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073‑6312048</label>
           <div class="submit-div" data-flex="row center-lg center-md center-sm center-xs">
             <input class="w-button submit" type="submit" value="Versturen" data-wait="Please wait...">
           </div>
@@ -150,69 +163,79 @@
     <div class="form" data-flex="row center-md">
       <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
       <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
-        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form">
+        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form" action="http://95.85.62.17/html-rederij/submit.php" method="post">
           <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
-            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10 center-lg center-md center-sm center-xs">
               <h3 class="contact-heading-white">Boek uw vaart</h3>
             </div>
-            <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle">
+            <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle center-xs">
               <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
               </a>
             </div>
           </div>
-          <div class="w-clearfix padding-wrapper-form">
+          <div class="padding-wrapper-form">
             <div class="text-afvaart">Afvaarttijd:</div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="12:00 uur" type="radio" name="radio" value="12:00 uur" data-name="Radio">
-              <label class="w-form-label" for="12:00 uur">12:00</label>
+            <div data-flex="row">
+              <div class="w-radio radion-button-field">
+                <input class="w-radio-input" id="12:00 uur" type="radio" name="afvaartijd" value="12:00 uur" data-name="afvaartijd">
+                <label class="w-form-label" for="12:00 uur">12:00</label>
+              </div>
+              <div class="w-radio radion-button-field">
+                <input class="w-radio-input" id="15:00 uur" type="radio" name="afvaartijd" value="15:00 uur" data-name="afvaartijd">
+                <label class="w-form-label" for="15:00 uur">15:00</label>
+              </div>
             </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="15:00 uur" type="radio" name="radio" value="15:00 uur" data-name="Radio">
-              <label class="w-form-label" for="15:00 uur">15:00</label>
+            <div data-flex="row">
+              <div class="w-radio radion-button-field alt">
+                <input class="w-radio-input" id="13:30 uur" type="radio" name="afvaartijd" value="13:30 uur" data-name="afvaartijd">
+                <label class="w-form-label" for="13:30 uur">13:30</label>
+              </div>
+              <div class="w-radio radion-button-field">
+                <input class="w-radio-input" id="16:30 uur" type="radio" name="afvaartijd" value="16:30 uur" data-name="afvaartijd">
+                <label class="w-form-label" for="16:30 uur">16:30</label>
+              </div>
             </div>
-            <div class="w-radio radion-button-field alt">
-              <input class="w-radio-input" id="13:30 uur" type="radio" name="radio" value="13:30 uur" data-name="Radio">
-              <label class="w-form-label" for="13:30 uur">13:30</label>
-            </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="16:30 uur" type="radio" name="radio" value="16:30 uur" data-name="Radio">
-              <label class="w-form-label" for="16:30 uur">16:30</label>
-            </div>
-            <input class="w-input text-field" id="vaardatum-4" type="text" placeholder="Vaardatum" name="vaardatum-4" data-name="Vaardatum 4">
-            <input class="w-input text-field" id="naam-gezelschap-4" type="text" placeholder="Naam gezelschap" name="naam-gezelschap-4" data-name="Naam Gezelschap 4" required="required">
-            <input class="w-input text-field" id="aantal-personen-4" type="text" placeholder="Aantal personen" name="aantal-personen-4" data-name="Aantal Personen 4" required="required">
-            <input class="w-input text-field mail-blue-line" id="email-4" type="email" placeholder="Emailadres" name="email-4" data-name="Email 4" required="required">
-            <input class="w-input text-field" id="Telefoon-4" type="text" placeholder="Telefoonnummer" name="Telefoon-4" data-name="Telefoon 4" required="required">
-            <textarea class="w-input extar-wensen-fiels" id="Extra-wensen-4" placeholder="Extra wensen of kortingacties" name="Extra-wensen-4" data-name="Extra Wensen 4"></textarea>
-            <div class="w-checkbox w-clearfix checkbox-de-luxe">
-              <input class="w-checkbox-input checkbox-de-luxe" id="Rondvaart-De-Luxe-2" type="checkbox" name="Rondvaart-De-Luxe-2" data-name="Rondvaart De Luxe 2">
-              <label class="label-de-luxe black" for="Rondvaart-De-Luxe-2">Rondvaart Deluxe</label>
-              <label class="w-form-label label-de-luxe" for="De-Luxe">Rondvaart met Bossche Bol en twee maal koffie of thee voor 14,00 euro per persoon.</label>
+            <select class="w-select" id="vaart" name="vaart" data-name="vaart">
+              <option value="Vestingvaart">Vestingvaart</option>
+            </select>
+            <input class="w-input text-field" id="vaartdatum" type="text" placeholder="Vaardatum (verpilcht)" name="vaartdatum" data-name="vaartdatum" required="required">
+            <input class="w-input text-field" id="naamgroep" type="text" placeholder="Naam gezelschap" name="naamgroep" data-name="naamgroep" required="required">
+            <input class="w-input text-field" id="aantal_personen-5" type="text" placeholder="Aantal personen" name="aantal_personen" data-name="aantal_personen" required="required">
+            <input class="w-input text-field mail-blue-line" id="emailadres" type="email" placeholder="Emailadres" name="emailadres" data-name="emailadres" required="required">
+            <input class="w-input text-field" id="telefoon-5" type="text" placeholder="Telefoonnummer" name="telefoon" data-name="telefoon" required="required">
+            <textarea class="w-input extar-wensen-fiels" id="wensen" placeholder="Extra wensen of kortingacties" name="wensen" data-name="wensen"></textarea>
+            <div class="w-checkbox w-clearfix checkbox-field">
+              <input class="w-checkbox-input" id="deluxe-2" type="checkbox" name="deluxe" data-name="deluxe">
+              <label class="w-form-label checkbox-label" for="deluxe-2"><span class="span-deluxe">Rondvaart Deluxe<br xmlns="http://www.w3.org/1999/xhtml"></span>Rondvaart met Bossche Bol en twee maal koffie of thee voor 14,00 euro per persoon.</label>
             </div>
             <label class="text-label-form" for="email">Soort reservering:</label>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Definitief reserveren</label>
+            <div class="w-radio radion-button-field" data-flex="row middle-xs">
+              <input class="w-radio-input radio-button" id="Definitief reserveren" type="radio" name="reservering" value="Definitief reserveren" data-name="reservering">
+              <label class="w-form-label radio-button-label" for="Definitief reserveren">Definitief reserveren</label>
             </div>
-            <div class="w-radio radion-button-field reservering">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Beschikbaarheid toetsen</label>
+            <div class="w-radio radion-button-field reservering" data-flex="row middle-xs">
+              <input class="w-radio-input radio-button" id="Definitief reseveren" type="radio" name="reservering" value="Definitief reseveren" data-name="reservering">
+              <label class="w-form-label radio-button-label" for="Definitief reseveren">Beschikbaarheid toetsen</label>
             </div>
-            <div class="w-radio radion-button-field reservering">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Annuleren</label>
+            <div class="w-radio radion-button-field reservering" data-flex="row middle-xs">
+              <input class="w-radio-input radio-button" id="Definitief reseveren" type="radio" name="reservering" value="Definitief reseveren" data-name="reservering">
+              <label class="w-form-label radio-button-label" for="Definitief reseveren">Annuleren</label>
             </div>
           </div>
-          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag no varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073 – 6312048</label>
+          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag nog varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073‑6312048</label>
           <div class="submit-div" data-flex="row center-lg center-md center-sm center-xs">
             <input class="w-button submit" type="submit" value="Versturen" data-wait="Please wait...">
           </div>
         </form>
-        <div class="w-form-done">
-          <p>Thank you! Your submission has been received!</p>
+        <div class="w-form-done succes">
+          <p>We hebben uw aanvraag ontvangen. We nemen zo snel mogelijk contact met u op.
+            <br>
+            <br>Met vriendelijke groet,
+            <br>
+            <br>Rederij Wolthuis</p>
         </div>
-        <div class="w-form-fail">
-          <p>Oops! Something went wrong while submitting the form :(</p>
+        <div class="w-form-fail error">
+          <p>Oeps! Er ging iets mis. Probeer het indien mogelijk nog een keer.</p>
         </div>
       </div>
       <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
@@ -220,8 +243,31 @@
   </div>
   <div class="w-section section-top alt-vaart">
     <div class="w-nav top-nav-bar" data-collapse="all" data-animation="over-left" data-duration="1250">
-      <div class="topmenu">
-        <div class="w-nav-button button-menu" id="menu-button"><img class="image-hamberger" src="images/hamburger.svg" width="32" alt="54ea37b219500e4473ec5e91_hamburger.svg">
+      <div class="w-nav-menu nav-menu" role="navigation">
+        <div class="flex-cont"><a class="w-nav-link nav-link bold home" href="index.html">Home</a>
+          <div class="div-menu">
+            <div class="text-menu-item">Rondvaarten</div><a class="w-nav-link nav-link intend" href="rondvaart-den-bosch.html">Vestingrondvaart</a><a class="w-nav-link nav-link intend" href="pannenkoeken-boot-den-bosch.html">Pannenkoekenboot</a><a class="w-nav-link nav-link intend" href="wijnproeverij-den-bosch.html">Varend wijnproeven</a>
+          </div>
+          <div class="div-menu">
+            <div class="white-line"></div>
+            <div class="text-menu-item">Dagtochten</div><a class="w-nav-link nav-link intend" href="dagtocht-heusden.html">Heusden</a><a class="w-nav-link nav-link intend" href="dagtocht-maxima-kanaal.html">Maximakanaal</a><a class="w-nav-link nav-link intend" href="rondvaart-ammerzoden.html">Amerzoden</a><a class="w-nav-link nav-link intend" href="r-bommelerwaardondvaart.html">Cruise Bommelerwaard</a>
+          </div>
+          <div class="div-menu">
+            <div class="white-line"></div>
+            <div class="text-menu-item">Feesten / Verhuur</div><a class="w-nav-link nav-link intend" href="de-ouwe-dirk.html">Oude Dirk</a><a class="w-nav-link nav-link intend" href="jeronimus-bosch.html">Jeronimus Bosch</a><a class="w-nav-link nav-link intend" href="fleur.html">Fleur</a>
+          </div>
+          <div class="div-menu">
+            <div class="white-line"></div>
+          </div>
+          <div class="div-menu"><a class="w-nav-link nav-link bold" href="arrangementen-alternative.html">Arrangementen</a>
+          </div>
+          <div class="white-line"></div><a class="w-nav-link nav-link" href="prijslijst.html">Prijslijst</a><a class="w-nav-link nav-link modal-open-contact" href="javascript:void(0);">Contact</a>
+        </div>
+      </div>
+      <div class="topmenu" data-ix="menu-loading">
+        <div class="w-nav-button button-menu" id="menu-button" data-ix="hamberger-arrow" data-flex="row">
+          <div class="div-hamburger"><img class="arrow" src="images/arrow.svg" alt="54ea3923af905760742a629f_arrow.svg"><img class="hamburger" src="images/hamburger.svg" alt="54ea37b219500e4473ec5e91_hamburger.svg">
+          </div>
           <a class="w-inline-block link-hamburger" href="#">
             <div class="w-hidden-small w-hidden-tiny menu-text-next-hamburger">Menu</div>
           </a>
@@ -231,27 +277,6 @@
             <a class="w-nav-brand wolthuis-logo" href="index.html"><img src="images/Wolthuis_logo.png" width="48%" alt="54b3e43db936169d36228a9a_Wolthuis_logo.png">
             </a>
           </div>
-        </div>
-      </div>
-      <div class="w-nav-menu nav-menu" role="navigation" data-ix="hide-nav-menu">
-        <div class="flex-cont"><a class="w-nav-link nav-link bold home" href="index.html">Home</a>
-          <div class="div-menu">
-            <div class="text-menu-item">Rondvaarten</div><a class="w-nav-link nav-link intend" href="rondvaart-den-bosch.html">Vestingrondvaart</a><a class="w-nav-link nav-link intend" href="pannenkoeken-boot-den-bosch.html">Pannenkoekenboot</a><a class="w-nav-link nav-link intend" href="wijnproeverij-den-bosch.html">Varend wijnproeven</a>
-          </div>
-          <div class="div-menu">
-            <div class="white-line"></div>
-            <div class="text-menu-item">Dagtochten</div><a class="w-nav-link nav-link intend" href="dagtocht-heusden.html">Heusden</a><a class="w-nav-link nav-link intend" href="dagtocht-maxima-kanaal.html">Maximakanaal</a><a class="w-nav-link nav-link intend" href="dagtocht-ammerzoden.html">Amerzoden</a><a class="w-nav-link nav-link intend" href="cruise-bommelerwaard.html">Cruise Bommelerwaard</a>
-          </div>
-          <div class="div-menu">
-            <div class="white-line"></div>
-            <div class="text-menu-item">Feesten / Verhuur</div><a class="w-nav-link nav-link intend" href="de-oude-dirk.html">Oude Dirk</a><a class="w-nav-link nav-link intend" href="jeronimus-bosch.html">Jeronimus Bosch</a><a class="w-nav-link nav-link intend" href="fleur.html">Fleur</a>
-          </div>
-          <div class="div-menu">
-            <div class="white-line"></div><a class="w-nav-link nav-link bold" href="arrangementen.html">Arrangementen</a>
-          </div>
-          <div class="div-menu">
-            <div class="white-line"></div><a class="w-nav-link nav-link bold" href="arrangementen-alternative.html">Arrangementen Alt design</a>
-          </div><a class="w-nav-link nav-link" href="prijslijst.html">Prijslijst</a><a class="w-nav-link nav-link modal-open-contact" href="javascript:void(0);">Contact</a>
         </div>
       </div>
     </div>
@@ -277,6 +302,7 @@
         </div>
       </div>
     </div>
+    <div class="loading" data-ix="laoding"></div>
   </div>
   <div class="w-section">
     <div class="section-vaartpagina-2" data-flex="row center-sm">
@@ -292,23 +318,29 @@
             <br>
             <span class="span-tussenkopje">Tickets:
 </span>
-            <br>Kaartjes kunt u kopen bij Wijnhuis Le Robinet (50 meter vanaf opstapplaats), en aan boord van het schip. Onze rondvaarten worden gehouden van mei t/m oktober.</p>
+            <br>Kaartjes kunt u kopen bij Wijnhuis Le Robinet (50 meter vanaf opstapplaats), en aan boord van het schip. Onze rondvaarten worden gehouden van mei t/m oktober.
+            <br>
+            <br><span class="bold-tekst-span">Vanaf 1 maart tot en met 10 mei varen we om 13.30 uur voor de NS/Karwei actie. Met uitzondering van 21 maart.</span>
+          </p>
         </div>
         <div class="div-button-event-1" data-flex="row center-lg center-md center-sm center-xs"><a class="button vaart-pagina modal-open-button" href="javascript:void(0);" data-ix="madal-background-show">Direct boeken</a>
         </div>
       </div>
       <div class="column-section-vaart2 vestingvaart" data-flex="col-lg-6 col-md-6 col-sm-12 col-xs-12 start-lg start-md center-sm center-xs">
         <div class="bleu-vaart-column">
-          <div class="location-row" data-flex="row center-sm center-xs start-lg start-md middle-lg">
-            <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-              <div class="div-location"><img src="images/701-location@2x.png" alt="54b99db4aba3daf27b32d878_701-location%402x.png">
+          <a class="w-inline-block link-opstap-div" href="opstapplek-st-janssingel-den-bosch.html" id="link-opstapplek">
+            <div class="location-row" data-flex="row center-sm center-xs start-lg start-md">
+              <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="div-location"><img src="images/701-location@2x.png" alt="54b99db4aba3daf27b32d878_701-location%402x.png">
+                </div>
+              </div>
+              <div class="column-blue-vaart2" data-flex="col-lg-10 col-md-10">
+                <p class="vaart-pagina-para alt-location">Opstapplek:
+                  <br><span class="opstap-plek-link">St. Janssingel</span>
+                </p>
               </div>
             </div>
-            <div class="column-blue-vaart2" data-flex="col-lg-10 col-md-10">
-              <p class="vaart-pagina-para alt-location">Opstapplek:
-                <br>St. Janssingel</p>
-            </div>
-          </div>
+          </a>
           <div class="w-hidden-main w-hidden-medium white-line-blue-boeking vestingvaart" data-flex="col-xs-12 col-sm-12"></div>
           <div class="location-row" data-flex="row center-sm center-xs start-lg start-md">
             <div class="column-blue-vaart1" data-flex="col-lg-2 col-md-2 col-sm-12 col-xs-12">
@@ -317,8 +349,9 @@
             </div>
             <div class="column-blue-vaart2" data-flex="col-lg-9 col-md-10">
               <p class="vaart-pagina-para alt-money">Wanneer:
-                <br>&nbsp;In mei en september op woensdag, zaterdag en zondag.
+                <br>In mei en september op woensdag, zaterdag en zondag.
                 <br> In oktober alleen op zaterdag en zondag om 13.30 uur en 15.00 uur.
+                <br>
                 <br> In juni t/m augustus op dinsdag, woensdag, donderdag, vrijdag, zaterdag, zondag.
                 <br>
                 <br>Andere dagen op reservering vanaf 8 personen.<span class="span-small-characters"></span>
@@ -334,7 +367,9 @@
             <div class="column-blue-vaart2" data-flex="col-lg-10 col-md-10">
               <p class="vaart-pagina-para alt-money">Vertrektijden:
                 <br>12:00, 13:30, 15:00, 16:30
-                <br>Duur: Circa één uur.</p>
+                <br>
+                <br>Duur:
+                <br>Circa één uur.</p>
             </div>
           </div>
           <div class="w-hidden-main w-hidden-medium white-line-blue-boeking vestingvaart" data-flex="col-xs-12 col-sm-12"></div>
@@ -344,10 +379,11 @@
               </div>
             </div>
             <div class="column-blue-vaart2" data-flex="col-lg-10 col-md-10">
-              <p class="vaart-pagina-para alt-money editable">Volwassenen: €9,00.
-                <br>65-plussers en kinderen tot twaalf jaar: €7,50.
+              <p class="vaart-pagina-para alt-money editable">Volwassenen: € 9,00.
+                <br>65-plussers en kinderen tot twaalf jaar: € 7,50.
                 <br>
-                <br>Rondvaart Deluxe inclusief koffie/thee met Bossche Bol € 14,00 p/p ( € 12,50 kind/65+)
+                <br>Rondvaart Deluxe inclusief koffie/thee met Bossche Bol € 14,00 p.p.
+                <br>Voor kinderen en 65-plussers € 12,50 p.p.
                 <br>
                 <br>Aan boord is pinnen niet mogelijk</p>
             </div>
@@ -363,12 +399,12 @@
           { "group": "vesting", "items": [{
             "guid": "5500aadb0de511082fd1b19d",
             "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/5500aadb0de511082fd1b19d_Oude%20Dirk%20-%20Dommel%20en%20draaibrug.JPG",
-            "fileName": "5500aadb0de511082fd1b19d_undefined",
+            "fileName": "5500aadb0de511082fd1b19d_Oude Dirk - Dommel en draaibrug.JPG",
             "origFileName": "Oude Dirk - Dommel en draaibrug.JPG",
             "width": 2000,
             "height": 1500,
             "size": 357427,
-            "caption": "Pannenkoeken Den Bosch Ouwe Dirk",
+            "caption": "Draaibrug Den Bosch",
             "type": "image"
           }] }
         </script>
@@ -378,11 +414,12 @@
           { "group": "vesting", "items": [{
             "guid": "5500abeaee9f790a2ff62e00",
             "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/5500abeaee9f790a2ff62e00_Ouwe%20Dirk%20bij%20Oliemolen.JPG",
-            "fileName": "5500abeaee9f790a2ff62e00_undefined",
+            "fileName": "5500abeaee9f790a2ff62e00_Ouwe Dirk bij Oliemolen.JPG",
             "origFileName": "Ouwe Dirk bij Oliemolen.JPG",
             "width": 1400,
             "height": 1050,
             "size": 189597,
+            "caption": "Ouwe Dirk bij de Oliemolen",
             "type": "image"
           }] }
         </script>
@@ -392,11 +429,12 @@
           { "group": "vesting", "items": [{
             "guid": "54f9c0754bbb5f6263ee3b53",
             "url": "https://daks2k3a4ib2z.cloudfront.net/54b3ca1fdab6b5db23c4c33a/54f9c0754bbb5f6263ee3b53_DB%20-%20Foto%201.jpg",
-            "fileName": "54f9c0754bbb5f6263ee3b53_undefined",
+            "fileName": "54f9c0754bbb5f6263ee3b53_Ouwe Dirk met draaibrug.jpg",
             "origFileName": "Ouwe Dirk met draaibrug.jpg",
             "width": 2000,
             "height": 1131,
             "size": 320216,
+            "caption": "Ouwe Dirk met draaibrug",
             "type": "image"
           }] }
         </script>
@@ -420,15 +458,15 @@
       <div class="blue-boot-column" data-flex="col-lg-6 col-md-6 center-lg center-md">
         <div class="div-column-boot" data-flex="row center-lg center-md center-sm">
           <div class="boten-blue-image-column" id="oude-dirk" data-flex="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-            <div class="image-event-1"><img class="image-boot-od" src="images/Jeronimus_Bosch.png" alt="5500a45dbea91c7929c4221f_Jeronimus_Bosch.png">
+            <div class="image-event-1"><img class="image-boot-od" src="images/Oude_Dirk_Boot_wolthuis.png" alt="Ouwe Dirk Den Bosch">
             </div>
             <div class="div-heading-vaart">
-              <h2 class="vaartpagina-heading2">Jeronimus Bosch</h2>
+              <h2 class="vaartpagina-heading2">Ouwe Dirk</h2>
             </div>
             <div class="div-events-text boten-blue">
-              <p class="vaart-pagina-para alt-white">De Jeronimus Bosch is ons grootste schip. Met een overdekt bovendek en plaats voor ongeveer 120 personen is dit schip geschikt voor grotere partijen.</p>
+              <p class="vaart-pagina-para alt-white">De Ouwe Dirk is een ontzettend mooi schip dat gebaseerd is op tekeningen uit 1912. Het ship is ruim en heeft ruimte voor ongeveer 80 personen.</p>
             </div>
-            <div class="div-button-event-1 alt-vaart"><a class="button boten-blue" href="jeronimus-bosch.html">Bekijk het schip</a>
+            <div class="div-button-event-1 alt-vaart"><a class="button boten-blue" href="de-ouwe-dirk.html">Bekijk het schip</a>
             </div>
           </div>
         </div>
@@ -443,8 +481,9 @@
               <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/Randvaart_Den_Bosch_Rederij_Wolthuis.png" alt="Rondvaart den Bosch">
               </div>
               <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
-                <h3 class="tochten-h3 alt-first">Vestigingsrondvaart</h3>
-                <p class="tochten-paragraph">Ontdek ’s-Hertogenbosch op een unieke manier tijdens deze één uur durende rondvaart. Geniet van de prachtige omgeving en eventueel een heerlijke Bossche Bol.</p>
+                <h3 class="tochten-h3 alt-first">Vestingrondvaart</h3>
+                <p class="tochten-paragraph">Ontdek ’s-Hertogenbosch op een unieke manier tijdens deze één uur durende rondvaart. Geniet van de prachtige omgeving en eventueel een heerlijke Bossche Bol. <span class="lees-meer">Lees meer...</span>
+                </p>
               </div>
             </div>
           </div>
@@ -456,19 +495,21 @@
               </div>
               <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
                 <h3 class="tochten-h3">Dagtocht Heusden</h3>
-                <p class="tochten-paragraph">Deze tocht neemt u mee naar het mooie stadje Heusden. Over de Maas kunt u dit prachtige stadje bezoeken en ontdekken.</p>
+                <p class="tochten-paragraph">Deze tocht neemt u mee naar het mooie stadje Heusden. Over de Maas kunt u dit prachtige stadje bezoeken en ontdekken. <span class="lees-meer">Lees meer...</span>
+                </p>
               </div>
             </div>
           </div>
         </a>
-        <a class="w-inline-block link-div-pop-tochten" href="pannenkoeken-boot-den-bosch.html" data-ix="image-tochten-rond">
+        <a class="w-inline-block link-div-pop-tochten" href="arrangement-bourgondisch.html" data-ix="image-tochten-rond">
           <div class="left-row alt-last" id="pop-tocht-row-3">
             <div class="tochten-row-first" data-flex="row center-xs start-md start-lg">
-              <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/Pannenkoeken_boot_rederij_wolthuis.png" alt="Pannenkoeken boot den bosch">
+              <div class="image-column" data-flex="col-lg-4 col-md-4 middle-lg"><img class="image-tochten-rond" src="images/De_Eeterij_Restaurant_Den_Bosch.png" alt="Eeterij Restaurant Den Bosch">
               </div>
               <div class="tochten-text-right" data-flex="col-lg-8 col-md-8 col-xs-12">
-                <h3 class="tochten-h3">Pannenkoekenboot</h3>
-                <p class="tochten-paragraph">Kom eens lekker pannenkoeken eten aan boord van de “Pannenkoekenboot ’s-Hertogenbosch”. Zeer geschikt voor de kleinere kapiteintjes.</p>
+                <h3 class="tochten-h3">Bourgondisch Den Bosch</h3>
+                <p class="tochten-paragraph">U wordt meegenomen terug in de tijd en vaart langs de mooiste plekjes. Geheel onthaast komt u weer terug aan de wal waar een heerlijk diner staat te wachten in de oude haven van ’s-Hertogenbosch. <span class="lees-meer">Lees meer...</span>
+                </p>
               </div>
             </div>
           </div>
@@ -482,7 +523,7 @@
     <div class="w-container container-contact-section">
       <div class="row-conatct" data-flex="row middle-lg middle-md between-sm between-xs">
         <div class="contact-column-telefoon" id="contact-telefoon" data-tidy-sitewide="#contact-telefoon" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs center-lg">
-          <a class="w-inline-block telefoon-link" href="tel:+31736312048">
+          <a class="w-inline-block telefoon-link">
             <div class="telefoon"></div>
             <div class="contact-text">Telefonisch contact</div>
           </a>
@@ -494,7 +535,7 @@
           </a>
         </div>
         <div class="contact-column-boeken" id="contact-boeken" data-tidy-sitewide="#contact-boeken" data-flex="col-lg-4 col-md-4 col-sm-12 col-xs-12 middle-lg middle-md middle-sm center-sm middle-xs center-xs">
-          <a class="w-inline-block contact-link modal-open-overall" href="javascript:void(0);">
+          <a class="w-inline-block contact-link modal-open-button" href="javascript:void(0);">
             <div class="boeken"></div>
             <div class="contact-text">Direct boeken</div>
           </a>
@@ -515,7 +556,7 @@
                 <br>E: info@rederijwoltuis.nl
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Kantooradres</a>
+            <div class="div-button-boot" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter button-kantoor" href="javascript:void(0);">Postadres</a>
             </div>
           </div>
         </div>
@@ -527,11 +568,11 @@
               <h4 class="footer-heading4">Opstapplek: Oliemolen</h4>
             </div>
             <div class="div-paragrapgh" data-flex="row center-xs center-sm">
-              <p class="alt-blue footer">Oliemolensingel 243
-                <br>5221 BC&nbsp;
+              <p class="alt-blue footer">Oliemolensingel
+                <br>5211TN
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
+            <div class="div-button-boot" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="opstapplek-oliemolensingel-den-bosch.html">Routebeschrijving</a>
             </div>
           </div>
         </div>
@@ -543,11 +584,11 @@
               <h4 class="footer-heading4">Opstapplek: St. Janssingel</h4>
             </div>
             <div class="div-paragrapgh" data-flex="row center-xs center-sm">
-              <p class="alt-blue footer">St. Janssingel 1
-                <br>5234 FD
+              <p class="alt-blue footer">St. Janssingel
+                <br>5211 DL
                 <br>‘s-Hertogenbosch</p>
             </div>
-            <div class="div-button-boot" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="#">Routebeschrijving</a>
+            <div class="div-button-boot" data-flex="row center-lg center-md center-sm center-xs"><a class="button alt-boot altfooter" href="opstapplek-st-janssingel-den-bosch.html">Routebeschrijving</a>
             </div>
           </div>
         </div>
@@ -557,6 +598,16 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-  <script type="text/javascript" src="http://95.85.62.17/html-rederij/js/rederij-extra.js"></script>
+  <script type="text/javascript" src="http://www.rederijwolthuis.nl/js/rederij-extra.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9088788-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
