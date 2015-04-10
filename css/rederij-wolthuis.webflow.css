@@ -2035,7 +2035,7 @@ p {
 .checkbox-label {
   max-width: 95%;
   margin-top: 0px;
-  padding-left: 0rem;
+  padding-left: 0.2rem;
   font-family: Raleway, sans-serif;
   color: rgba(0, 0, 0, 0.47);
   font-size: 1.1em;
