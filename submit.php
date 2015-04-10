@@ -60,7 +60,7 @@
         }
         else
            
-             header("Location: http://www.rederijwolthuis.nl/rederij-wolthuis-bevestiging-contact.html");
+             header("Location: /rederij-wolthuis-bevestiging-contact.html");
        
           
         }

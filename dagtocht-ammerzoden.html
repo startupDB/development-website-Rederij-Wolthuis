@@ -19,129 +19,13 @@
   <script type="text/javascript" src="js/modernizr.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
   <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
-  <link rel="stylesheet" type="text/css" href="http://www.rederijwolthuis.nl/css/flex_style_alt.css">
+  <link rel="stylesheet" type="text/css" href="/css/flex_style_alt.css">
   <style>
     body { -webkit-font-smoothing: subpixel-antialiased; }
   </style>
 </head>
 <body>
-  <div class="modal-contact" id="modal-contact" data-flex="row" data-ix="hide-nav-menu">
-    <div class="form" data-flex="row center-md">
-      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
-      <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
-        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form">
-          <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
-            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-              <h3 class="contact-heading-white">Contact</h3>
-            </div>
-            <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle">
-              <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
-              </a>
-            </div>
-          </div>
-          <div class="padding-wrapper-form">
-            <div class="text-afvaart">Waarmee kunnen we u van dienst zijn</div>
-            <input class="w-input text-field" id="Naam" type="text" placeholder="Naam" name="Naam" data-name="Naam" required="required">
-            <input class="w-input text-field mail-blue-line" id="email-5" type="email" placeholder="Emailadres" name="email-5" data-name="Email 5" required="required">
-            <input class="w-input text-field" id="Telefoon-5" type="text" placeholder="Telefoonnummer" name="Telefoon-5" data-name="Telefoon 5" required="required">
-            <textarea class="w-input extar-wensen-fiels" id="Extra-wensen-5" placeholder="Uw vragen" name="Extra-wensen-5" data-name="Extra Wensen 5"></textarea>
-          </div>
-          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag nog varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073 – 6312048</label>
-          <div class="submit-div" data-flex="row center-lg center-md center-sm center-xs">
-            <input class="w-button submit" type="submit" value="Versturen" data-wait="Please wait...">
-          </div>
-        </form>
-        <div class="w-form-done">
-          <p>Thank you! Your submission has been received!</p>
-        </div>
-        <div class="w-form-fail">
-          <p>Oops! Something went wrong while submitting the form :(</p>
-        </div>
-      </div>
-      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
-    </div>
-  </div>
-  <div class="modal-boeken-overall" id="modal-boeken-overall" data-flex="row">
-    <div class="form" data-flex="row center-md">
-      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
-      <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
-        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form">
-          <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
-            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-              <h3 class="contact-heading-white">Boek uw vaart</h3>
-            </div>
-            <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle">
-              <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
-              </a>
-            </div>
-          </div>
-          <div class="w-clearfix padding-wrapper-form">
-            <div class="text-afvaart">Kies uw vaart</div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="Vestingrondvaart" type="radio" name="tochten" value="Vestingrondvaart" data-name="tochten">
-              <label class="w-form-label" for="Vestingrondvaart">Vestingrondvaart</label>
-            </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="dagtocht Heusden" type="radio" name="tochten" value="dagtocht Heusden" data-name="tochten">
-              <label class="w-form-label" for="dagtocht Heusden">Dagtocht Heusden</label>
-            </div>
-            <div class="text-afvaart">Afvaarttijd:</div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="12:00 uur" type="radio" name="radio" value="12:00 uur" data-name="Radio">
-              <label class="w-form-label" for="12:00 uur">12:00</label>
-            </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="15:00 uur" type="radio" name="radio" value="15:00 uur" data-name="Radio">
-              <label class="w-form-label" for="15:00 uur">15:00</label>
-            </div>
-            <div class="w-radio radion-button-field alt">
-              <input class="w-radio-input" id="13:30 uur" type="radio" name="radio" value="13:30 uur" data-name="Radio">
-              <label class="w-form-label" for="13:30 uur">13:30</label>
-            </div>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="16:30 uur" type="radio" name="radio" value="16:30 uur" data-name="Radio">
-              <label class="w-form-label" for="16:30 uur">16:30</label>
-            </div>
-            <input class="w-input text-field" id="vaardatum-4" type="text" placeholder="Vaardatum" name="vaardatum-4" data-name="Vaardatum 4">
-            <input class="w-input text-field" id="naam-gezelschap-4" type="text" placeholder="Naam gezelschap" name="naam-gezelschap-4" data-name="Naam Gezelschap 4" required="required">
-            <input class="w-input text-field" id="aantal-personen-4" type="text" placeholder="Aantal personen" name="aantal-personen-4" data-name="Aantal Personen 4" required="required">
-            <input class="w-input text-field mail-blue-line" id="email-4" type="email" placeholder="Emailadres" name="email-4" data-name="Email 4" required="required">
-            <input class="w-input text-field" id="Telefoon-4" type="text" placeholder="Telefoonnummer" name="Telefoon-4" data-name="Telefoon 4" required="required">
-            <textarea class="w-input extar-wensen-fiels" id="Extra-wensen-4" placeholder="Extra wensen of kortingacties" name="Extra-wensen-4" data-name="Extra Wensen 4"></textarea>
-            <div class="w-checkbox w-clearfix checkbox-de-luxe">
-              <input class="w-checkbox-input checkbox-de-luxe" id="Rondvaart-De-Luxe-2" type="checkbox" name="Rondvaart-De-Luxe-2" data-name="Rondvaart De Luxe 2">
-              <label class="label-de-luxe black" for="Rondvaart-De-Luxe-2">Rondvaart Deluxe</label>
-              <label class="w-form-label label-de-luxe" for="De-Luxe">Rondvaart met Bossche Bol en twee maal koffie of thee voor 14,00 euro per persoon.</label>
-            </div>
-            <label class="text-label-form" for="email">Soort reservering:</label>
-            <div class="w-radio radion-button-field">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Definitief reserveren</label>
-            </div>
-            <div class="w-radio radion-button-field reservering">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Beschikbaarheid toetsen</label>
-            </div>
-            <div class="w-radio radion-button-field reservering">
-              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
-              <label class="w-form-label" for="Definitief reseveren">Annuleren</label>
-            </div>
-          </div>
-          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag no varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073 – 6312048</label>
-          <div class="submit-div" data-flex="row center-lg center-md center-sm center-xs">
-            <input class="w-button submit" type="submit" value="Versturen" data-wait="Please wait...">
-          </div>
-        </form>
-        <div class="w-form-done">
-          <p>Thank you! Your submission has been received!</p>
-        </div>
-        <div class="w-form-fail">
-          <p>Oops! Something went wrong while submitting the form :(</p>
-        </div>
-      </div>
-      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
-    </div>
-  </div>
+  
   <div class="w-section section-top alt-boot-ouade-dirk ammerzoden">
     <div class="w-nav top-nav-bar" data-collapse="all" data-animation="over-left" data-duration="1250">
       <div class="topmenu">
@@ -458,6 +342,123 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+    <div class="modal-contact" id="modal-contact" data-flex="row" data-ix="hide-nav-menu">
+    <div class="form" data-flex="row center-md">
+      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
+      <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
+        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form">
+          <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
+            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <h3 class="contact-heading-white">Contact</h3>
+            </div>
+            <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle">
+              <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
+              </a>
+            </div>
+          </div>
+          <div class="padding-wrapper-form">
+            <div class="text-afvaart">Waarmee kunnen we u van dienst zijn</div>
+            <input class="w-input text-field" id="Naam" type="text" placeholder="Naam" name="Naam" data-name="Naam" required="required">
+            <input class="w-input text-field mail-blue-line" id="email-5" type="email" placeholder="Emailadres" name="email-5" data-name="Email 5" required="required">
+            <input class="w-input text-field" id="Telefoon-5" type="text" placeholder="Telefoonnummer" name="Telefoon-5" data-name="Telefoon 5" required="required">
+            <textarea class="w-input extar-wensen-fiels" id="Extra-wensen-5" placeholder="Uw vragen" name="Extra-wensen-5" data-name="Extra Wensen 5"></textarea>
+          </div>
+          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag nog varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073 – 6312048</label>
+          <div class="submit-div" data-flex="row center-lg center-md center-sm center-xs">
+            <input class="w-button submit" type="submit" value="Versturen" data-wait="Please wait...">
+          </div>
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form :(</p>
+        </div>
+      </div>
+      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
+    </div>
+  </div>
+  <div class="modal-boeken-overall" id="modal-boeken-overall" data-flex="row">
+    <div class="form" data-flex="row center-md">
+      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
+      <div class="w-form form-wrapper" data-flex="col-lg-6 col-md-6 col-sm-8">
+        <form class="form-inside" id="email-form" name="email-form" data-name="Email Form">
+          <div class="top-blue-contact-form" data-flex="row end-lg end-md end-sm end-xs">
+            <div data-flex="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+              <h3 class="contact-heading-white">Boek uw vaart</h3>
+            </div>
+            <div class="close-div" data-flex="col-lg-1 col-md-1col-sm-1 col-xs-1 item-flex-center item-flex-middle">
+              <a class="w-inline-block link-clsoe" href="#"><img src="images/ic_close_24px_white.svg" alt="54e7881e30ed968f3344f6cd_ic_close_24px_white.svg">
+              </a>
+            </div>
+          </div>
+          <div class="w-clearfix padding-wrapper-form">
+            <div class="text-afvaart">Kies uw vaart</div>
+            <div class="w-radio radion-button-field">
+              <input class="w-radio-input" id="Vestingrondvaart" type="radio" name="tochten" value="Vestingrondvaart" data-name="tochten">
+              <label class="w-form-label" for="Vestingrondvaart">Vestingrondvaart</label>
+            </div>
+            <div class="w-radio radion-button-field">
+              <input class="w-radio-input" id="dagtocht Heusden" type="radio" name="tochten" value="dagtocht Heusden" data-name="tochten">
+              <label class="w-form-label" for="dagtocht Heusden">Dagtocht Heusden</label>
+            </div>
+            <div class="text-afvaart">Afvaarttijd:</div>
+            <div class="w-radio radion-button-field">
+              <input class="w-radio-input" id="12:00 uur" type="radio" name="radio" value="12:00 uur" data-name="Radio">
+              <label class="w-form-label" for="12:00 uur">12:00</label>
+            </div>
+            <div class="w-radio radion-button-field">
+              <input class="w-radio-input" id="15:00 uur" type="radio" name="radio" value="15:00 uur" data-name="Radio">
+              <label class="w-form-label" for="15:00 uur">15:00</label>
+            </div>
+            <div class="w-radio radion-button-field alt">
+              <input class="w-radio-input" id="13:30 uur" type="radio" name="radio" value="13:30 uur" data-name="Radio">
+              <label class="w-form-label" for="13:30 uur">13:30</label>
+            </div>
+            <div class="w-radio radion-button-field">
+              <input class="w-radio-input" id="16:30 uur" type="radio" name="radio" value="16:30 uur" data-name="Radio">
+              <label class="w-form-label" for="16:30 uur">16:30</label>
+            </div>
+            <input class="w-input text-field" id="vaardatum-4" type="text" placeholder="Vaardatum" name="vaardatum-4" data-name="Vaardatum 4">
+            <input class="w-input text-field" id="naam-gezelschap-4" type="text" placeholder="Naam gezelschap" name="naam-gezelschap-4" data-name="Naam Gezelschap 4" required="required">
+            <input class="w-input text-field" id="aantal-personen-4" type="text" placeholder="Aantal personen" name="aantal-personen-4" data-name="Aantal Personen 4" required="required">
+            <input class="w-input text-field mail-blue-line" id="email-4" type="email" placeholder="Emailadres" name="email-4" data-name="Email 4" required="required">
+            <input class="w-input text-field" id="Telefoon-4" type="text" placeholder="Telefoonnummer" name="Telefoon-4" data-name="Telefoon 4" required="required">
+            <textarea class="w-input extar-wensen-fiels" id="Extra-wensen-4" placeholder="Extra wensen of kortingacties" name="Extra-wensen-4" data-name="Extra Wensen 4"></textarea>
+            <div class="w-checkbox w-clearfix checkbox-de-luxe">
+              <input class="w-checkbox-input checkbox-de-luxe" id="Rondvaart-De-Luxe-2" type="checkbox" name="Rondvaart-De-Luxe-2" data-name="Rondvaart De Luxe 2">
+              <label class="label-de-luxe black" for="Rondvaart-De-Luxe-2">Rondvaart Deluxe</label>
+              <label class="w-form-label label-de-luxe" for="De-Luxe">Rondvaart met Bossche Bol en twee maal koffie of thee voor 14,00 euro per persoon.</label>
+            </div>
+            <label class="text-label-form" for="email">Soort reservering:</label>
+            <div class="w-radio radion-button-field">
+              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
+              <label class="w-form-label" for="Definitief reseveren">Definitief reserveren</label>
+            </div>
+            <div class="w-radio radion-button-field reservering">
+              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
+              <label class="w-form-label" for="Definitief reseveren">Beschikbaarheid toetsen</label>
+            </div>
+            <div class="w-radio radion-button-field reservering">
+              <input class="w-radio-input" id="Definitief reseveren" type="radio" name="reserveren" value="Definitief reseveren" data-name="reserveren">
+              <label class="w-form-label" for="Definitief reseveren">Annuleren</label>
+            </div>
+          </div>
+          <label class="text-label-form let-op-text" for="email">Let op: Wilt u vandaag no varen?&nbsp;Neem dan telefonisch contact op met Rederij Wolthuis via 073 – 6312048</label>
+          <div class="submit-div" data-flex="row center-lg center-md center-sm center-xs">
+            <input class="w-button submit" type="submit" value="Versturen" data-wait="Please wait...">
+          </div>
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form :(</p>
+        </div>
+      </div>
+      <div class="w-hidden-tiny hulp-column" data-flex="col-lg-3 col-sm-2 col-md-3"></div>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
