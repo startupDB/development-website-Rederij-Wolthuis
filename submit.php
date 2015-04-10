@@ -6,7 +6,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-    require_once dirname(__FILE__).'/vendor/class.phpmailer.php';
+    require_once dirname(__FILE__).'/vendor/PHPMailerAutoload.php';
+
+
 
     if( isset( $_POST ) ){
         
@@ -41,13 +43,56 @@
         
         $mail = new PHPMailer();
         
-        $mail->From = '';
-        $mail->FromName = '';
+       $options = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
+$mail->smtpConnect($options);
+        //Tell PHPMailer to use SMTP
+$mail->isSMTP();
+
+//Enable SMTP debugging
+// 0 = off (for production use)
+// 1 = client messages
+// 2 = client and server messages
+$mail->SMTPDebug = 2;
+
+//Ask for HTML-friendly debug output
+$mail->Debugoutput = 'html';
+
+//Set the hostname of the mail server
+$mail->Host = 'smtp.gmail.com';
+
+//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+$mail->Port = 587;
+
+//Set the encryption system to use - ssl (deprecated) or tls
+$mail->SMTPSecure = 'tls';
+
+//Whether to use SMTP authentication
+$mail->SMTPAuth = true;
+
+//Username to use for SMTP authentication - use full email address for gmail
+$mail->Username = "milkproductions@gmail.com";
+
+//Password to use for SMTP authentication
+$mail->Password = "leunweg17";
+
        
+        #$mail->FromName = ;
+
         //Naar wie moet de mail gestuurd worden
-        $mail->addAddress('wolthuis@nieuwerwets.tv');
+        $mail->addAddress('info@rederijwolthuis.nl');
+        $mail->addAddress('bertvanhouten@icloud.com');
         $mail->addReplyTo( $emailadres );
         
+        $mail->setFrom('info@rederijwolthuis.nl','Rederij Wolthuis');
+
+
+
         $mail->isHTML( true );
         $mail->Subject = "{$vaart} op {$vaartdatum} naam: {$naamgroep}";
         $mail->Body= $message;
@@ -60,10 +105,11 @@
         }
         else
            
-             header("Location: /rederij-wolthuis-bevestiging-contact.html");
+             header("Location: http://www.rederijwolthuis.nl/rederij-wolthuis-bevestiging-contact.html");
        
           
         }
+
     
 #bertvanhouten@icloud.com
 #info@rederijwolthuis.nl
