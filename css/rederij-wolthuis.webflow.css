@@ -3623,7 +3623,7 @@ html.w-mod-js *[data-ix="laoding"] {
     background-image: url('../images/Oliemolensingel.JPG'), -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.27) 69%) ;
     background-image: url('../images/Oliemolensingel.JPG'), linear-gradient(transparent, rgba(0, 0, 0, 0.27) 69%) ;
     background-position: 0% 0%, 24% 72%;
-    background-size: auto, cover;
+    background-size: cover, auto;
 
   }
   .section-top.homepage {
