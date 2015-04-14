@@ -471,6 +471,11 @@ p {
 .boot-blue-text-div {
   background-color: #189bce;
 }
+
+.div-blue-row{
+    padding-top: auto;
+    padding-bottom: auto;
+}
 .div-button-boot {
   margin-top: auto;
   padding-bottom: 2rem;
