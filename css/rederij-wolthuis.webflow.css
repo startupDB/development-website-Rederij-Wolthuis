@@ -2593,6 +2593,8 @@ html.w-mod-js *[data-ix="laoding"] {
     text-shadow: none;
   }
   .contact-heading-white {
+      margin-top: auto;
+      margin-bottom: auto;
     padding-top: 0rem;
     padding-bottom: 0rem;
     font-size: 1.8em;
@@ -3344,6 +3346,8 @@ html.w-mod-js *[data-ix="laoding"] {
     line-height: 1.4em;
   }
   .contact-heading-white {
+      margin-top: auto;
+      margin-bottom: auto;
     padding-top: 0rem;
     padding-bottom: 0rem;
     font-size: 1.5em;
@@ -4181,6 +4185,8 @@ html.w-mod-js *[data-ix="laoding"] {
     font-size: 1.1em;
   }
   .contact-heading-white {
+      margin-bottom: auto;
+      margin-bottom: auto;
     padding-top: 0rem;
     padding-bottom: 0rem;
     text-shadow: none;
