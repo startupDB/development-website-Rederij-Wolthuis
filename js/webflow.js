@@ -603,7 +603,7 @@ module.exports = function($, _) {
 
   function load() {
     loaded = true;
-    $.getScript('https://apis.google.com/js/plusone.js');
+    $.getScript('https://apis.google.comjs/plusone.js');
   }
 
   // Export module
