@@ -2012,17 +2012,7 @@ p {
   text-align: center;
   text-decoration: none;
 }
-.row-next-section {
-  margin-top: auto;
-  margin-bottom: 1rem;
-}
-.next-section-div {
-  position: relative;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  padding-bottom: 2rem;
-}
+
 .dic-next {
   padding-bottom: 1rem;
 }
@@ -2712,12 +2702,7 @@ html.w-mod-js *[data-ix="laoding"] {
   .next-section {
     margin-bottom: 1rem;
   }
-  .next-section-div {
-    position: relative;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-  }
+
   .loading {
     left: 0px;
     top: 0px;
@@ -3484,9 +3469,7 @@ html.w-mod-js *[data-ix="laoding"] {
   .next-section {
     font-size: 2em;
   }
-  .next-section-div {
-    padding-bottom: 1rem;
-  }
+
   .loading {
     left: 0px;
     top: 0px;
