@@ -13,6 +13,7 @@ var $menu = $('.nav-menu');
 function showModal() {
     $html.css('overflow', 'hidden');
     $html.css('position', 'fixed');
+    $html.css('width', '100%');
     $modal.fadeIn(1000).css('overflow', 'auto');
     
 }
