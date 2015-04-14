@@ -1970,7 +1970,7 @@ p {
 }
 .hamburger {
   position: absolute;
-  left: 3rem;
+  left: 2rem;
   top: 1rem;
   right: 0px;
   bottom: 23px;
@@ -1979,7 +1979,7 @@ p {
 }
 .arrow {
  position: absolute;
-  left: 3rem;
+  left: 2rem;
   top: 1rem;
   right: 0px;
   bottom: 23px;
