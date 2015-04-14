@@ -2002,9 +2002,6 @@ p {
   text-align: center;
 }
 .next-section {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
   font-family: Icomoon, sans-serif;
   margin-top: 30vh;
   color: white;
