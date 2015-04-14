@@ -126,8 +126,6 @@ p {
   background-color: rgba(24, 155, 206, 0.09);
 }
 .button.vaart-pagina.modal-open-button.vaart-pagina {
-  margin-right: auto;
-  margin-left: auto;
   border-radius: 6px;
   font-size: 1em;
   line-height: 1.4em;
