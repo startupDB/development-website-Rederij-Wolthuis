@@ -231,7 +231,7 @@ p {
   padding-left: 1rem;
 }
 .div-top.alt-homepage {
-  /*height: 100vh;*/
+  height: 100vh;
   min-height: 30rem;
   padding-top: 20vh;
   padding-right: 6rem;
