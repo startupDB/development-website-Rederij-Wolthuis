@@ -20,7 +20,7 @@ function showModal() {
      function showModal3() {
     $html.css('overflow', 'hidden');
     $html.css('position', 'fixed');
-         $html.css('width', '100%');
+    $html.css('width', '100%');
     $modal3.fadeIn(1000).css('overflow', 'auto');
     
 }
@@ -28,7 +28,7 @@ function showModal() {
    function showModal2() {
     $html.css('overflow', 'hidden');
     $html.css('position', 'fixed');
-       $html.css('width', '100%');
+    $html.css('width', '100%');
     $modal2.fadeIn(1000).css('overflow', 'auto');
     
 }
@@ -70,6 +70,7 @@ $('.button-kantoor').on('click', showModal4);
 $('.button-menu').clickToggle(function() {   
         $html.css('overflow', 'hidden');
         $html.css('position','fixed');
+        $html.css('width', '100%');
         $menu.css('overflow', 'auto');
   
 }, function() {
