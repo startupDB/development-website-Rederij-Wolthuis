@@ -737,9 +737,9 @@ p {
   text-shadow: none;
 }
 .column-locatie-icon {
+  height: 7rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-shadow: none;
 }
 .alt-opstapplek {
   padding-right: 2rem;
@@ -2466,10 +2466,10 @@ html.w-mod-js *[data-ix="laoding"] {
   }
   .div-opstapplek-right-top-blue {
     padding-left: 1rem;
-    text-shadow: none;
+
   }
   .column-locatie-icon {
-    text-shadow: none;
+
   }
   .alt-opstapplek {
     text-align: left;
