@@ -31,7 +31,11 @@ class PHPMailer
      * The PHPMailer Version number.
      * @type string
      */
+<<<<<<< HEAD
     public $Version = '5.2.8';
+=======
+    public $Version = '5.2.9';
+>>>>>>> RWgithub/master
 
     /**
      * Email priority.

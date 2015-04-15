@@ -30,7 +30,11 @@ class SMTP
      * The PHPMailer SMTP version number.
      * @type string
      */
+<<<<<<< HEAD
     const VERSION = '5.2.8';
+=======
+    const VERSION = '5.2.9';
+>>>>>>> RWgithub/master
 
     /**
      * SMTP line break constant.
@@ -51,12 +55,44 @@ class SMTP
     const MAX_LINE_LENGTH = 998;
 
     /**
+<<<<<<< HEAD
+=======
+     * Debug level for no output
+     */
+    const DEBUG_OFF = 0;
+
+    /**
+     * Debug level to show client -> server messages
+     */
+    const DEBUG_CLIENT = 1;
+
+    /**
+     * Debug level to show client -> server and server -> client messages
+     */
+    const DEBUG_SERVER = 2;
+
+    /**
+     * Debug level to show connection status, client -> server and server -> client messages
+     */
+    const DEBUG_CONNECTION = 3;
+
+    /**
+     * Debug level to show all messages
+     */
+    const DEBUG_LOWLEVEL = 4;
+
+    /**
+>>>>>>> RWgithub/master
      * The PHPMailer SMTP Version number.
      * @type string
      * @deprecated Use the `VERSION` constant instead
      * @see SMTP::VERSION
      */
+<<<<<<< HEAD
     public $Version = '5.2.8';
+=======
+    public $Version = '5.2.9';
+>>>>>>> RWgithub/master
 
     /**
      * SMTP server port number.
@@ -77,6 +113,7 @@ class SMTP
     /**
      * Debug output level.
      * Options:
+<<<<<<< HEAD
      * * `0` No output
      * * `1` Commands
      * * `2` Data and commands
@@ -85,6 +122,16 @@ class SMTP
      * @type integer
      */
     public $do_debug = 0;
+=======
+     * * self::DEBUG_OFF (`0`) No debug output, default
+     * * self::DEBUG_CLIENT (`1`) Client commands
+     * * self::DEBUG_SERVER (`2`) Client commands and server responses
+     * * self::DEBUG_CONNECTION (`3`) As DEBUG_SERVER plus connection status
+     * * self::DEBUG_LOWLEVEL (`4`) Low-level data output, all messages
+     * @type integer
+     */
+    public $do_debug = self::DEBUG_OFF;
+>>>>>>> RWgithub/master
 
     /**
      * How to handle debug output.
@@ -154,10 +201,21 @@ class SMTP
      * @see SMTP::$Debugoutput
      * @see SMTP::$do_debug
      * @param string $str Debug string to output
+<<<<<<< HEAD
      * @return void
      */
     protected function edebug($str)
     {
+=======
+     * @param integer $level The debug level of this message; see DEBUG_* constants
+     * @return void
+     */
+    protected function edebug($str, $level = 0)
+    {
+        if ($level > $this->do_debug) {
+            return;
+        }
+>>>>>>> RWgithub/master
         if (is_callable($this->Debugoutput)) {
             call_user_func($this->Debugoutput, $str, $this->do_debug);
             return;
@@ -197,6 +255,7 @@ class SMTP
      * @access public
      * @return boolean
      */
+<<<<<<< HEAD
    
        
     
@@ -207,6 +266,10 @@ class SMTP
         if (count($options) == 0) {
            $options['ssl'] = array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true);
        }
+=======
+    public function connect($host, $port = null, $timeout = 30, $options = array())
+    {
+>>>>>>> RWgithub/master
         static $streamok;
         //This is enabled by default since 5.0.0 but some providers disable it
         //Check this once and cache the result
@@ -225,9 +288,16 @@ class SMTP
             $port = self::DEFAULT_SMTP_PORT;
         }
         // Connect to the SMTP server
+<<<<<<< HEAD
         if ($this->do_debug >= 3) {
             $this->edebug("Connection: opening to $host:$port, t=$timeout, opt=".var_export($options, true));
         }
+=======
+        $this->edebug(
+            "Connection: opening to $host:$port, t=$timeout, opt=".var_export($options, true),
+            self::DEBUG_CONNECTION
+        );
+>>>>>>> RWgithub/master
         $errno = 0;
         $errstr = '';
         if ($streamok) {
@@ -243,9 +313,16 @@ class SMTP
             );
         } else {
             //Fall back to fsockopen which should work in more places, but is missing some features
+<<<<<<< HEAD
             if ($this->do_debug >= 3) {
                 $this->edebug("Connection: stream_socket_client not available, falling back to fsockopen");
             }
+=======
+            $this->edebug(
+                "Connection: stream_socket_client not available, falling back to fsockopen",
+                self::DEBUG_CONNECTION
+            );
+>>>>>>> RWgithub/master
             $this->smtp_conn = fsockopen(
                 $host,
                 $port,
@@ -261,6 +338,7 @@ class SMTP
                 'errno' => $errno,
                 'errstr' => $errstr
             );
+<<<<<<< HEAD
             if ($this->do_debug >= 1) {
                 $this->edebug(
                     'SMTP ERROR: ' . $this->error['error']
@@ -272,6 +350,16 @@ class SMTP
         if ($this->do_debug >= 3) {
             $this->edebug('Connection: opened');
         }
+=======
+            $this->edebug(
+                'SMTP ERROR: ' . $this->error['error']
+                . ": $errstr ($errno)",
+                self::DEBUG_CLIENT
+            );
+            return false;
+        }
+        $this->edebug('Connection: opened', self::DEBUG_CONNECTION);
+>>>>>>> RWgithub/master
         // SMTP server can take longer to respond, give longer timeout for first read
         // Windows does not have support for this timeout function
         if (substr(PHP_OS, 0, 3) != 'WIN') {
@@ -283,9 +371,13 @@ class SMTP
         }
         // Get any announcement
         $announce = $this->get_lines();
+<<<<<<< HEAD
         if ($this->do_debug >= 2) {
             $this->edebug('SERVER -> CLIENT: ' . $announce);
         }
+=======
+        $this->edebug('SERVER -> CLIENT: ' . $announce, self::DEBUG_SERVER);
+>>>>>>> RWgithub/master
         return true;
     }
 
@@ -375,12 +467,20 @@ class SMTP
                 //Check that functions are available
                 if (!$ntlm_client->Initialize($temp)) {
                     $this->error = array('error' => $temp->error);
+<<<<<<< HEAD
                     if ($this->do_debug >= 1) {
                         $this->edebug(
                             'You need to enable some modules in your php.ini file: '
                             . $this->error['error']
                         );
                     }
+=======
+                    $this->edebug(
+                        'You need to enable some modules in your php.ini file: '
+                        . $this->error['error'],
+                        self::DEBUG_CLIENT
+                    );
+>>>>>>> RWgithub/master
                     return false;
                 }
                 //msg1
@@ -474,12 +574,20 @@ class SMTP
         if (is_resource($this->smtp_conn)) {
             $sock_status = stream_get_meta_data($this->smtp_conn);
             if ($sock_status['eof']) {
+<<<<<<< HEAD
                 // the socket is valid but we are not connected
                 if ($this->do_debug >= 1) {
                     $this->edebug(
                         'SMTP NOTICE: EOF caught while checking if connected'
                     );
                 }
+=======
+                // The socket is valid but we are not connected
+                $this->edebug(
+                    'SMTP NOTICE: EOF caught while checking if connected',
+                    self::DEBUG_CLIENT
+                );
+>>>>>>> RWgithub/master
                 $this->close();
                 return false;
             }
@@ -502,9 +610,14 @@ class SMTP
         if (is_resource($this->smtp_conn)) {
             // close the connection and cleanup
             fclose($this->smtp_conn);
+<<<<<<< HEAD
             if ($this->do_debug >= 3) {
                 $this->edebug('Connection: closed');
             }
+=======
+            $this->smtp_conn = null; //Makes for cleaner serialization
+            $this->edebug('Connection: closed', self::DEBUG_CONNECTION);
+>>>>>>> RWgithub/master
         }
     }
 
@@ -715,9 +828,13 @@ class SMTP
         $this->last_reply = $this->get_lines();
         $code = substr($this->last_reply, 0, 3);
 
+<<<<<<< HEAD
         if ($this->do_debug >= 2) {
             $this->edebug('SERVER -> CLIENT: ' . $this->last_reply);
         }
+=======
+        $this->edebug('SERVER -> CLIENT: ' . $this->last_reply, self::DEBUG_SERVER);
+>>>>>>> RWgithub/master
 
         if (!in_array($code, (array)$expect)) {
             $this->error = array(
@@ -725,11 +842,18 @@ class SMTP
                 'smtp_code' => $code,
                 'detail' => substr($this->last_reply, 4)
             );
+<<<<<<< HEAD
             if ($this->do_debug >= 1) {
                 $this->edebug(
                     'SMTP ERROR: ' . $this->error['error'] . ': ' . $this->last_reply
                 );
             }
+=======
+            $this->edebug(
+                'SMTP ERROR: ' . $this->error['error'] . ': ' . $this->last_reply,
+                self::DEBUG_CLIENT
+            );
+>>>>>>> RWgithub/master
             return false;
         }
 
@@ -791,9 +915,13 @@ class SMTP
         $this->error = array(
             'error' => 'The SMTP TURN command is not implemented'
         );
+<<<<<<< HEAD
         if ($this->do_debug >= 1) {
             $this->edebug('SMTP NOTICE: ' . $this->error['error']);
         }
+=======
+        $this->edebug('SMTP NOTICE: ' . $this->error['error'], self::DEBUG_CLIENT);
+>>>>>>> RWgithub/master
         return false;
     }
 
@@ -805,9 +933,13 @@ class SMTP
      */
     public function client_send($data)
     {
+<<<<<<< HEAD
         if ($this->do_debug >= 1) {
             $this->edebug("CLIENT -> SERVER: $data");
         }
+=======
+        $this->edebug("CLIENT -> SERVER: $data", self::DEBUG_CLIENT);
+>>>>>>> RWgithub/master
         return fwrite($this->smtp_conn, $data);
     }
 
@@ -854,6 +986,7 @@ class SMTP
         }
         while (is_resource($this->smtp_conn) && !feof($this->smtp_conn)) {
             $str = @fgets($this->smtp_conn, 515);
+<<<<<<< HEAD
             if ($this->do_debug >= 4) {
                 $this->edebug("SMTP -> get_lines(): \$data was \"$data\"");
                 $this->edebug("SMTP -> get_lines(): \$str is \"$str\"");
@@ -862,6 +995,12 @@ class SMTP
             if ($this->do_debug >= 4) {
                 $this->edebug("SMTP -> get_lines(): \$data is \"$data\"");
             }
+=======
+            $this->edebug("SMTP -> get_lines(): \$data was \"$data\"", self::DEBUG_LOWLEVEL);
+            $this->edebug("SMTP -> get_lines(): \$str is \"$str\"", self::DEBUG_LOWLEVEL);
+            $data .= $str;
+            $this->edebug("SMTP -> get_lines(): \$data is \"$data\"", self::DEBUG_LOWLEVEL);
+>>>>>>> RWgithub/master
             // If 4th character is a space, we are done reading, break the loop, micro-optimisation over strlen
             if ((isset($str[3]) and $str[3] == ' ')) {
                 break;
@@ -869,21 +1008,36 @@ class SMTP
             // Timed-out? Log and break
             $info = stream_get_meta_data($this->smtp_conn);
             if ($info['timed_out']) {
+<<<<<<< HEAD
                 if ($this->do_debug >= 4) {
                     $this->edebug(
                         'SMTP -> get_lines(): timed-out (' . $this->Timeout . ' sec)'
                     );
                 }
+=======
+                $this->edebug(
+                    'SMTP -> get_lines(): timed-out (' . $this->Timeout . ' sec)',
+                    self::DEBUG_LOWLEVEL
+                );
+>>>>>>> RWgithub/master
                 break;
             }
             // Now check if reads took too long
             if ($endtime and time() > $endtime) {
+<<<<<<< HEAD
                 if ($this->do_debug >= 4) {
                     $this->edebug(
                         'SMTP -> get_lines(): timelimit reached ('.
                         $this->Timelimit . ' sec)'
                     );
                 }
+=======
+                $this->edebug(
+                    'SMTP -> get_lines(): timelimit reached ('.
+                    $this->Timelimit . ' sec)',
+                    self::DEBUG_LOWLEVEL
+                );
+>>>>>>> RWgithub/master
                 break;
             }
         }
