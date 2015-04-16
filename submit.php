@@ -86,7 +86,10 @@ $mail->Password = "leunweg17";
 
         //Naar wie moet de mail gestuurd worden
         $mail->addAddress('info@rederijwolthuis.nl');
+<<<<<<< HEAD
+=======
         $mail->addAddress('bertvanhouten@icloud.com');
+>>>>>>> RWgithub/master
         $mail->addReplyTo( $emailadres );
         
         $mail->setFrom('info@rederijwolthuis.nl','Rederij Wolthuis');

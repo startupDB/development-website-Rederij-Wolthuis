@@ -34,7 +34,11 @@ class POP3
      * @type string
      * @access public
      */
+<<<<<<< HEAD
+    public $Version = '5.2.8';
+=======
     public $Version = '5.2.9';
+>>>>>>> RWgithub/master
 
     /**
      * Default POP3 port number.
