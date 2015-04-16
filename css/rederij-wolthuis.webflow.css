@@ -739,6 +739,12 @@ p {
 .column-locatie-icon {
 <<<<<<< HEAD
   height: 7rem;
+<<<<<<< HEAD
+=======
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+=======
+>>>>>>> origin/master
   padding-top: 1rem;
   padding-bottom: 1rem;
 =======
@@ -748,6 +754,9 @@ p {
 =======
   text-shadow: none;
 >>>>>>> RWgithub/master
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 }
 .alt-opstapplek {
@@ -1449,7 +1458,11 @@ p {
   height: 3.5rem;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 3.5rem;
+=======
+>>>>>>> RWgithub/master
+>>>>>>> origin/master
 =======
 >>>>>>> RWgithub/master
 >>>>>>> origin/master
@@ -1462,12 +1475,18 @@ p {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/master
   margin-top: auto;
   margin-bottom: auto;
   padding-top: auto;
   padding-bottom: auto;
 >>>>>>> RWgithub/master
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
   color: white;
   font-weight: 300;
@@ -2033,7 +2052,12 @@ p {
   margin-top: 22vh;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-top: 22vh;
+=======
+  margin-top: 30vh;
+>>>>>>> RWgithub/master
+>>>>>>> origin/master
 =======
   margin-top: 30vh;
 >>>>>>> RWgithub/master
@@ -2507,16 +2531,22 @@ html.w-mod-js *[data-ix="laoding"] {
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   }
   .column-locatie-icon {
 
 =======
+=======
+>>>>>>> origin/master
     text-shadow: none;
   }
   .column-locatie-icon {
     text-shadow: none;
 >>>>>>> RWgithub/master
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
   }
   .alt-opstapplek {
