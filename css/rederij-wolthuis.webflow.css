@@ -2245,7 +2245,7 @@ html.w-mod-js *[data-ix="laoding"] {
   }
   .div-top.alt-homepage {
     height: 100vh;
-    padding-top: 25vh;
+    padding-top: 0rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }
