@@ -231,8 +231,8 @@ p {
   height: 100vh;
   /*padding-top: 22vh;*/
 
-  padding-right: 6rem;
-  padding-left: 6rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
   font-family: Icomoon, sans-serif;
   font-weight: 400;
 }
