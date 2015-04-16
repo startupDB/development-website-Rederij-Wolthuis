@@ -229,7 +229,8 @@ p {
 .div-top.alt-homepage {
   width: 100%;
   height: 100vh;
-  padding-top: 22vh;
+  /*padding-top: 22vh;*/
+
   padding-right: 6rem;
   padding-left: 6rem;
   font-family: Icomoon, sans-serif;
