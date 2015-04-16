@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 div [data-flex~="container-fluid"]{margin-right:auto;margin-left:auto;}
 div [data-flex~="container"]{box-sizing:border-box;}
 div [data-flex~="row"]{box-sizing:border-box;display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-moz-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}
