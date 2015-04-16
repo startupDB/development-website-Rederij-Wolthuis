@@ -2241,7 +2241,6 @@ html.w-mod-js *[data-ix="laoding"] {
     padding-left: 2rem;
   }
   .div-top.alt-homepage {
-      display: flex;
     height: 100vh;
     min-height: 33rem;
     padding-top: 35vh;
