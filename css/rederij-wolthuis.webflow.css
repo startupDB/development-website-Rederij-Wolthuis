@@ -1254,7 +1254,7 @@ p {
 }
 .menu-text-next-hamburger {
   position: absolute;
-  left: 4.2rem;
+  left: 5rem;
   top: 1.3rem;
   z-index: 26;
   display: inline;
