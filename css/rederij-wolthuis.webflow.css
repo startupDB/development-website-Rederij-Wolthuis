@@ -2219,7 +2219,7 @@ html.w-mod-js *[data-ix="laoding"] {
   }
   .div-top.alt-homepage {
     height: 100vh;
-    padding-top: 0rem;
+    padding-top: 10rem;
     padding-right: 0rem;
     padding-left: 0rem;
   }
