@@ -52,7 +52,7 @@ module.exports = function($, _) {
   // Module methods
 
   api.ready = function() {
-    var doBranding = $html.attr("data-wf-status") && location.href.match(/webflow.com/);
+    var doBranding = $html.attr("data-wf-status");
 
     if (doBranding) {
       var $branding = $('<div></div>');
@@ -430,9 +430,9 @@ module.exports = function($, _) {
   function getStatus(field, name, value) {
     var status = null;
     if (!field.attr('required')) return null;
-    if (!value) status = 'Vult u a.u.b. de verplichte velden in:' + name;
+    if (!value) status = 'Please fill out the required field: ' + name;
     else if (emailField.test(name) || emailField.test(field.attr('type'))) {
-      if (!emailValue.test(value)) status = 'Graag een geldig emailadres invulen:' + name;
+      if (!emailValue.test(value)) status = 'Please enter a valid email address for: ' + name;
     }
     return status;
   }
@@ -603,7 +603,7 @@ module.exports = function($, _) {
 
   function load() {
     loaded = true;
-    $.getScript('https://apis.google.comjs/plusone.js');
+    $.getScript('https://apis.google.com/js/plusone.js');
   }
 
   // Export module
@@ -2515,7 +2515,7 @@ module.exports = function($, _) {
     // Close menu when tapped outside, debounced to wait for state
     return _.debounce(function(evt) {
       if (!data.open) return;
-      //var menu = $(evt.target).closest('.w-nav-menu');
+      var menu = $(evt.target).closest('.w-nav-menu');
       if (!data.menu.is(menu)) {
         close(data);
       }
@@ -4017,8 +4017,8 @@ Webflow.require('ix').init([
   {"slug":"show-prijzen-hapjes","name":"show prijzen hapjes","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-hapjes","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
   {"slug":"show-prijzen-lunch","name":"show prijzen lunch","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-lunch","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
   {"slug":"show-prijzen-nagerecht","name":"show prijzen nagerecht","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-nagerecht","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
-  {"slug":"show-prijzen-buffet-luxe","name":"show prijzen buffet luxe","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms","group":"A","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"8b69553e-65db-a9df-0d28-e34aa86c7ec4","style":{"modelType":"MacroStyle"}}}}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms","group":"B","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"8b69553e-65db-a9df-0d28-e34aa86c7ec4","style":{"modelType":"MacroStyle"}}}}],"macro":{"modelType":"Macro","guid":"8b69553e-65db-a9df-0d28-e34aa86c7ec4","style":{"modelType":"MacroStyle"}}}]}},
-  {"slug":"show-prijzen-buffet-aanvulling","name":"show prijzen buffet aanvulling","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-aanvulling-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms","group":"A","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"e789efc1-bbdc-c8f7-949a-8f6278ba3bb6","style":{"modelType":"MacroStyle"}}}}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms","group":"B","trigger":{"modelType":"MacroTrigger","macro":{"modelType":"Macro","guid":"e789efc1-bbdc-c8f7-949a-8f6278ba3bb6","style":{"modelType":"MacroStyle"}}}}],"macro":{"modelType":"Macro","guid":"e789efc1-bbdc-c8f7-949a-8f6278ba3bb6","style":{"modelType":"MacroStyle"}}}]}},
+  {"slug":"show-prijzen-buffet-luxe","name":"show prijzen buffet luxe","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
+  {"slug":"show-prijzen-buffet-aanvulling","name":"show prijzen buffet aanvulling","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-aanvulling-buffet","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
   {"slug":"madal-background-show-2","name":"madal background show 2","value":{"style":{},"triggers":[{"type":"click","selector":".form-heusden-modal","stepsA":[{"display":"block"}],"stepsB":[]}]}},
   {"slug":"madal-background-show","name":"madal background show","value":{"style":{},"triggers":[{"type":"click","stepsA":[{"display":"block"}],"stepsB":[]}]}},
   {"slug":"new-interaction-4","name":"New Interaction 4","value":{"style":{},"triggers":[{"type":"hover","selector":".tekst-overlay","stepsA":[{"transition":"transform 500ms ease 0ms","x":"0px","y":"-160px"}],"stepsB":[]}]}},
@@ -4036,4 +4036,3 @@ Webflow.require('ix').init([
   {"slug":"show-prijzen-italiaans","name":"show prijzen italiaans","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-spaans","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}},
   {"slug":"show-prijzen-diverse","name":"show prijzen diverse","value":{"style":{},"triggers":[{"type":"click","selector":".hidden-diverse","stepsA":[{"height":"auto","transition":"height 850ms ease 0ms"}],"stepsB":[{"height":"0px","transition":"height 800ms ease 0ms"}]}]}}
 ]);
->>>>>>> RWgithub/master
