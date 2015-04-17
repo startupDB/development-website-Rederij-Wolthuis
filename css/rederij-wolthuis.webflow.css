@@ -3365,8 +3365,7 @@ html.w-mod-js *[data-ix="laoding"] {
     line-height: 1.4em;
   }
   .contact-heading-white {
-      margin-top: auto;
-      margin-bottom: auto;
+    color: white;
     padding-top: 0rem;
     padding-bottom: 0rem;
     font-size: 1.5em;
@@ -4204,6 +4203,7 @@ html.w-mod-js *[data-ix="laoding"] {
     font-size: 1.1em;
   }
   .contact-heading-white {
+      color: white;
       margin-bottom: auto;
       margin-bottom: auto;
     padding-top: auto;
