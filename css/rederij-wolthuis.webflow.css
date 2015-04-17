@@ -3679,7 +3679,7 @@ html.w-mod-js *[data-ix="laoding"] {
     height: 20rem;
     max-height: 20rem;
     min-height: 20rem;
-    padding-top: 0rem;
+    padding-top: 4rem;
     padding-right: 1rem;
     padding-left: 1rem;
   }
