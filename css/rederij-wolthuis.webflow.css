@@ -1444,40 +1444,19 @@ p {
   box-shadow: rgba(0, 0, 0, 0.29) 0px 0px 7px 0px;
 }
 .top-blue-contact-form {
-<<<<<<< HEAD
   height: 3.5rem;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
   height: 3.5rem;
-=======
->>>>>>> RWgithub/master
->>>>>>> origin/master
-=======
->>>>>>> RWgithub/master
->>>>>>> origin/master
   max-height: 4rem;
   min-height: 3.5rem;
   border-radius: 1px;
   background-color: #189bce;
 }
 .contact-heading-white {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
+
   margin-top: auto;
   margin-bottom: auto;
   padding-top: auto;
   padding-bottom: auto;
->>>>>>> RWgithub/master
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
   color: white;
   font-weight: 300;
   text-align: center;
@@ -2634,8 +2613,7 @@ html.w-mod-js *[data-ix="laoding"] {
     text-shadow: none;
   }
   .contact-heading-white {
-      margin-top: auto;
-      margin-bottom: auto;
+    color: white;
     padding-top: 0rem;
     padding-bottom: 0rem;
     font-size: 1.8em;
