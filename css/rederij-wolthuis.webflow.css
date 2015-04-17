@@ -1452,11 +1452,6 @@ p {
   background-color: #189bce;
 }
 .contact-heading-white {
-
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top: auto;
-  padding-bottom: auto;
   color: white;
   font-weight: 300;
   text-align: center;
@@ -2614,8 +2609,6 @@ html.w-mod-js *[data-ix="laoding"] {
   }
   .contact-heading-white {
     color: white;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
     font-size: 1.8em;
     text-shadow: none;
   }
@@ -3366,8 +3359,6 @@ html.w-mod-js *[data-ix="laoding"] {
   }
   .contact-heading-white {
     color: white;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
     font-size: 1.5em;
     text-shadow: none;
   }
@@ -4204,10 +4195,6 @@ html.w-mod-js *[data-ix="laoding"] {
   }
   .contact-heading-white {
       color: white;
-      margin-bottom: auto;
-      margin-bottom: auto;
-    padding-top: auto;
-    padding-bottom: auto;
     text-shadow: none;
   }
   .text-afvaart {
