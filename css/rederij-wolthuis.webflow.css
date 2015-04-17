@@ -2502,30 +2502,13 @@ html.w-mod-js *[data-ix="laoding"] {
   }
   .div-opstapplek-right-top-blue {
     padding-left: 1rem;
-<<<<<<< HEAD
-
   }
+
   .column-locatie-icon {
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-  }
-  .column-locatie-icon {
-
-=======
-=======
->>>>>>> origin/master
     text-shadow: none;
   }
   .column-locatie-icon {
     text-shadow: none;
->>>>>>> RWgithub/master
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
   }
   .alt-opstapplek {
     text-align: left;
@@ -2879,7 +2862,7 @@ html.w-mod-js *[data-ix="laoding"] {
     height: 18rem;
     max-height: 16rem;
     min-height: 17rem;
-    padding-top: 9rem;
+    padding-top: 0rem;
     padding-left: 2rem;
   }
   .div-top.vaarten {
