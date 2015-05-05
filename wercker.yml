@@ -1,3 +1,8 @@
 box: wercker/default
-steps:
-  - leipert/git-push@0.7.6
+deploy:
+    steps:
+        # Execute the s3sync deploy step, a step provided by wercker
+        - s3sync:
+            key_id: $AWS_ACCESS_KEY_ID
+            key_secret: $AWS_SECRET_ACCESS_KEY
+            bucket_url: $AWS_BUCKET_URL
