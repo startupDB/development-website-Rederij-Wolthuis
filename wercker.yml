@@ -1,8 +1,8 @@
 box: wercker/default
 deploy:
   steps:
-    - pcellis/ftp-deploy-exclude@1.0.1:
-        destination: ftp://www.rederijwolthuis.nl
+    - wercker-labs/azure-ftp-deploy:
+        publish-url: ftp://www.rederijwolthuis.nl
         username: wolthuis
-        password: $PASSWORD
-        exclude-file: "/.git/"#"/wercker.yml"
+        password: $AZURE_PASSWORD
+    
