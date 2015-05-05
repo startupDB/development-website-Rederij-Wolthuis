@@ -4,8 +4,7 @@ box: wercker/default
   
 deploy:
   steps:
-    - duleorlovic/ftp-deploy@1.0.1
-    - duleorlovic/ftp-deploy:
+    - duleorlovic/ftp-deploy@1.0.1:
         destination: ftp://www.rederijwolthuis.nl
         username: wolthuis
         password: $PASSWORD
