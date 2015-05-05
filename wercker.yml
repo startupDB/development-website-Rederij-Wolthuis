@@ -1,10 +1,11 @@
 box: wercker/default
-steps:
-  - duleorlovic/ftp-stage-deploy@0.0.3
+build:
+ steps:
+    - duleorlovic/ftp-deploy@1.0.1
   
 deploy:
   steps:
-    - wercker-labs/azure-ftp-deploy:
-          publish-url: ftp://www.rederijwolthuis.nl
-          username: wolthuis
-          password: $AZURE_PASSWORD
+    - duleorlovic/ftp-deploy:
+        destination: ftp://www.rederijwolthuis.nl
+        username: wolthuis
+        password: $PASSWORD
