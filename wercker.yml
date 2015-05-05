@@ -1,4 +1,7 @@
 box: wercker/default
+steps:
+  - duleorlovic/ftp-stage-deploy@0.0.3
+  
 deploy:
   steps:
     - wercker-labs/azure-ftp-deploy:
