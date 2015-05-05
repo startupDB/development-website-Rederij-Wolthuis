@@ -1,7 +1,7 @@
 box: wercker/default
 deploy:
   steps:
-  - peterellis/ftp-deploy:
+    - pcellis/ftp-deploy-exclude@1.0.1:
         destination: ftp://www.rederijwolthuis.nl
         username: wolthuis
         password: $PASSWORD
