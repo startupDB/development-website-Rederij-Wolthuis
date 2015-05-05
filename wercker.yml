@@ -4,6 +4,6 @@ deploy:
     - florianb/niftypee:
         target: ftp://www.rederijwolthuis.nl
         username: wolthuis
-        password: $AZURE_PASSWORD
+        password: mkzlg
    
     
