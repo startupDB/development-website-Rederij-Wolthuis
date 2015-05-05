@@ -3,5 +3,5 @@ deploy:
   steps:
     - wercker-labs/azure-ftp-deploy:
           publish-url: ftp://www.rederijwolthuis.nl
-          username: wolthuis\\\$wolthuis
+          username: wolthuis
           password: $AZURE_PASSWORD
