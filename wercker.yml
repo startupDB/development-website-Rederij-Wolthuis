@@ -1,10 +1,10 @@
 box: wercker/default
-build:
- steps:
-    - duleorlovic/ftp-deploy@1.0.1
+ 
+    
   
 deploy:
   steps:
+    - duleorlovic/ftp-deploy@1.0.1
     - duleorlovic/ftp-deploy:
         destination: ftp://www.rederijwolthuis.nl
         username: wolthuis
