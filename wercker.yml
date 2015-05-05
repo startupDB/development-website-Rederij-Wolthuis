@@ -1,3 +1,4 @@
 box: wercker/default
-steps:
-  - leipert/git-push@0.7.6
+build:
+  steps:
+    - leipert/git-push@0.7.6
