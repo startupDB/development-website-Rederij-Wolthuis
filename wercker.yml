@@ -1,7 +1,4 @@
 box: wercker/default
- 
-    
-  
 deploy:
   steps:
     - duleorlovic/ftp-deploy@1.0.1:
