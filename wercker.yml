@@ -1,7 +1,8 @@
 box: wercker/default
 deploy:
   steps:
-    - duleorlovic/ftp-deploy@1.0.1:
+  - peterellis/ftp-deploy:
         destination: ftp://www.rederijwolthuis.nl
         username: wolthuis
         password: $PASSWORD
+        exclude-file: "/.git/"#"/wercker.yml"
