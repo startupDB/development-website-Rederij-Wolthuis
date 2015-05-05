@@ -87,8 +87,6 @@ $mail->Password = "leunweg17";
         //Naar wie moet de mail gestuurd worden
         $mail->addAddress('info@rederijwolthuis.nl');
 
-        $mail->addAddress('bertvanhouten@icloud.com');
-
         $mail->addReplyTo( $emailadres );
         
         $mail->setFrom('info@rederijwolthuis.nl','Rederij Wolthuis');
