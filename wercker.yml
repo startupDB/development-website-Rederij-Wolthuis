@@ -1,9 +1,7 @@
 box: wercker/default
 deploy:
   steps:
-    - florianb/niftypee:
-        target: ftp://www.rederijwolthuis.nl
+     - wercker-labs/azure-ftp-deploy:
+        publish-url: ftp://www.rederijwolthuis.nl
         username: wolthuis
-        password: mkzlg
-   
-    
+        password: $AZURE_PASSWORD
