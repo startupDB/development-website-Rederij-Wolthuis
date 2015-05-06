@@ -8,7 +8,7 @@ deploy:
             key_secret: $AWS_SECRET_ACCESS_KEY
             bucket_url: $AWS_BUCKET_URL
     after-steps:
-        - sherzberg/slack-notify:
+        - sherzberg/slack-notify@0.0.11:
             subdomain: startupdb
             token: T03EX0XF1/B04N86D9N/NthAwEzopH2rU6AbSd97TDS8
             channel: "rederij-wolthuis"
