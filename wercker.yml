@@ -9,7 +9,7 @@ deploy:
             bucket_url: $AWS_BUCKET_URL
     after-steps:
         - sherzberg/slack-notify:
-            subdomain: startupDB
+            subdomain: startupdb
             token: $SLACK_TOKEN
             channel: "#rederij-wolthuis"
             username: bert
