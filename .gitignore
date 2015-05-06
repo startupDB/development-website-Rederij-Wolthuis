@@ -1,4 +1,8 @@
-
 *.json
 
 *.yml
+/vendor/class.phpmailer.php
+/vendor/class.pop3.php
+/vendor/class.smtp.php
+/vendor/PHPMailerAutoload.php
+/submit.php
