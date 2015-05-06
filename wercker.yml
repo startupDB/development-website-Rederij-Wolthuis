@@ -7,5 +7,10 @@ deploy:
             key_id: $AWS_ACCESS_KEY_ID
             key_secret: $AWS_SECRET_ACCESS_KEY
             bucket_url: $AWS_BUCKET_URL
-       
-        
+    after-steps:
+        - sherzberg/slack-notify:
+            subdomain: startupDB
+            token: $SLACK_TOKEN
+            channel: "#rederij-wolthuis"
+            username: bert
+            icon_url: https://avatars3.githubusercontent.com/u/1695193?s=140
